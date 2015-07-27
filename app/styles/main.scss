@@ -1,5 +1,26 @@
-@import 'base/h5bp';
-@import 'base/normalize';
+
+@import 'base/bootstrap';
+
+@import 'vendor/flexslider';
+// @import 'vendor/lightbox.min';
+@import 'vendor/ytplayer';
+
+@import 'components/themify-icons';
+@import 'components/theme_less2sass';
+
+@import 'components/font-robotocondensed';
+/*@import 'font-oswald';*/
+
+
+@import 'components/menu-wrapper';
+
+
+
+
+.temp .fs-vid-background,
+.temp .bg-dark .background-image-holder {
+    -webkit-filter: blur(40px);
+}
 
 
 

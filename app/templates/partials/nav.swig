@@ -1,0 +1,137 @@
+<div class="nav-container">
+    <a id="top"></a>
+    <nav class="absolute transparent">
+        <div class="nav-bar">
+            <div class="module left">
+                <a href="index.html">
+                    <!-- <img class="logo logo-light" alt="Foundry" src="img/logo-light.png" />
+                    <img class="logo logo-dark" alt="Foundry" src="img/logo-dark.png" /> -->
+                    KERALOCK
+                </a>
+            </div>
+            <div class="module widget-handle mobile-toggle right visible-sm visible-xs">
+                <i class="ti-menu"></i>
+            </div>
+            <div class="module-group right">
+                <div class="module left">
+                    <ul class="menu">
+                        <li class="has-dropdown">
+                            <a href="inspiration.html" {% if page == 'inspiration' %}class="active"{% endif %}>
+                                Inspiration
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="detailseite.html">
+                                        Haarfarben
+                                    </a>
+
+                                </li>
+                                <li>
+                                    <a href="detailseite.html">
+                                        Blondierungen
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="detailseite.html">
+                                        Haarfarb-Entferner
+                                    </a>
+                                <li>
+                                    <a href="detailseite.html">
+                                        Tönungsshampoos
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="has-dropdown">
+                            <a href="inspiration.html">
+                                DE LUXE
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        Sensitiv Dauerwelle
+                                    </a>
+
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Intensiv Dauerwelle
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Kräuterschaum Dauerwelle
+                                    </a>
+                                <li>
+                                    <a href="">
+                                        Powercurl Dauerwelle
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="has-dropdown">
+                            <a href="inspiration.html">
+                                NIGHT LIFE
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        Strukturwechsel Crazy Curl
+                                    </a>
+
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Strukturwechsel Straight Hair
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        color hairsprays
+                                    </a>
+                                </li>
+                            </ul>
+        
+                        </li>
+                        <li class="has-dropdown">
+                            <a href="inspiration.html">
+                                CARE
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        VOLUMEN-Shampoo
+                                    </a>
+
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        TIEFENREINIGUNGS-Shampoo
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        ANTI-GELBSTICH-Shampoo
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        ANTI-SCHUPPEN-Shampoo
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        FARBSCHUTZ-Shampoo
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!--end of menu module-->
+        
+            </div>
+            <!--end of module group-->
+        </div>
+    </nav>
+</div>

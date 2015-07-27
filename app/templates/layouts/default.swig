@@ -1,18 +1,46 @@
-<!DOCTYPE html>
-<!--[if IE 8]>         <html class="lt-ie10 lt-ie9 ie8"><![endif]-->
-<!--[if IE 9]>         <html class="lt-ie10 ie9"><![endif]-->
-<!--[if gt IE 9]><!--> <html><!--<![endif]-->
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>{% block pagetitle %}{% endblock %} - Site Title</title>
-	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0">
-	<meta name="description" content="">
-	<link rel="stylesheet" href="/css/main.css">
-</head>
-<body>
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>{% block pagetitle %}{% endblock %}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+        <link rel="stylesheet" href="/css/main.css">
+        
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
+
+
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    </head>
+    <body class="temp">
 	
-	{% block content %}{% endblock %}
-	<script src="/js/main.js"></script>
-</body>
+		{% block nav %}
+			{% include '../partials/nav_offcanvas.html' %}
+			{% include '../partials/nav.swig' %}
+		{% endblock %}
+		
+		<div class="main-container">
+			{% block content %}{% endblock %}
+
+			{% block footer %}
+				{% include '../partials/footer.swig' %}
+			{% endblock %}
+		</div>
+
+
+		{# <script src="/js/main.js"></script> #}
+
+	    <script src="assets/js/jquery.min.js"></script>
+	    <script src="assets/js/bootstrap.min.js"></script>
+	    <script src="assets/js/flexslider.min.js"></script>
+	    <script src="assets/js/lightbox.min.js"></script>
+	    <script src="assets/js/masonry.min.js"></script>
+	    <script src="assets/js/twitterfetcher.min.js"></script>
+	    <script src="assets/js/spectragram.min.js"></script>
+	    <script src="assets/js/ytplayer.min.js"></script>
+	    <script src="assets/js/countdown.min.js"></script>
+	    <script src="assets/js/smooth-scroll.min.js"></script>
+	    <script src="assets/js/parallax.js"></script>
+	    <script src="assets/js/scripts.js"></script>
+    </body>
 </html>

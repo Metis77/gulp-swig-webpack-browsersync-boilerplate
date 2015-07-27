@@ -1,0 +1,98 @@
+.menu-wrapper {
+  position: relative;
+  display: table;
+  width: 95%;
+  top: 50%;
+  height: 118px;
+  margin-top: -59px;
+}
+.menu-wrapper .logo-nav {
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  min-width: 200px;
+  z-index: 1;
+  top: -5px;
+}
+
+.menu-wrapper .logo-nav .logo-invictus {
+  display: block;
+  margin-left: 35px;
+  cursor: pointer;
+}
+
+.menu-wrapper .cursor {
+  overflow: hidden;
+  position: relative;
+  top: 18px;
+  white-space: nowrap;
+  font-size: 0px;
+}
+
+.menu-wrapper .cursor .large {
+  display: inline-block;
+  visibility: hidden;
+  position: relative;
+  top: 0px;
+  width: 27px;
+  height: 2px;
+  background-color: white;
+}
+.menu-wrapper .cursor .fine {
+  display: inline-block;
+  position: relative;
+  top: -1px;
+  width: 0%;
+  height: 1px;
+  background-color: white;
+}
+
+.menu-wrapper .item-nav {
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  /*font-family: 'Trajan W01 Regular';*/
+  font-size: 12px;
+  width: 20%;
+  text-align: left;
+}
+.menu-wrapper .item-nav .link-wrapper {
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  z-index: 10;
+}
+
+
+.menu-wrapper .item-nav .link-wrapper > a {
+  text-decoration: none;
+}
+.menu-wrapper .item-nav .link-wrapper > a > span {
+  font-size: 17px;
+  /*font-family: 'Trajan W01 Bd';*/
+}
+
+.menu-wrapper .item-nav.selected .link-wrapper > .cursor .large {
+  visibility: visible !important;
+  width: 27px !important;
+}
+.menu-wrapper .item-nav .submenu {
+  display: none;
+}
+.menu-wrapper .item-nav .evoucher-wrapper {
+  position: absolute;
+  bottom: 120px;
+  left: 0px;
+  visibility: hidden;
+  display: none;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url('../images/transp.png');
+}
+.menu-wrapper .item-nav .evoucher-wrapper span {
+  font-size: 12px;
+  color: #99a1a9;
+  font-style: italic;
+  margin-bottom: 15px;
+  display: block;
+}
+
