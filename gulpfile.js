@@ -14,7 +14,7 @@ var browserSync     = require('browser-sync').create();
 
 
 var src   = './app/';
-var dist  = './public/';
+var dest  = './public/';
 
 
 /*
@@ -24,7 +24,7 @@ gulp.task('default', function() {
 	gulp.start('serve');
 });
 gulp.task('production', function() {
-	gulp.start('sass', 'templates');
+	gulp.start('sass', 'templates', 'js');
 });
 
 
@@ -58,7 +58,7 @@ gulp.task('sass', function () {
             	}
             ))
         .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest(dist + 'css/'))
+        .pipe(gulp.dest(dest + 'css/'))
         .pipe(browserSync.stream());
 });
 
@@ -80,7 +80,7 @@ gulp.task('templates', function() {
             load_json: true,
             json_path: src+'templates/data/'
         }))
-        .pipe(gulp.dest(dist))
+        .pipe(gulp.dest(dest))
         .pipe(browserSync.stream());
 });
 
@@ -96,14 +96,6 @@ gulp.task('templates', function() {
 /**
  * JavaScript - main.js task.
  */
-module.exports.js = {
-    input:  [
-        './src/assets/js/libraries/*.js',
-        './src/assets/js/main/*.js',
-    ],
-    output: './public/js/',
-    filename: 'main.js'
-};
 gulp.task('js', function() {
     return gulp.src([
             src+'js/libraries/*.js',
@@ -111,7 +103,8 @@ gulp.task('js', function() {
         ])
         .pipe(concat('main.js'))
         .pipe(uglify())
-        .pipe(gulp.dest(dist+'js/'));
+        .pipe(gulp.dest(dest+'js/'))
+        .pipe(browserSync.stream());
 });
 
 
@@ -128,15 +121,16 @@ gulp.task('js', function() {
  */
 
 // Static Server + watching scss/html files
-gulp.task('serve', ['sass','templates'], function() {
+gulp.task('serve', ['sass','templates', 'js'], function() {
 
     browserSync.init({
-        server: dist,
+        server: dest,
         open: false,
         reloadOnRestart: true,
         notify: false,
     });
 
+    gulp.watch(src + 'js/**/*', ['js']);
     gulp.watch(src + 'styles/**/*', ['sass']);
     gulp.watch(src + 'templates/**/*', ['templates']);
 });
