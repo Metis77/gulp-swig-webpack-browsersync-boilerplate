@@ -1,5 +1,7 @@
 .DS_Store
-public
+public/*.*
+public/css
+public/js
 
 
 # Logs

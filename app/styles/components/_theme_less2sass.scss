@@ -53,9 +53,11 @@ $purple: #9037ff;
 $trublu: #60c5a7;
 $adventure: #91A05C;
 $resume: #13181D;
+$gray: #444;
 
 
-$color-primary: $green;
+// $color-primary: $green;
+$color-primary: $gray;
 $bg-secondary: #f8f8f8;
 $bg-dark: #292929;
 
@@ -392,10 +394,10 @@ nav .btn, .nav-bar .btn{ margin: 0; height: auto; }
 .nav-bar{ height: $nav-height; max-height: $nav-height; line-height: $nav-line-height; border-bottom: 1px solid #ccc; }
 .nav-bar .module,.nav-bar .module-group{ height: $nav-height; }
 .nav-bar a{ display: inline-block; height: $nav-height; }
-.logo{ max-height: 60%; }
-.logo-light{ display: none; }
-nav.bg-dark .logo-light{ display: inline; }
-nav.bg-dark .logo-dark{ display: none; }
+// .logo{ max-height: 70%; }
+// .logo-light{ display: none; }
+// nav.bg-dark .logo-light{ display: inline; }
+// nav.bg-dark .logo-dark{ display: none; }
 
 .has-dropdown{ padding-right: 18px; }
 .has-dropdown:after{ position: absolute; top: 0; right: 0; font-size: 11px; content: "\e64b"; font-family: 'themify'; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; }
@@ -541,7 +543,7 @@ nav.transparent .nav-utility, nav.transparent .nav-bar{ border-bottom: 1px solid
 nav.transparent .module.widget-handle{ border-left: 1px solid rgba(255,255,255,0.2) !important; }
 nav.transparent .menu > li > a, nav.transparent .module.widget-handle i{ opacity: 1; }
 nav.transparent .has-dropdown:after{ color: #fff; }
-nav.transparent .logo-dark{ display: none; }
+// nav.transparent .logo-dark{ display: none; }
 nav.transparent .logo-light{ display: inline; }
 
 @media all and (max-width: 990px){
@@ -553,9 +555,10 @@ nav.transparent .logo-light{ display: inline; }
 	.menu > li:last-child > ul ul{ right: 0; }
 }
 
+
 nav.transparent.fixed{ background: #fff; }
-nav.transparent.fixed .logo-light{ display: none; }
-nav.transparent.fixed .logo-dark{ display: inline; }
+// nav.transparent.fixed .logo-light{ display: none; }
+// nav.transparent.fixed .logo-dark{ display: inline; }
 nav.transparent.fixed .menu > li > a, nav.transparent.fixed .module.widget-handle i{ color: $bg-dark; }
 nav.transparent.fixed .menu > .has-dropdown:after{ color: #fff; color: $bg-dark; }
 nav.transparent.fixed .module.widget-handle{ border-left: 1px solid #ccc; }

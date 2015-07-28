@@ -1,3 +1,5 @@
+{% set page = 'home' %}
+
 {% extends "../layouts/default.swig" %}
 
 {% block pagetitle %}Keralock{% endblock %}
@@ -26,8 +28,8 @@
 
 
 			<div class="menu-wrapper">
-				<div class="logo-nav">
-					<a href="/" class="logo-invictus">Keralock</a>
+				<div class="logo">
+					<a href="/">{% include '../partials/KERALOCK-Logo.svg' %}</a>
 				</div>
 				<div class="item-nav">
 					<div class="center-wrapper sound-roll1">
@@ -81,7 +83,7 @@
 		             </div>
 		        </div>
 		        
-		       	<div class="item-nav" style="opacity: 1;">
+		       	<div class="item-nav">
 		        	<div class="center-wrapper">
 			        	<div class="link-wrapper sound-roll1">
 				        	<a href="inspiration.html">
