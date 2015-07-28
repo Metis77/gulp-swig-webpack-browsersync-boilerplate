@@ -1,9 +1,4 @@
-.menu-wrapper {
-	.logo > a {
-		display: inline-block;
-		width: 300px;
-	}
-}
+
 
 svg.logo {
 	max-height: 70%;
@@ -26,5 +21,18 @@ svg.logo {
 
   	.page_home & {
 		width: 60%;
+	}
+}
+
+.menu-wrapper {
+	.logo > a {
+		display: inline-block;
+		width: 300px;
+	}
+}
+footer .logo {
+	svg.logo {
+		width: 100px;
+		height: auto;
 	}
 }
