@@ -4,9 +4,7 @@
         <div class="nav-bar">
             <div class="module left">
                 <a href="index.html">
-                    <!-- <img class="logo logo-light" alt="Foundry" src="img/logo-light.png" />
-                    <img class="logo logo-dark" alt="Foundry" src="img/logo-dark.png" /> -->
-                    KERALOCK
+                    {% include '../partials/KERALOCK-Logo.svg' %}
                 </a>
             </div>
             <div class="module widget-handle mobile-toggle right visible-sm visible-xs">

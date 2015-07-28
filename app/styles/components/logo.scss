@@ -1,0 +1,32 @@
+.menu-wrapper {
+	.logo > a {
+		display: inline-block;
+		width: 300px;
+	}
+}
+
+svg.logo {
+	max-height: 70%;
+	width: auto;
+	vertical-align: middle;
+
+	path, 
+	polygon {
+		stroke: white;
+		fill  : white;
+  	}
+
+  	nav.fixed & {
+  		path,
+	 	polygon {
+			stroke: $bg-dark;
+			fill  : $bg-dark;
+		}
+  	}
+
+  	.page_home & {
+		width: 60%;
+	}
+}
+
+red
