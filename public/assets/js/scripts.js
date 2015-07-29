@@ -134,7 +134,7 @@ $(document).ready(function() {
         }
 
     } else {
-        $('body').addClass('nav-is-overlay');
+        // $('body').addClass('nav-is-overlay');
     }
 
     if ($('nav').hasClass('bg-dark')) {

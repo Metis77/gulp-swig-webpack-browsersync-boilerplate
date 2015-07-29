@@ -1,23 +1,3 @@
-$green: #47b475;
-$red: #e31d3b;
-$red2: #fc4f4f;
-$hyperblu: #3b3be8;
-$gunmetal: #333347;
-$trunavy: #282a38;
-$purple: #9037ff;
-$trublu: #60c5a7;
-$adventure: #91A05C;
-$resume: #13181D;
-$gray: #444;
-
-
-// $color-primary: $green;
-$color-primary: $gray;
-$bg-secondary: #f8f8f8;
-$bg-dark: #292929;
-
-
-
 @import 'base/bootstrap';
 
 @import 'vendor/flexslider';
@@ -25,8 +5,8 @@ $bg-dark: #292929;
 @import 'vendor/ytplayer';
 
 @import 'components/themify-icons';
-// @import 'components/theme_less2sass';
-@import 'components/theme';
+@import 'components/theme_less2sass';
+// @import 'components/theme';
 
 @import 'components/font-robotocondensed';
 /*@import 'font-oswald';*/

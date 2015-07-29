@@ -15,13 +15,15 @@ svg.logo {
 		fill  : white;
   	}
 
-  	nav.fixed & {
+  	nav.fixed &,
+  	nav > .nav-open & {
   		path,
 	 	polygon {
 			stroke: $bg-dark;
 			fill  : $bg-dark;
 		}
   	}
+
 
   	.page_home & {
 		width: 60%;

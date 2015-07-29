@@ -12,8 +12,8 @@
             </div>
             <div class="module-group right">
                 <div class="module left">
-                    <ul class="menu">
-                        <li class="has-dropdown">
+                    <ul class="menu bg-light">
+                        <li class="has-dropdown bg-light">
                             <a href="inspiration.html" {% if page == 'inspiration' %}class="active"{% endif %}>
                                 Inspiration
                             </a>
