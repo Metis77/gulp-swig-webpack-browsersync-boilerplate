@@ -1,8 +1,12 @@
 
-
+/* main menu */
 svg.logo {
-	max-height: 70%;
-	width: auto;
+	max-height: inherit;
+
+	width: 100px;
+	height: inherit;
+	
+
 	vertical-align: middle;
 
 	path, 
@@ -24,12 +28,18 @@ svg.logo {
 	}
 }
 
+
+
+/* home page */
 .menu-wrapper {
 	.logo > a {
 		display: inline-block;
 		width: 300px;
 	}
 }
+
+
+/* footer */
 footer .logo {
 	svg.logo {
 		width: 100px;

@@ -6,11 +6,6 @@
 {% block pagetitle %}Inspiration - Keralock{% endblock %}
 
 
-{% block nav %}
-	{% include '../partials/nav_offcanvas.html' %}
-	{% include '../partials/nav.swig' %}
-{% endblock %}
-
 {% block content %}
 <section class="image-bg overlay pt180 pb180 pt-xs-140 pb-xs-140">
     <div class="background-image-holder">

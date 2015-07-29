@@ -5,7 +5,6 @@
 {% block pagetitle %}Keralock{% endblock %}
 
 {% block nav %}
-		{% include '../partials/nav_offcanvas.html' %}
 {% endblock %}
 
 {% block content %}

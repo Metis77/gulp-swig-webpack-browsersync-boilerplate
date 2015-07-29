@@ -15,7 +15,7 @@
     <body class="temp page_{{ page }}">
 	
 		{% block nav %}
-			{% include '../partials/nav_offcanvas.html' %}
+			{# {% include '../partials/nav_offcanvas.html' %} #}
 			{% include '../partials/nav.swig' %}
 		{% endblock %}
 		
@@ -43,4 +43,4 @@
 	    <script src="assets/js/parallax.js"></script>
 	    <script src="assets/js/scripts.js"></script>
     </body>
-</html>
+</html>	
