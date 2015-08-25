@@ -20,6 +20,25 @@
     <div class="background-image-holder">
         <img alt="image" class="background-image" src="/assets/img/home15.jpg" />
     </div>
+    <div class="bg-container">
+    	<div class="bg-item bg-item-inspiration">
+    		<img src="img/home/KL-Keyvisual-INSPIRATION-3000px.jpg" alt="" class="bg1">
+    		<img src="img/home/KL-Keyvisual-INSPIRATION-3000px.png" alt="" class="bg2">
+    	</div>
+    	<div class="bg-item bg-item-deluxe">
+    		<img src="img/home/KL-Keyvisual-DELUXE-3000px.jpg" alt="" class="bg1">
+    		<img src="img/home/KL-Keyvisual-DELUXE-3000px.png" alt="" class="bg2">
+    	</div>
+    	<div class="bg-item bg-item-nightlife">
+    		<img src="img/home/KL-Keyvisual-NIGHT-3000px.jpg" alt="" class="bg1">
+    		<img src="img/home/KL-Keyvisual-NIGHT-3000px.png" alt="" class="bg2">
+
+    	</div>
+    	<div class="bg-item bg-item-care">
+    		<img src="img/home/KL-Keyvisual-CARE-3000px.jpg" alt="" class="bg1">
+    		<img src="img/home/KL-Keyvisual-CARE-3000px.png" alt="" class="bg2">
+    	</div>
+    </div>
     <div class="container v-align-transform">
         <div class="row">
 
@@ -30,7 +49,7 @@
 				<div class="logo">
 					<a href="/">{% include '../partials/KERALOCK-Logo.svg' %}</a>
 				</div>
-				<div class="item-nav">
+				<div class="item-nav" data="inspiration">
 					<div class="center-wrapper sound-roll1">
 						<div class="link-wrapper">
 							<a href="inspiration.html" data-linkimg="competition">
@@ -82,7 +101,7 @@
 		             </div>
 		        </div>
 		        
-		       	<div class="item-nav">
+		       	<div class="item-nav" data="deluxe">
 		        	<div class="center-wrapper">
 			        	<div class="link-wrapper sound-roll1">
 				        	<a href="inspiration.html">
@@ -122,7 +141,7 @@
 		         	</div>
 		        </div>
 			             
-		        <div class="item-nav">
+		        <div class="item-nav" data="nightlife">
 		        	<div class="center-wrapper">
 			        	<div class="link-wrapper sound-roll1">
 				        	<a href="inspiration.html" data-linkimg="candidats">
@@ -135,7 +154,7 @@
 		             </div>
 		        </div>                    
 
-		        <div class="item-nav">
+		        <div class="item-nav" data="care">
 		        	        	
 		        	<div class="center-wrapper">
 			        	<div class="link-wrapper sound-roll1">

@@ -1,0 +1,67 @@
+
+
+
+
+
+.fullscreen {
+	.bg-container,
+	.bg-item  {
+	    height: 100%;
+	    width: 100%;
+	    position: absolute;
+	    top: 0;
+	    bottom: 0;
+	    left: 0;
+	    right: 0;
+	    overflow: hidden;
+	    
+	    z-index: 10;
+	}
+
+	.bg-item {
+		background-color: black;
+	    img {
+	    	position: absolute;
+	    	&.bg1 {
+
+	    	}
+	    	&.bg2 {
+	    		bottom: 0;
+	    		right: 0;
+	    	}
+	    }
+    }
+
+
+
+	.container {
+		z-index: 20;
+	}
+
+
+	/* 
+	 * interaction 
+	 */
+	.bg-item  {
+		opacity: 0;
+		transform: matrix(1.1, 0, 0, 1.1, 0, 0);
+		transition: transform .3s ease-in-out,
+			opacity .3s ease-in-out;
+	}
+	// &.is-hover .bg-item {
+		
+	// 	transform: matrix(1, 0, 0, 1, 0, 0);
+	// }
+
+
+
+	&.is-hover-inspiration .bg-item-inspiration,
+	&.is-hover-deluxe .bg-item-deluxe,
+	&.is-hover-nightlife .bg-item-nightlife,
+	&.is-hover-care .bg-item-care {
+		opacity: 1;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+	
+
+}

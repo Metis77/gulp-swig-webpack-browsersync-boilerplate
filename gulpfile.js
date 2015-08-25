@@ -102,7 +102,7 @@ gulp.task('js', function() {
             src+'js/main/*.js',
         ])
         .pipe(concat('main.js'))
-        .pipe(uglify())
+        // .pipe(uglify())
         .pipe(gulp.dest(dest+'js/'))
         .pipe(browserSync.stream());
 });
