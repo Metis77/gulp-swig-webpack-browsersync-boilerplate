@@ -26,7 +26,7 @@
 
 <section class="image-bg bg-dark parallax overlay pt160 pb160 pt-xs-40 pb-xs-40">
     <div class="background-image-holder">
-        <img alt="Background Image" class="background-image" src="/assets/img/vent3.jpg" />
+        <img alt="Background Image" class="background-image" src="/img/KL-Visuals-Level2/KL-INSPIRATION-02-Haarfarben.jpg" />
     </div>
     <div class="container">
         <div class="row">
@@ -42,7 +42,7 @@
 </section>
 <section class="image-bg bg-dark parallax overlay pt160 pb160 pt-xs-40 pb-xs-40">
     <div class="background-image-holder">
-        <img alt="Background Image" class="background-image" src="/assets/img/vent4.jpg" />
+        <img alt="Background Image" class="background-image" src="/img/KL-Visuals-Level2/KL-INSPIRATION-03-Blondierungen.jpg" />
     </div>
     <div class="container">
         <div class="row">
@@ -58,7 +58,7 @@
 </section>
 <section class="image-bg bg-dark parallax overlay pt160 pb160 pt-xs-40 pb-xs-40">
     <div class="background-image-holder">
-        <img alt="Background Image" class="background-image" src="/assets/img/vent5.jpg" />
+        <img alt="Background Image" class="background-image" src="/img/KL-Visuals-Level2/KL-INSPIRATION-05-Entferner.jpg" />
     </div>
     <div class="container">
         <div class="row">
@@ -75,7 +75,7 @@
 
 <section class="image-bg bg-dark parallax overlay pt160 pb160 pt-xs-40 pb-xs-40">
     <div class="background-image-holder">
-        <img alt="Background Image" class="background-image" src="/assets/img/vent3.jpg" />
+        <img alt="Background Image" class="background-image" src="/img/KL-Visuals-Level2/KL-INSPIRATION-04-Toenung.jpg" />
     </div>
     <div class="container">
         <div class="row">
