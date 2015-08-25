@@ -7,6 +7,7 @@ var uglify          = require('gulp-uglify');
 var sass 			= require('gulp-sass');
 var sourcemaps 		= require('gulp-sourcemaps');
 var autoprefixer 	= require('gulp-autoprefixer');
+var inlineResize    = require("gulp-inline-resize");
 
 var swig            = require('gulp-swig');
 
@@ -80,6 +81,7 @@ gulp.task('templates', function() {
             load_json: true,
             json_path: src+'templates/data/'
         }))
+        .pipe(inlineResize({replaceIn:[".html",".css"]}))
         .pipe(gulp.dest(dest))
         .pipe(browserSync.stream());
 });

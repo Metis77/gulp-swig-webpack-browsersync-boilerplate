@@ -14,7 +14,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12 text-center">
-                <h6 class="uppercase mb0">Willkommen in der Welt der Farben</h6>
+                <h6 class="uppercase mb0">Willkommen in der Welt der Farbe1</h6>
                 <h1>KERALOCK INSPIRATION</h1>
             </div>
         </div>
@@ -26,7 +26,7 @@
 
 <section class="image-bg bg-dark parallax overlay pt160 pb160 pt-xs-40 pb-xs-40">
     <div class="background-image-holder">
-        <img alt="Background Image" class="background-image" src="/img/KL-Visuals-Level2/KL-INSPIRATION-02-Haarfarben.jpg" />
+        <img alt="Background Image" class="background-image" src="/img/KL-Visuals-Level2/KL-INSPIRATION-02-Haarfarben.jpg;1408w" />
     </div>
     <div class="container">
         <div class="row">
@@ -42,7 +42,7 @@
 </section>
 <section class="image-bg bg-dark parallax overlay pt160 pb160 pt-xs-40 pb-xs-40">
     <div class="background-image-holder">
-        <img alt="Background Image" class="background-image" src="/img/KL-Visuals-Level2/KL-INSPIRATION-03-Blondierungen.jpg" />
+        <img alt="Background Image" class="background-image" src="/img/KL-Visuals-Level2/KL-INSPIRATION-03-Blondierungen.jpg;100w" />
     </div>
     <div class="container">
         <div class="row">
