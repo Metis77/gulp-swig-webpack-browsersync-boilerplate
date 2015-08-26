@@ -12,10 +12,11 @@ var inlineResize    = require("gulp-inline-resize");
 var swig            = require('gulp-swig');
 
 var browserSync     = require('browser-sync').create();
+var merge           = require("merge-stream");
 
 
 var src   = './app/';
-var dest  = './public/';
+var dest  = './build/';
 
 
 /*
@@ -29,23 +30,29 @@ gulp.task('production', function() {
 });
 
 
-/**
- *  SASS
- *  https://github.com/sindresorhus/gulp-autoprefixer/issues/8
- */
-gulp.task('sass', function () {
-    return gulp.src(src + 'styles/main.scss')
+function getAssetStream() {
+    var templateStream = gulp.src(src+'templates/pages/**/*.swig', {
+            base: src+'templates/pages/'
+        })
+        .pipe(swig({
+            defaults: { cache: false },
+            load_json: true,
+            json_path: src+'templates/data/'
+        }));
+
+
+    var styleStream = gulp.src(src + 'styles/main.scss')
         .pipe(sourcemaps.init())
             .pipe(sass(
-            	{
-            		outputStyle: 'compressed'
-            	}
+                {
+                    outputStyle: 'compressed'
+                }
             ))
         .pipe(sourcemaps.write())
         .pipe(sourcemaps.init({loadMaps: true}))
             .pipe(autoprefixer(
-            	{
-            		browsers: [
+                {
+                    browsers: [
                         '> 1%',
                         'last 2 versions',
                         'firefox >= 4',
@@ -56,36 +63,20 @@ gulp.task('sass', function () {
                         'IE 10',
                         'IE 11'
                     ],
-            	}
+                }
             ))
-        .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest(dest + 'css/'))
-        .pipe(browserSync.stream());
+        .pipe(sourcemaps.write('.'));
+
+    var assetsStream = gulp.src("./public/**/*");
+
+  return merge(templateStream, styleStream, assetsStream)
+          .pipe(inlineResize({replaceIn:[".html",".css"]}));
+}
+
+gulp.task("assets-to-dest", function() {
+  return getAssetStream()
+    .pipe(gulp.dest("build"));
 });
-
-
-
-
-
-
-
-/**
- * Templates task - compiles templates.
- */
-gulp.task('templates', function() {
-    return gulp.src(src+'templates/pages/**/*.swig', { 
-            base: src+'templates/pages/' 
-        })
-        .pipe(swig({
-            defaults: { cache: false },
-            load_json: true,
-            json_path: src+'templates/data/'
-        }))
-        .pipe(inlineResize({replaceIn:[".html",".css"]}))
-        .pipe(gulp.dest(dest))
-        .pipe(browserSync.stream());
-});
-
 
 
 
@@ -114,16 +105,12 @@ gulp.task('js', function() {
 
 
 
-
-
-
-
 /**
  *  browserSync
  */
 
 // Static Server + watching scss/html files
-gulp.task('serve', ['sass','templates', 'js'], function() {
+gulp.task('serve', ["assets-to-dest", 'js'], function() {
 
     browserSync.init({
         server: dest,
