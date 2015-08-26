@@ -26,7 +26,7 @@
 
 <section class="image-bg bg-dark parallax overlay pt160 pb160 pt-xs-40 pb-xs-40">
     <div class="background-image-holder">
-        <img alt="Background Image" class="background-image" src="/img/KL-Visuals-Level2/KL-INSPIRATION-02-Haarfarben.jpg;1408w" />
+        <img alt="Background Image" class="background-image" src="./img/KL-Visuals-Level2/KL-INSPIRATION-02-Haarfarben.jpg;1408w" />
     </div>
     <div class="container">
         <div class="row">
@@ -42,7 +42,7 @@
 </section>
 <section class="image-bg bg-dark parallax overlay pt160 pb160 pt-xs-40 pb-xs-40">
     <div class="background-image-holder">
-        <img alt="Background Image" class="background-image" src="/img/KL-Visuals-Level2/KL-INSPIRATION-03-Blondierungen.jpg;100w" />
+        <img alt="Background Image" class="background-image" src="./img/KL-Visuals-Level2/KL-INSPIRATION-03-Blondierungen.jpg;100w" />
     </div>
     <div class="container">
         <div class="row">
