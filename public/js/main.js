@@ -14,11 +14,11 @@ $(document).ready(function() {
 
 
 
-	$('.item-nav').on('mouseenter mouseleave', function(event) {
+	$('.item-nav .link-wrapper').on('mouseenter mouseleave', function(event) {
 		event.preventDefault();
 
 		var that = $(this)
-		var data = that.attr('data')
+		var data = that.parent().parent().attr('data')
 
 		$(this).toggleClass('is-nav-hover')
 		$('.fullscreen').toggleClass('is-hover is-hover-'+data);
@@ -59,10 +59,12 @@ $(document).ready(function() {
     // Append .background-image-holder <img>'s as CSS backgrounds
 
     $('.background-image-holder').each(function() {
-        var imgSrc = $(this).children('img').attr('src');
-        // $(this).css('background', 'url("' + imgSrc + '")');
-        // $(this).children('img').hide();
-        $(this).css('background-position', 'initial');
+        if ( $(this).children('img').length ) {
+            var imgSrc = $(this).children('img').attr('src');
+            $(this).css('background', 'url("' + imgSrc + '")');
+            $(this).children('img').hide();
+            $(this).css('background-position', 'initial');
+        }
     });
 
     // Fade in background images

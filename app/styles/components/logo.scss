@@ -25,18 +25,25 @@ svg.logo {
   	}
 
 
-  	.page_home & {
-		width: 60%;
-	}
+ //  	.page_home & {
+	// 	width: 60%;
+	// }
 }
 
 
 
 /* home page */
 .menu-wrapper {
+	.logo {
+		min-width: 250px;
+	}
+
 	.logo > a {
-		display: inline-block;
-		width: 300px;
+		position: relative;
+		top: -20px;
+
+		display: block;
+		margin-right: 50px;
 	}
 }
 

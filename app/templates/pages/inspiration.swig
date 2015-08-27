@@ -14,7 +14,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12 text-center">
-                <h6 class="uppercase mb0">Willkommen in der Welt der Farb</h6>
+                <h6 class="uppercase mb0">Willkommen in der Welt der Farbe</h6>
                 <h1>KERALOCK INSPIRATION</h1>
             </div>
         </div>
@@ -30,7 +30,7 @@
         <div class="row">
             <div class="col-sm-12 text-center">
                 <h2 class="uppercase mb8">Haarfarbe</h2>
-                <p class="lead mb40">A brief description of the tour.</p>
+                <p class="lead mb40">Intensive, langanhaltende und leuchtende Farben in 12 aufregenden Nuancen.</p>
                 <a class="btn btn-lg btn-white mb0" href="detailseite.html">Produkte</a>
             </div>
         </div>
@@ -58,7 +58,7 @@
         <div class="row">
             <div class="col-sm-12 text-center">
                 <h2 class="uppercase mb8">Haarfarb-Entferner</h2>
-                <p class="lead mb40">A brief description of the tour.</p>
+                <p class="lead mb40">Haarfarbe von Hals, Gesicht und Händen ganz einfach und problemlos entfernen.</p>
                 <a class="btn btn-lg btn-white mb0" href="detailseite.html">Produkte</a>
             </div>
         </div>

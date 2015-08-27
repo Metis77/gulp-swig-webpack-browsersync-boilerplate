@@ -28,10 +28,12 @@ $(document).ready(function() {
     // Append .background-image-holder <img>'s as CSS backgrounds
 
     $('.background-image-holder').each(function() {
-        var imgSrc = $(this).children('img').attr('src');
-        // $(this).css('background', 'url("' + imgSrc + '")');
-        // $(this).children('img').hide();
-        $(this).css('background-position', 'initial');
+        if ( $(this).children('img').length ) {
+            var imgSrc = $(this).children('img').attr('src');
+            $(this).css('background', 'url("' + imgSrc + '")');
+            $(this).children('img').hide();
+            $(this).css('background-position', 'initial');
+        }
     });
 
     // Fade in background images

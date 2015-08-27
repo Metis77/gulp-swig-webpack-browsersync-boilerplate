@@ -22,28 +22,25 @@
     </div>
     <div class="bg-container">
     	<div class="bg-item bg-item-inspiration">
-    		<img src="img/home/KL-Keyvisual-INSPIRATION-3000px.jpg" alt="" class="bg1">
-    		<img src="img/home/KL-Keyvisual-INSPIRATION-3000px.png" alt="" class="bg2">
+    		<img src="assets_build/home/KL-Keyvisual-INSPIRATION-3000px.jpg" alt="" class="bg1">
+    		<img src="assets_build/home/KL-Keyvisual-INSPIRATION-3000px.png" alt="" class="bg2">
     	</div>
     	<div class="bg-item bg-item-deluxe">
-    		<img src="img/home/KL-Keyvisual-DELUXE-3000px.jpg" alt="" class="bg1">
-    		<img src="img/home/KL-Keyvisual-DELUXE-3000px.png" alt="" class="bg2">
+    		<img src="assets_build/home/KL-Keyvisual-DELUXE-3000px.jpg" alt="" class="bg1">
+    		<img src="assets_build/home/KL-Keyvisual-DELUXE-3000px.png" alt="" class="bg2">
     	</div>
     	<div class="bg-item bg-item-nightlife">
-    		<img src="img/home/KL-Keyvisual-NIGHT-3000px.jpg" alt="" class="bg1">
-    		<img src="img/home/KL-Keyvisual-NIGHT-3000px.png" alt="" class="bg2">
+    		<img src="assets_build/home/KL-Keyvisual-NIGHT-3000px.jpg" alt="" class="bg1">
+    		<img src="assets_build/home/KL-Keyvisual-NIGHT-3000px.png" alt="" class="bg2">
 
     	</div>
     	<div class="bg-item bg-item-care">
-    		<img src="img/home/KL-Keyvisual-CARE-3000px.jpg" alt="" class="bg1">
-    		<img src="img/home/KL-Keyvisual-CARE-3000px.png" alt="" class="bg2">
+    		<img src="assets_build/home/KL-Keyvisual-CARE-3000px.jpg" alt="" class="bg1">
+    		<img src="assets_build/home/KL-Keyvisual-CARE-3000px.png" alt="" class="bg2">
     	</div>
     </div>
-    <div class="container v-align-transform">
-        <div class="row">
 
-
-
+    <div class="v-align-transform nav-home">
 
 			<div class="menu-wrapper">
 				<div class="logo">
@@ -232,10 +229,6 @@
 
 
 
-
-
-        </div>
-        <!--end of row-->
     </div>
     <!--end of container-->
 </section>

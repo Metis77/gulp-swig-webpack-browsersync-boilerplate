@@ -34,7 +34,7 @@
 
 
 
-	.container {
+	.nav-home {
 		z-index: 20;
 	}
 
@@ -45,8 +45,14 @@
 	.bg-item  {
 		opacity: 0;
 		transform: matrix(1.1, 0, 0, 1.1, 0, 0);
-		transition: transform .3s ease-in-out,
-			opacity .3s ease-in-out;
+		filter: sepia(0%);
+		will-change: transform, opacity, filter;
+
+
+		transition: 
+			transform .3s ease-in-out,
+			opacity .3s ease-in-out,
+			filer .3s ease-in-out;
 	}
 	// &.is-hover .bg-item {
 		
@@ -61,6 +67,7 @@
 	&.is-hover-care .bg-item-care {
 		opacity: 1;
 		transform: matrix(1, 0, 0, 1, 0, 0);
+		filter: sepia(30%);
 	}
 	
 
