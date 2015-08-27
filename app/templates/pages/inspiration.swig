@@ -27,11 +27,11 @@
 <section class="image-bg bg-dark parallax overlay pt160 pb160 pt-xs-40 pb-xs-40">
     <div class="background-image-holder">
         <img alt="Background Image" class="background-image" 
-            src="img/KL-Visuals-Level2/KL-INSPIRATION-02-Haarfarben.jpg"
+            src="assets/img_resize/KL-Visuals-Level2/KL-INSPIRATION-02-Haarfarben.jpg"
             srcset="
-                ./img/KL-Visuals-Level2/KL-INSPIRATION-02-Haarfarben.jpg;600w 600w,
-                ./img/KL-Visuals-Level2/KL-INSPIRATION-02-Haarfarben.jpg;1200w 1200w,
-                ./img/KL-Visuals-Level2/KL-INSPIRATION-02-Haarfarben.jpg;2400w 2400w"
+                assets/img_resize/KL-Visuals-Level2/KL-INSPIRATION-02-Haarfarben.jpg;600w 600w,
+                assets/img_resize/KL-Visuals-Level2/KL-INSPIRATION-02-Haarfarben.jpg;1200w 1200w,
+                assets/img_resize/KL-Visuals-Level2/KL-INSPIRATION-02-Haarfarben.jpg;2400w 2400w"
             sizes="100vw" />
     </div>
     <div class="container">
@@ -48,7 +48,7 @@
 </section>
 <section class="image-bg bg-dark parallax overlay pt160 pb160 pt-xs-40 pb-xs-40">
     <div class="background-image-holder">
-        <img alt="Background Image" class="background-image" src="./img/KL-Visuals-Level2/KL-INSPIRATION-03-Blondierungen.jpg;100w" />
+        <img alt="Background Image" class="background-image" src="./assets/img_resize/KL-Visuals-Level2/KL-INSPIRATION-03-Blondierungen.jpg;100w" />
     </div>
     <div class="container">
         <div class="row">
@@ -64,7 +64,7 @@
 </section>
 <section class="image-bg bg-dark parallax overlay pt160 pb160 pt-xs-40 pb-xs-40">
     <div class="background-image-holder">
-        <img alt="Background Image" class="background-image" src="/img/KL-Visuals-Level2/KL-INSPIRATION-05-Entferner.jpg" />
+        <img alt="Background Image" class="background-image" src="/assets/img_resize/KL-Visuals-Level2/KL-INSPIRATION-05-Entferner.jpg" />
     </div>
     <div class="container">
         <div class="row">
@@ -81,7 +81,7 @@
 
 <section class="image-bg bg-dark parallax overlay pt160 pb160 pt-xs-40 pb-xs-40">
     <div class="background-image-holder">
-        <img alt="Background Image" class="background-image" src="/img/KL-Visuals-Level2/KL-INSPIRATION-04-Toenung.jpg" />
+        <img alt="Background Image" class="background-image" src="/assets/img_resize/KL-Visuals-Level2/KL-INSPIRATION-04-Toenung.jpg" />
     </div>
     <div class="container">
         <div class="row">

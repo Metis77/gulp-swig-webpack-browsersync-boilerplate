@@ -17,8 +17,8 @@ var gulp    		= require("gulp"),
 
 
     src   = './app/',
-    dest  = './build/',
-    inlineResizeSrc = './app/inlineResize/**/*';
+    dest  = './public/',
+    inlineResizeSrc = './src/**/*';
 
 
 /*
