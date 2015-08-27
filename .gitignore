@@ -1,8 +1,9 @@
 .DS_Store
-#public/*.*
-#public/css
-#public/js
-#build/
+public/assets_build
+public/css
+public/js
+public/*.css
+public/*.map
 
 # Logs
 logs
