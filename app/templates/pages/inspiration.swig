@@ -25,19 +25,11 @@
 
 
 <section class="image-bg bg-dark parallax overlay pt160 pb160 pt-xs-40 pb-xs-40">
-    <div class="background-image-holder">
-        <img alt="Background Image" class="background-image" 
-            src="./assets_build/KL-Visuals-Level2/KL-INSPIRATION-02-Haarfarben.jpg"
-            srcset="
-                ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-02-Haarfarben.jpg;600w 600w,
-                ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-02-Haarfarben.jpg;1200w 1200w,
-                ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-02-Haarfarben.jpg;2400w 2400w"
-            sizes="100vw" />
-    </div>
+    <div class="background-image-holder INSPIRATION-02-Haarfarben"></div>
     <div class="container">
         <div class="row">
             <div class="col-sm-12 text-center">
-                <h2 class="uppercase mb8">Haarfarben</h2>
+                <h2 class="uppercase mb8">Haarfarbe</h2>
                 <p class="lead mb40">A brief description of the tour.</p>
                 <a class="btn btn-lg btn-white mb0" href="detailseite.html">Produkte</a>
             </div>
@@ -47,9 +39,7 @@
     <!--end of container-->
 </section>
 <section class="image-bg bg-dark parallax overlay pt160 pb160 pt-xs-40 pb-xs-40">
-    <div class="background-image-holder">
-        <img alt="Background Image" class="background-image" src="./assets_build/KL-Visuals-Level2/KL-INSPIRATION-03-Blondierungen.jpg;100w" />
-    </div>
+    <div class="background-image-holder INSPIRATION-03-Blondierungen"></div>
     <div class="container">
         <div class="row">
             <div class="col-sm-12 text-center">
@@ -63,9 +53,7 @@
     <!--end of container-->
 </section>
 <section class="image-bg bg-dark parallax overlay pt160 pb160 pt-xs-40 pb-xs-40">
-    <div class="background-image-holder">
-        <img alt="Background Image" class="background-image" src="./assets_build/KL-Visuals-Level2/KL-INSPIRATION-05-Entferner.jpg" />
-    </div>
+    <div class="background-image-holder INSPIRATION-05-Entferner"></div>
     <div class="container">
         <div class="row">
             <div class="col-sm-12 text-center">
@@ -80,9 +68,7 @@
 </section>
 
 <section class="image-bg bg-dark parallax overlay pt160 pb160 pt-xs-40 pb-xs-40">
-    <div class="background-image-holder">
-        <img alt="Background Image" class="background-image" src="./assets_build/KL-Visuals-Level2/KL-INSPIRATION-04-Toenung.jpg" />
-    </div>
+    <div class="background-image-holder INSPIRATION-04-Toenung"></div>
     <div class="container">
         <div class="row">
             <div class="col-sm-12 text-center">

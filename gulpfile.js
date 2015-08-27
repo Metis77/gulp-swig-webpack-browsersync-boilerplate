@@ -12,11 +12,13 @@ var gulp    		= require("gulp"),
     swig            = require('gulp-swig'),
 
     browserSync     = require('browser-sync').create(),
-    merge           = require("merge-stream"),
+    reload          = browserSync.reload,
+
+    merge           = require("merge-stream");
 
 
 
-    src   = './app/',
+var src   = './app/',
     dest  = './public/',
     inlineResizeSrc = './src/**/*';
 
@@ -56,7 +58,7 @@ function getTemplates() {
 gulp.task('templates', function() {
   return getTemplates()
     .pipe(gulp.dest(dest))
-    .pipe(browserSync.stream());
+    .on("end", reload);
 });
 
 
@@ -107,7 +109,7 @@ function getSass() {
 gulp.task('sass', function() {
   return getSass()
     .pipe(gulp.dest(dest))
-    .pipe(browserSync.stream());
+    .on("end", reload);
 });
 
 
@@ -126,7 +128,7 @@ gulp.task('js', function() {
         .pipe(concat('main.js'))
         // .pipe(uglify())
         .pipe(gulp.dest(dest+'js/'))
-        .pipe(browserSync.stream());
+        .on("end", reload);
 });
 
 
@@ -145,12 +147,13 @@ gulp.task('serve', ['templates', 'sass', 'js'], function() {
         server: dest,
         open: false,
         reloadOnRestart: true,
-        notify: false,
+        notify: true,
     });
 
     gulp.watch(src + 'js/**/*', ['js']);
     gulp.watch(src + 'styles/**/*', ['sass']);
     gulp.watch(src + 'templates/**/*', ['templates']);
+
 });
 
 
