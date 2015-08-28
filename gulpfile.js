@@ -147,7 +147,7 @@ gulp.task('serve', ['templates', 'sass', 'js'], function() {
         server: dest,
         open: false,
         reloadOnRestart: true,
-        notify: true,
+        notify: false,
     });
 
     gulp.watch(src + 'js/**/*', ['js']);

@@ -59,7 +59,8 @@ $(document).ready(function() {
     // Append .background-image-holder <img>'s as CSS backgrounds
 
     $('.background-image-holder').each(function() {
-        if ( $(this).children('img').length ) {
+        // only if img available
+        if ( $(this).children('img').length ) { 
             var imgSrc = $(this).children('img').attr('src');
             $(this).css('background', 'url("' + imgSrc + '")');
             $(this).children('img').hide();
@@ -150,9 +151,11 @@ $(document).ready(function() {
         $('.nav-container').css('min-height', $('nav').outerHeight(true));
 
         $(window).resize(function() {
-            $('.nav-container').css('min-height', $('nav').outerHeight(true));
-            console.error('nav outerheight: '+$('nav').outerHeight(true));
-        });
+            if ( $('.nav-container').length ) {
+                $('.nav-container').css('min-height', $('nav').outerHeight(true));
+                console.error('nav outerheight: '+$('nav').outerHeight(true));
+            }
+        });  
 
         // Compensate the height of parallax element for inline nav
 
@@ -287,44 +290,44 @@ $(document).ready(function() {
 
     // Twitter Feed
 
-    $('.tweets-feed').each(function(index) {
-        $(this).attr('id', 'tweets-' + index);
-    }).each(function(index) {
+    // $('.tweets-feed').each(function(index) {
+    //     $(this).attr('id', 'tweets-' + index);
+    // }).each(function(index) {
 
-        function handleTweets(tweets) {
-            var x = tweets.length;
-            var n = 0;
-            var element = document.getElementById('tweets-' + index);
-            var html = '<ul class="slides">';
-            while (n < x) {
-                html += '<li>' + tweets[n] + '</li>';
-                n++;
-            }
-            html += '</ul>';
-            element.innerHTML = html;
-            return html;
-        }
+    //     function handleTweets(tweets) {
+    //         var x = tweets.length;
+    //         var n = 0;
+    //         var element = document.getElementById('tweets-' + index);
+    //         var html = '<ul class="slides">';
+    //         while (n < x) {
+    //             html += '<li>' + tweets[n] + '</li>';
+    //             n++;
+    //         }
+    //         html += '</ul>';
+    //         element.innerHTML = html;
+    //         return html;
+    //     }
 
-        twitterFetcher.fetch($('#tweets-' + index).attr('data-widget-id'), '', 5, true, true, true, '', false, handleTweets);
+    //     twitterFetcher.fetch($('#tweets-' + index).attr('data-widget-id'), '', 5, true, true, true, '', false, handleTweets);
 
-    });
+    // });
 
     // Instagram Feed
     
-    if($('.instafeed').length){
-    	jQuery.fn.spectragram.accessData = {
-			accessToken: '1406933036.fedaafa.feec3d50f5194ce5b705a1f11a107e0b',
-			clientID: 'fedaafacf224447e8aef74872d3820a1'
-		};	
-    }   
+  //   if($('.instafeed').length){
+  //   	jQuery.fn.spectragram.accessData = {
+		// 	accessToken: '1406933036.fedaafa.feec3d50f5194ce5b705a1f11a107e0b',
+		// 	clientID: 'fedaafacf224447e8aef74872d3820a1'
+		// };	
+  //   }   
 
-    $('.instafeed').each(function() {
-    	var feedID = $(this).attr('data-user-name') + '-';
-        $(this).children('ul').spectragram('getUserFeed', {
-            query: feedID,
-            max: 12
-        });
-    });
+  //   $('.instafeed').each(function() {
+  //   	var feedID = $(this).attr('data-user-name') + '-';
+  //       $(this).children('ul').spectragram('getUserFeed', {
+  //           query: feedID,
+  //           max: 12
+  //       });
+  //   });
 
     // Image Sliders
 
@@ -365,130 +368,130 @@ $(document).ready(function() {
     	$(this).attr('data-lightbox', galleryTitle);
     });
     
-    // Multipurpose Modals
+ //    // Multipurpose Modals
     
-    if($('.foundry_modal').length){
-    	var modalScreen = $('<div class="modal-screen">').appendTo('body');
-    }
+ //    if($('.foundry_modal').length){
+ //    	var modalScreen = $('<div class="modal-screen">').appendTo('body');
+ //    }
     
-    $('.modal-container').each(function(index) {
-        if($(this).find('iframe[src]').length){
-        	$(this).find('.foundry_modal').addClass('iframe-modal');
-        }
-        $(this).find('.btn-modal').attr('modal-link', index);
-        $(this).find('.foundry_modal').clone().appendTo('body').attr('modal-link', index).prepend($('<i class="ti-close close-modal">'));
-    });
+ //    $('.modal-container').each(function(index) {
+ //        if($(this).find('iframe[src]').length){
+ //        	$(this).find('.foundry_modal').addClass('iframe-modal');
+ //        }
+ //        $(this).find('.btn-modal').attr('modal-link', index);
+ //        $(this).find('.foundry_modal').clone().appendTo('body').attr('modal-link', index).prepend($('<i class="ti-close close-modal">'));
+ //    });
     
-    $('.btn-modal').click(function(){
-    	var linkedModal = $('section').closest('body').find('.foundry_modal[modal-link="' + $(this).attr('modal-link') + '"]');
-        $('.modal-screen').toggleClass('reveal-modal');
-        linkedModal.toggleClass('reveal-modal');
-        return false;
-    });
+ //    $('.btn-modal').click(function(){
+ //    	var linkedModal = $('section').closest('body').find('.foundry_modal[modal-link="' + $(this).attr('modal-link') + '"]');
+ //        $('.modal-screen').toggleClass('reveal-modal');
+ //        linkedModal.toggleClass('reveal-modal');
+ //        return false;
+ //    });
     
-    // Autoshow modals
+ //    // Autoshow modals
 	
-	$('.foundry_modal[data-time-delay]').each(function(){
-		var modal = $(this);
-		var delay = modal.attr('data-time-delay');
-		modal.prepend($('<i class="ti-close close-modal">'));
-    	if(typeof modal.attr('data-cookie') != "undefined"){
-        	if(!mr_cookies.hasItem(modal.attr('data-cookie'))){
-                setTimeout(function(){
-        			modal.addClass('reveal-modal');
-        			$('.modal-screen').addClass('reveal-modal');
-        		},delay);
-            }
-        }else{
-            setTimeout(function(){
-                modal.addClass('reveal-modal');
-                $('.modal-screen').addClass('reveal-modal');
-            },delay);
-        }
-	});
+	// $('.foundry_modal[data-time-delay]').each(function(){
+	// 	var modal = $(this);
+	// 	var delay = modal.attr('data-time-delay');
+	// 	modal.prepend($('<i class="ti-close close-modal">'));
+ //    	if(typeof modal.attr('data-cookie') != "undefined"){
+ //        	if(!mr_cookies.hasItem(modal.attr('data-cookie'))){
+ //                setTimeout(function(){
+ //        			modal.addClass('reveal-modal');
+ //        			$('.modal-screen').addClass('reveal-modal');
+ //        		},delay);
+ //            }
+ //        }else{
+ //            setTimeout(function(){
+ //                modal.addClass('reveal-modal');
+ //                $('.modal-screen').addClass('reveal-modal');
+ //            },delay);
+ //        }
+	// });
     
-    $('.close-modal:not(.modal-strip .close-modal)').click(function(){
-    	var modal = $(this).closest('.foundry_modal');
-        modal.toggleClass('reveal-modal');
-        if(typeof modal.attr('data-cookie') != "undefined"){
-            mr_cookies.setItem(modal.attr('data-cookie'), "true", Infinity);
-        }
+ //    $('.close-modal:not(.modal-strip .close-modal)').click(function(){
+ //    	var modal = $(this).closest('.foundry_modal');
+ //        modal.toggleClass('reveal-modal');
+ //        if(typeof modal.attr('data-cookie') != "undefined"){
+ //            mr_cookies.setItem(modal.attr('data-cookie'), "true", Infinity);
+ //        }
     	
-        $('.modal-screen').toggleClass('reveal-modal');
-    });
+ //        $('.modal-screen').toggleClass('reveal-modal');
+ //    });
     
-    $('.modal-screen').click(function(){
-    	$('.foundry_modal.reveal-modal').toggleClass('reveal-modal');
-    	$(this).toggleClass('reveal-modal');
-    });
+ //    $('.modal-screen').click(function(){
+ //    	$('.foundry_modal.reveal-modal').toggleClass('reveal-modal');
+ //    	$(this).toggleClass('reveal-modal');
+ //    });
     
-    $(document).keyup(function(e) {
-		 if (e.keyCode == 27) { // escape key maps to keycode `27`
-			$('.foundry_modal').removeClass('reveal-modal');
-			$('.modal-screen').removeClass('reveal-modal');
-		}
-	});
+ //    $(document).keyup(function(e) {
+	// 	 if (e.keyCode == 27) { // escape key maps to keycode `27`
+	// 		$('.foundry_modal').removeClass('reveal-modal');
+	// 		$('.modal-screen').removeClass('reveal-modal');
+	// 	}
+	// });
     
-    // Modal Strips
+ //    // Modal Strips
     
-    $('.modal-strip').each(function(){
-    	if(!$(this).find('.close-modal').length){
-    		$(this).append($('<i class="ti-close close-modal">'));
-    	}
-    	var modal = $(this);
+ //    $('.modal-strip').each(function(){
+ //    	if(!$(this).find('.close-modal').length){
+ //    		$(this).append($('<i class="ti-close close-modal">'));
+ //    	}
+ //    	var modal = $(this);
 
-        if(typeof modal.attr('data-cookie') != "undefined"){
+ //        if(typeof modal.attr('data-cookie') != "undefined"){
            
-            if(!mr_cookies.hasItem(modal.attr('data-cookie'))){
-            	setTimeout(function(){
-            		modal.addClass('reveal-modal');
-            	},1000);
-            }
-        }else{
-            setTimeout(function(){
-                    modal.addClass('reveal-modal');
-            },1000);
-        }
-    });
+ //            if(!mr_cookies.hasItem(modal.attr('data-cookie'))){
+ //            	setTimeout(function(){
+ //            		modal.addClass('reveal-modal');
+ //            	},1000);
+ //            }
+ //        }else{
+ //            setTimeout(function(){
+ //                    modal.addClass('reveal-modal');
+ //            },1000);
+ //        }
+ //    });
     
-    $('.modal-strip .close-modal').click(function(){
-        var modal = $(this).closest('.modal-strip');
-        if(typeof modal.attr('data-cookie') != "undefined"){
-            mr_cookies.setItem(modal.attr('data-cookie'), "true", Infinity);
-        }
-    	$(this).closest('.modal-strip').removeClass('reveal-modal');
-    	return false;
-    });
+ //    $('.modal-strip .close-modal').click(function(){
+ //        var modal = $(this).closest('.modal-strip');
+ //        if(typeof modal.attr('data-cookie') != "undefined"){
+ //            mr_cookies.setItem(modal.attr('data-cookie'), "true", Infinity);
+ //        }
+ //    	$(this).closest('.modal-strip').removeClass('reveal-modal');
+ //    	return false;
+ //    });
 
 
-    // Video Modals
-    $('section').closest('body').find('.modal-video[video-link]').remove();
+ //    // Video Modals
+ //    $('section').closest('body').find('.modal-video[video-link]').remove();
 
-    $('.modal-video-container').each(function(index) {
-        $(this).find('.play-button').attr('video-link', index);
-        $(this).find('.modal-video').clone().appendTo('body').attr('video-link', index);
-    });
+ //    $('.modal-video-container').each(function(index) {
+ //        $(this).find('.play-button').attr('video-link', index);
+ //        $(this).find('.modal-video').clone().appendTo('body').attr('video-link', index);
+ //    });
 
-    $('.modal-video-container .play-button').click(function() {
-        var linkedVideo = $('section').closest('body').find('.modal-video[video-link="' + $(this).attr('video-link') + '"]');
-        linkedVideo.toggleClass('reveal-modal');
+ //    $('.modal-video-container .play-button').click(function() {
+ //        var linkedVideo = $('section').closest('body').find('.modal-video[video-link="' + $(this).attr('video-link') + '"]');
+ //        linkedVideo.toggleClass('reveal-modal');
 
-        if (linkedVideo.find('video').length) {
-            linkedVideo.find('video').get(0).play();
-        }
+ //        if (linkedVideo.find('video').length) {
+ //            linkedVideo.find('video').get(0).play();
+ //        }
 
-        if (linkedVideo.find('iframe').length) {
-            var iframe = linkedVideo.find('iframe');
-            var iframeSrc = iframe.attr('data-src') + '&autoplay=1';
-            iframe.attr('src', iframeSrc);
-        }
-    });
+ //        if (linkedVideo.find('iframe').length) {
+ //            var iframe = linkedVideo.find('iframe');
+ //            var iframeSrc = iframe.attr('data-src') + '&autoplay=1';
+ //            iframe.attr('src', iframeSrc);
+ //        }
+ //    });
 
-    $('section').closest('body').find('.close-iframe').click(function() {
-        $(this).closest('.modal-video').toggleClass('reveal-modal');
-        $(this).siblings('iframe').attr('src', '');
-        $(this).siblings('video').get(0).pause();
-    });
+ //    $('section').closest('body').find('.close-iframe').click(function() {
+ //        $(this).closest('.modal-video').toggleClass('reveal-modal');
+ //        $(this).siblings('iframe').attr('src', '');
+ //        $(this).siblings('video').get(0).pause();
+ //    });
 
     // Local Videos
 
@@ -740,31 +743,44 @@ $(document).ready(function() {
     
     // Disqus Comments
     
-    if($('.disqus-comments').length){
-		/* * * CONFIGURATION VARIABLES * * */
-		var disqus_shortname = $('.disqus-comments').attr('data-shortname');
+  //   if($('.disqus-comments').length){
+		// /* * * CONFIGURATION VARIABLES * * */
+		// var disqus_shortname = $('.disqus-comments').attr('data-shortname');
 
-		/* * * DON'T EDIT BELOW THIS LINE * * */
-		(function() {
-			var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-			dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-		})();
-    }
+		// /* * * DON'T EDIT BELOW THIS LINE * * */
+		// (function() {
+		// 	var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		// 	dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		// 	(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+		// })();
+  //   }
 
     // Load Google MAP API JS with callback to initialise when fully loaded
-    if(document.querySelector('[data-maps-api-key]') && !document.querySelector('.gMapsAPI')){
-        if($('[data-maps-api-key]').length){
-            var script = document.createElement('script');
-            var apiKey = $('[data-maps-api-key]:first').attr('data-maps-api-key');
-            script.type = 'text/javascript';
-            script.src = 'https://maps.googleapis.com/maps/api/js?key='+apiKey+'&callback=initializeMaps';
-            script.className = 'gMapsAPI';
-            document.body.appendChild(script);  
-        } 
-    }
+    // if(document.querySelector('[data-maps-api-key]') && !document.querySelector('.gMapsAPI')){
+    //     if($('[data-maps-api-key]').length){
+    //         var script = document.createElement('script');
+    //         var apiKey = $('[data-maps-api-key]:first').attr('data-maps-api-key');
+    //         script.type = 'text/javascript';
+    //         script.src = 'https://maps.googleapis.com/maps/api/js?key='+apiKey+'&callback=initializeMaps';
+    //         script.className = 'gMapsAPI';
+    //         document.body.appendChild(script);  
+    //     } 
+    // }
 
 }); 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 $(window).load(function() { 
     "use strict";
@@ -824,22 +840,55 @@ $(window).load(function() {
 
 }); 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 function resizeVid() {
 
-    $('.fs-vid-background video').each(function() {
-        var vid = $(this);
-        var ratio = (vid.width() / vid.height());
-        var section = vid.closest('section');
-        if (section.width() > section.outerHeight()) {
-            vid.css('width', (section.width() * ratio));
-            vid.css('margin-left', -((section.width() * ratio) / 4));
-            vid.css('height', 'auto');
-        } else {
-            vid.css('width', 'auto');
-            vid.css('height', (section.outerHeight() * ratio));
-            vid.css('margin-left', 0);
-        }
-    });
+    // $('.fs-vid-background video').each(function() {
+    //     var vid = $(this);
+    //     var ratio = (vid.width() / vid.height());
+    //     var section = vid.closest('section');
+    //     if (section.width() > section.outerHeight()) {
+
+    //         vid.css('width', (section.width() * ratio));
+    //         vid.css('margin-left', -((section.width() * ratio) / 4));
+    //         vid.css('height', 'auto');
+    //         console.log('width>height: '+ratio)
+    //     } 
+    //     else {
+    //         vid.css('width', 'auto');
+    //         vid.css('height', (section.outerHeight() * ratio));
+    //         vid.css('margin-left', -((section.width() * ratio) / 4));
+    //         console.log('height>width: '+ratio)
+    //     }
+    // });
+    
+
+
+    // $('.fs-vid-background video').each(function() {
+    //     var vid = $(this);
+    //     var ratio = (vid.width() / vid.height());
+    //     var section = vid.closest('section');
+
+    //     if (section.width() / section.outerHeight() > ratio) {
+    //         vid.removeClass('ratio_height').addClass('ratio_width')            
+    //     } 
+    //     else {
+    //         vid.removeClass('ratio_width').addClass('ratio_height')
+    //     }            
+    // });
+
 
 }
 
@@ -974,78 +1023,78 @@ function updateFloatingFilters() {
     }
 }
 
-window.initializeMaps = function(){
-    if(typeof google !== "undefined"){
-        if(typeof google.maps !== "undefined"){
-            $('.map-canvas[data-maps-api-key]').each(function(){
-                    var mapInstance   = this,
-                        mapJSON       = typeof $(this).attr('data-map-style') !== "undefined" ? $(this).attr('data-map-style'): false,
-                        mapStyle      = JSON.parse(mapJSON) || [{"featureType":"landscape","stylers":[{"saturation":-100},{"lightness":65},{"visibility":"on"}]},{"featureType":"poi","stylers":[{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]},{"featureType":"road.highway","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"road.arterial","stylers":[{"saturation":-100},{"lightness":30},{"visibility":"on"}]},{"featureType":"road.local","stylers":[{"saturation":-100},{"lightness":40},{"visibility":"on"}]},{"featureType":"transit","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"administrative.province","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":-25},{"saturation":-100}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#ffff00"},{"lightness":-25},{"saturation":-97}]}],
-                        zoomLevel     = (typeof $(this).attr('data-map-zoom') !== "undefined" && $(this).attr('data-map-zoom') !== "") ? $(this).attr('data-map-zoom') * 1: 17,
-                        latlong       = typeof $(this).attr('data-latlong') != "undefined" ? $(this).attr('data-latlong') : false,
-                        latitude      = latlong ? 1 *latlong.substr(0, latlong.indexOf(',')) : false,
-                        longitude     = latlong ? 1 * latlong.substr(latlong.indexOf(",") + 1) : false,
-                        geocoder      = new google.maps.Geocoder(),
-                        address       = typeof $(this).attr('data-address') !== "undefined" ? $(this).attr('data-address').split(';'): false,
-                        markerTitle   = "We Are Here",
-                        map, marker, markerImage,
-                        mapOptions = {
-                            scrollwheel: false,
-                            zoom: zoomLevel,
-                            disableDefaultUI: true,
-                            styles: mapStyle
-                        };
+// window.initializeMaps = function(){
+//     if(typeof google !== "undefined"){
+//         if(typeof google.maps !== "undefined"){
+//             $('.map-canvas[data-maps-api-key]').each(function(){
+//                     var mapInstance   = this,
+//                         mapJSON       = typeof $(this).attr('data-map-style') !== "undefined" ? $(this).attr('data-map-style'): false,
+//                         mapStyle      = JSON.parse(mapJSON) || [{"featureType":"landscape","stylers":[{"saturation":-100},{"lightness":65},{"visibility":"on"}]},{"featureType":"poi","stylers":[{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]},{"featureType":"road.highway","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"road.arterial","stylers":[{"saturation":-100},{"lightness":30},{"visibility":"on"}]},{"featureType":"road.local","stylers":[{"saturation":-100},{"lightness":40},{"visibility":"on"}]},{"featureType":"transit","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"administrative.province","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":-25},{"saturation":-100}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#ffff00"},{"lightness":-25},{"saturation":-97}]}],
+//                         zoomLevel     = (typeof $(this).attr('data-map-zoom') !== "undefined" && $(this).attr('data-map-zoom') !== "") ? $(this).attr('data-map-zoom') * 1: 17,
+//                         latlong       = typeof $(this).attr('data-latlong') != "undefined" ? $(this).attr('data-latlong') : false,
+//                         latitude      = latlong ? 1 *latlong.substr(0, latlong.indexOf(',')) : false,
+//                         longitude     = latlong ? 1 * latlong.substr(latlong.indexOf(",") + 1) : false,
+//                         geocoder      = new google.maps.Geocoder(),
+//                         address       = typeof $(this).attr('data-address') !== "undefined" ? $(this).attr('data-address').split(';'): false,
+//                         markerTitle   = "We Are Here",
+//                         map, marker, markerImage,
+//                         mapOptions = {
+//                             scrollwheel: false,
+//                             zoom: zoomLevel,
+//                             disableDefaultUI: true,
+//                             styles: mapStyle
+//                         };
 
-                    if($(this).attr('data-marker-title') != undefined && $(this).attr('data-marker-title') != "" )
-                    {
-                        markerTitle = $(this).attr('data-marker-title');
-                    }
+//                     if($(this).attr('data-marker-title') != undefined && $(this).attr('data-marker-title') != "" )
+//                     {
+//                         markerTitle = $(this).attr('data-marker-title');
+//                     }
 
-                    if(address != undefined && address[0] != ""){
-                            geocoder.geocode( { 'address': address[0].replace('[nomarker]','')}, function(results, status) {
-                                if (status == google.maps.GeocoderStatus.OK) {
-                                var map = new google.maps.Map(mapInstance, mapOptions); 
-                                map.setCenter(results[0].geometry.location);
+//                     if(address != undefined && address[0] != ""){
+//                             geocoder.geocode( { 'address': address[0].replace('[nomarker]','')}, function(results, status) {
+//                                 if (status == google.maps.GeocoderStatus.OK) {
+//                                 var map = new google.maps.Map(mapInstance, mapOptions); 
+//                                 map.setCenter(results[0].geometry.location);
                                 
-                                address.forEach(function(address){
-                                    var markerGeoCoder = new google.maps.Geocoder();
-                                    if(address.indexOf('[nomarker]') < 0){
-                                        markerGeoCoder.geocode( { 'address': address.replace('[nomarker]','')}, function(results, status) {
-                                            if (status == google.maps.GeocoderStatus.OK) {
-                                                markerImage = {url: window.mr_variant == undefined ? 'img/mapmarker.png' : '../img/mapmarker.png', size: new google.maps.Size(50,50), scaledSize: new google.maps.Size(50,50)},
-                                                marker = new google.maps.Marker({
-                                                    map: map,
-                                                    icon: markerImage,
-                                                    title: markerTitle,
-                                                    position: results[0].geometry.location,
-                                                    optimised: false
-                                                });
-                                            }
-                                        });
-                                    }
-                                });
-                            } else {
-                                console.log('There was a problem geocoding the address.');
-                            }
-                        });
-                    }
-                    else if(latitude != undefined && latitude != "" && latitude != false && longitude != undefined && longitude != "" && longitude != false ){
-                        mapOptions.center   = { lat: latitude, lng: longitude};
-                        map = new google.maps.Map(mapInstance, mapOptions); 
-                        marker              = new google.maps.Marker({
-                                                    position: { lat: latitude, lng: longitude },
-                                                    map: map,
-                                                    icon: markerImage,
-                                                    title: markerTitle
-                                                });
+//                                 address.forEach(function(address){
+//                                     var markerGeoCoder = new google.maps.Geocoder();
+//                                     if(address.indexOf('[nomarker]') < 0){
+//                                         markerGeoCoder.geocode( { 'address': address.replace('[nomarker]','')}, function(results, status) {
+//                                             if (status == google.maps.GeocoderStatus.OK) {
+//                                                 markerImage = {url: window.mr_variant == undefined ? 'img/mapmarker.png' : '../img/mapmarker.png', size: new google.maps.Size(50,50), scaledSize: new google.maps.Size(50,50)},
+//                                                 marker = new google.maps.Marker({
+//                                                     map: map,
+//                                                     icon: markerImage,
+//                                                     title: markerTitle,
+//                                                     position: results[0].geometry.location,
+//                                                     optimised: false
+//                                                 });
+//                                             }
+//                                         });
+//                                     }
+//                                 });
+//                             } else {
+//                                 console.log('There was a problem geocoding the address.');
+//                             }
+//                         });
+//                     }
+//                     else if(latitude != undefined && latitude != "" && latitude != false && longitude != undefined && longitude != "" && longitude != false ){
+//                         mapOptions.center   = { lat: latitude, lng: longitude};
+//                         map = new google.maps.Map(mapInstance, mapOptions); 
+//                         marker              = new google.maps.Marker({
+//                                                     position: { lat: latitude, lng: longitude },
+//                                                     map: map,
+//                                                     icon: markerImage,
+//                                                     title: markerTitle
+//                                                 });
 
-                    }
+//                     }
 
-                }); 
-        }
-    }
-}
-initializeMaps();
+//                 }); 
+//         }
+//     }
+// }
+// initializeMaps();
 
 // End of Maps
 

@@ -4,7 +4,7 @@
 
 
 .fullscreen {
-	.bg-container,
+	// .bg-container,
 	.bg-item  {
 	    height: 100%;
 	    width: 100%;
@@ -67,8 +67,74 @@
 	&.is-hover-care .bg-item-care {
 		opacity: 1;
 		transform: matrix(1, 0, 0, 1, 0, 0);
-		filter: sepia(30%);
+		filter: sepia(25%);
 	}
 	
 
 }
+
+
+/*
+ * fs-vid-background
+ */
+.fs-vid-background {
+	video {
+		
+		// &.ratio_width,
+		// &.ratio_height {
+		// 	min-width: 100%;
+		//     min-height: 100%;
+		//     width: auto;
+		//     height: auto;
+
+		// 	position: absolute;
+		// 	top: 50%;
+		// 	left: 50%;
+
+
+		// 	transform: translate(-50%,-50%); 
+		// }
+
+		min-width: 100%;
+	    min-height: 100%;
+	    width: auto;
+	    height: auto;
+
+		position: absolute;
+		top: 50%;
+		left: 50%;
+
+
+		transform: translate(-50%,-50%); 
+
+		
+		background: url(/assets/img/home15.jpg) no-repeat center center fixed;;
+		background-size: cover;
+	    // &.ratio_width {
+	    // 	width: 100%;
+	    // 	height: auto;
+	    // }
+	    // &.ratio_height {
+	    // 	width: auto;
+	    // 	height: 100%; 
+	    // }
+	}
+
+
+	
+
+}
+
+
+@media all and (max-width: 990px) {
+	.fs-vid-background{ display: none; }
+}
+
+
+
+
+
+
+
+
+

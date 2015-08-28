@@ -9,7 +9,6 @@
 
 {% block content %}
 <section class="cover image-bg fullscreen overlay overlay-heavy bg-dark vid-bg pt-xs-120">
-    <!-- <div class="player" data-video-id="dmgomCutGqc" data-start-at="22"></div> -->
     <div class="fs-vid-background">
         <video autoplay muted loop>
             <source src="/assets/video/video.webm" type="video/webm">
@@ -20,23 +19,40 @@
     <div class="background-image-holder">
         <img alt="image" class="background-image" src="/assets/img/home15.jpg" />
     </div>
+
     <div class="bg-container">
-    	<div class="bg-item bg-item-inspiration">
-    		<img src="assets_build/home/KL-Keyvisual-INSPIRATION-3000px.jpg" alt="" class="bg1">
-    		<img src="assets_build/home/KL-Keyvisual-INSPIRATION-3000px.png" alt="" class="bg2">
+    	<div class="bg-item overlay bg-item-inspiration">
+    		<img src="assets_build/home/KL-Keyvisual-INSPIRATION-3000px.jpg" 
+    			srcset="assets_build/home/KL-Keyvisual-INSPIRATION-3000px.jpg;600w 600w" 
+    			sizes="100vw" alt="" class="bg1">
+    		<img src="assets_build/home/KL-Keyvisual-INSPIRATION-3000px.png" 
+    			srcset="" 
+    			sizes="100vw" alt="" class="bg2">
     	</div>
-    	<div class="bg-item bg-item-deluxe">
-    		<img src="assets_build/home/KL-Keyvisual-DELUXE-3000px.jpg" alt="" class="bg1">
-    		<img src="assets_build/home/KL-Keyvisual-DELUXE-3000px.png" alt="" class="bg2">
+    	<div class="bg-item overlay bg-item-deluxe">
+    		<img src="assets_build/home/KL-Keyvisual-DELUXE-3000px.jpg" 
+    			srcset="" 
+    			sizes="100vw" alt="" class="bg1">
+    		<img src="assets_build/home/KL-Keyvisual-DELUXE-3000px.png" 
+    			srcset="" 
+    			sizes="100vw" alt="" class="bg2">
     	</div>
-    	<div class="bg-item bg-item-nightlife">
-    		<img src="assets_build/home/KL-Keyvisual-NIGHT-3000px.jpg" alt="" class="bg1">
-    		<img src="assets_build/home/KL-Keyvisual-NIGHT-3000px.png" alt="" class="bg2">
+    	<div class="bg-item overlay bg-item-nightlife">
+    		<img src="assets_build/home/KL-Keyvisual-NIGHT-3000px.jpg" 
+    			srcset="" 
+    			sizes="100vw" alt="" class="bg1">
+    		<img src="assets_build/home/KL-Keyvisual-NIGHT-3000px.png" 
+    			srcset="" 
+    			sizes="100vw" alt="" class="bg2">
 
     	</div>
-    	<div class="bg-item bg-item-care">
-    		<img src="assets_build/home/KL-Keyvisual-CARE-3000px.jpg" alt="" class="bg1">
-    		<img src="assets_build/home/KL-Keyvisual-CARE-3000px.png" alt="" class="bg2">
+    	<div class="bg-item overlay bg-item-care">
+    		<img src="assets_build/home/KL-Keyvisual-CARE-3000px.jpg" 
+    			srcset="" 
+    			sizes="100vw" alt="" class="bg1">
+    		<img src="assets_build/home/KL-Keyvisual-CARE-3000px.png" 
+    			srcset="" 
+    			sizes="100vw" alt="" class="bg2">
     	</div>
     </div>
 
@@ -50,13 +66,13 @@
 					<div class="center-wrapper sound-roll1">
 						<div class="link-wrapper">
 							<a href="inspiration.html" data-linkimg="competition">
-					            Keralock<br><span>INSPIRATION</span>		          	</a>
+					            Haarfarben <br><span>INSPIRATION</span>		          	</a>
 				           <div class="cursor">
 				            	<div class="fine"></div>
 				            	<div class="large" style="visibility: visible; width: 27px; opacity: 1;"></div>
 				            </div> 
 			            </div>
-			            <ul class="submenu sound-roll2" style="display: none;">
+			            {# <ul class="submenu sound-roll2" style="display: none;">
 			             	<li style="opacity: 0; transform: matrix(1, 0, 0, 1, -40, 0);">
 			             		<a href="http://www.pacorabanne.com/invictus/en-WW/#!/competition/seasonthree">
 				             		<div class="link-text">
@@ -94,7 +110,7 @@
 			            		<div class="fine" style="width: 0%; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"></div>
 			            		<div class="large" style="opacity: 1;"></div>
 			            	</div>	                   	             	
-			             </ul>
+			             </ul> #}
 		             </div>
 		        </div>
 		        
@@ -102,7 +118,7 @@
 		        	<div class="center-wrapper">
 			        	<div class="link-wrapper sound-roll1">
 				        	<a href="inspiration.html">
-				        		Keralock<br><span>DE LUXE</span></a>
+				        		Dauerwellen<br><span>DE LUXE</span></a>
 				            <div class="cursor">
 				            	<div class="fine" style="opacity: 0.3; transform: matrix(1, 0, 0, 1, 0, 0); width: 0%;"></div>
 				            	<div class="large" style="visibility: visible; width: 27px; opacity: 1;"></div>
@@ -142,7 +158,7 @@
 		        	<div class="center-wrapper">
 			        	<div class="link-wrapper sound-roll1">
 				        	<a href="inspiration.html" data-linkimg="candidats">
-					            Keralock<br><span>NIGHT LIFE</span>		             </a>
+					            Color Hairsprays<br><span>NIGHT LIFE</span>		             </a>
 				           <div class="cursor">
 				            	<div class="fine"></div>
 				            	<div class="large" style="visibility: visible; width: 27px; opacity: 1;"></div>
@@ -156,13 +172,13 @@
 		        	<div class="center-wrapper">
 			        	<div class="link-wrapper sound-roll1">
 				        	<a href="inspiration.html" data-linkimg="fragrance">
-					            Keralock<br><span>CARE</span>		            </a>
+					            Foamshampoos<br><span>CARE</span>		            </a>
 				            <div class="cursor">
 				            	<div class="fine" style="opacity: 0.3; transform: matrix(1, 0, 0, 1, 0, 0); width: 0%;"></div>
 				            	<div class="large" style="visibility: visible; width: 27px; opacity: 1;"></div>
 				            </div> 
 			            </div>
-			             <ul class="submenu">
+			             {# <ul class="submenu">
 			             	<li class="sound-roll2">             	
 			             		<a href="http://www.pacorabanne.com/invictus/en-WW/#!/perfumes">
 				             		<div class="link-text">
@@ -218,7 +234,7 @@
 			            		<div class="large"></div>
 			            	</div>
 			             	             	            	
-			             </ul>
+			             </ul> #}
 			          </div>
 		        </div>
 		        

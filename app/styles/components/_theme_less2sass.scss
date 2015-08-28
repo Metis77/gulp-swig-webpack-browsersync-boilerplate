@@ -1288,9 +1288,9 @@ video{ max-width: 100%; }
 .fs-vid-background video{ max-width: 900000px; }
 .overlay .fs-vid-background:before{ @include overlay-params(.5,#222); }
 
-@media all and (max-width: 990px){
-	.fs-vid-background{ display: none; }
-}
+// @media all and (max-width: 990px){
+// 	.fs-vid-background{ display: none; }
+// }
 
 /*!---------- 28. BLOG ----------*/
 
