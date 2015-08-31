@@ -1,5 +1,8 @@
 var gulp    		= require("gulp"),
     gutil 			= require("gulp-util"),
+    filter          = require("gulp-filter");
+    inlineResize    = require("gulp-inline-resize"),
+    gm              = require('gulp-gm'),
 
     concat          = require('gulp-concat'),
     uglify          = require('gulp-uglify'),
@@ -7,7 +10,6 @@ var gulp    		= require("gulp"),
     sass 			= require('gulp-sass'),
     sourcemaps 		= require('gulp-sourcemaps'),
     autoprefixer 	= require('gulp-autoprefixer'),
-    inlineResize    = require("gulp-inline-resize"),
 
     swig            = require('gulp-swig'),
 
@@ -18,9 +20,11 @@ var gulp    		= require("gulp"),
 
 
 
-var src   = './app/',
-    dest  = './public/',
-    inlineResizeSrc = './src/**/*';
+var app   = './app/',
+    dist  = './dist/',
+    srcImages = 'assets/**/*';
+
+var imgFilter = filter('**/*.+(jpg|png|gif)', {restore: true});
 
 
 /*
@@ -36,20 +40,22 @@ gulp.task('production', function() {
 
 
 
+
+
 /**
  * Templates task - compiles templates.
  */
 function getTemplates() {
-    var templateStream = gulp.src(src+'templates/pages/**/*.swig', {
-            base: src+'templates/pages/'
+    var templateStream = gulp.src(app+'templates/pages/**/*.swig', {
+            base: app+'templates/pages/'
         })
         .pipe(swig({
             defaults: { cache: false },
             load_json: true,
-            json_path: src+'templates/data/'
+            json_path: app+'templates/data/'
         }));
 
-    var assetsStream = gulp.src(inlineResizeSrc);
+    var assetsStream = gulp.src(srcImages);
 
     return merge(templateStream, assetsStream)
           .pipe(inlineResize({replaceIn:[".html"]}));
@@ -57,13 +63,25 @@ function getTemplates() {
 
 gulp.task('templates', function() {
   return getTemplates()
-    .pipe(gulp.dest(dest))
+    // .pipe(imgFilter)
+    // .pipe(gm(function (gmfile) {
+    //   return gmfile.quality(80);
+    // }))
+    // .pipe(imgFilter.restore)
+    .pipe(gulp.dest(dist))
     .on("end", reload);
 });
 
 
-
-
+gulp.task('img', function () {
+  gulp.src(dist+'assets_build/**/*')
+ 
+    .pipe(gm(function (gmfile) {
+      return gmfile.quality(80);
+    }))
+ 
+    .pipe(gulp.dist('./dist/assets_build/'));
+});
 
 
 
@@ -74,7 +92,7 @@ gulp.task('templates', function() {
  *  https://github.com/sindresorhus/gulp-autoprefixer/issues/8
  */
 function getSass() {
-    var styleStream = gulp.src(src + 'styles/main.scss')
+    var styleStream = gulp.src(app + 'styles/main.scss')
         .pipe(sourcemaps.init())
         .pipe(sass(
             {
@@ -100,7 +118,7 @@ function getSass() {
         ))
         .pipe(sourcemaps.write('.'));
 
-    var assetsStream = gulp.src(inlineResizeSrc);
+    var assetsStream = gulp.src(srcImages);
 
     return merge(styleStream, assetsStream)
           .pipe(inlineResize({replaceIn:[".css"]}));
@@ -108,7 +126,12 @@ function getSass() {
 
 gulp.task('sass', function() {
   return getSass()
-    .pipe(gulp.dest(dest))
+    // .pipe(imgFilter)
+    // .pipe(gm(function (gmfile) {
+    //   return gmfile.quality(80);
+    // }))
+    // .pipe(imgFilter.restore)
+    .pipe(gulp.dest(dist))
     .on("end", reload);
 });
 
@@ -122,12 +145,12 @@ gulp.task('sass', function() {
  */
 gulp.task('js', function() {
     return gulp.src([
-            src+'js/libraries/*.js',
-            src+'js/main/*.js',
+            app+'js/libraries/*.js',
+            app+'js/main/*.js',
         ])
         .pipe(concat('main.js'))
         // .pipe(uglify())
-        .pipe(gulp.dest(dest+'js/'))
+        .pipe(gulp.dest(dist+'js/'))
         .on("end", reload);
 });
 
@@ -144,15 +167,15 @@ gulp.task('js', function() {
 gulp.task('serve', ['templates', 'sass', 'js'], function() {
 
     browserSync.init({
-        server: dest,
+        server: dist,
         open: false,
         reloadOnRestart: true,
         notify: false,
     });
 
-    gulp.watch(src + 'js/**/*', ['js']);
-    gulp.watch(src + 'styles/**/*', ['sass']);
-    gulp.watch(src + 'templates/**/*', ['templates']);
+    gulp.watch(app + 'js/**/*', ['js']);
+    gulp.watch(app + 'styles/**/*', ['sass']);
+    gulp.watch(app + 'templates/**/*', ['templates']);
 
 });
 
