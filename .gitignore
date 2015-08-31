@@ -1,10 +1,6 @@
 .DS_Store
 dist
-dist/assets_build
-dist/css
-dist/js
-dist/*.css
-dist/*.map
+
 
 # Logs
 logs
