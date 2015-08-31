@@ -17,7 +17,7 @@
 
 		min-width: 100%;                   // Expand
 		min-height: 100%; 
-		width: auto;                       // Keep aspect ratio
+		width: 100%;                       // Keep aspect ratio
 		height: auto;
 		z-index: -1;                       // Put on background
 		overflow: hidden;
@@ -30,9 +30,8 @@
 
 
 /*
- * lazysizes
+ * lazysizes unveil
  */
- 
 .lazyload,
 .lazyloading {
     opacity: 0;
@@ -40,4 +39,10 @@
 .lazyloaded {
     opacity: 1;
     transition: opacity 300ms;
+}
+/*
+ * lazysizes noscript
+ */
+.no-js img.lazyload {
+    display: none;
 }

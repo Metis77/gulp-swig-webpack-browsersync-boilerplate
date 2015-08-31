@@ -9,7 +9,7 @@
 {% endblock %}
 
 {% block content %}
-<section class="cover image-bg fullscreen overlay overlay-heavy bg-dark vid-bg pt-xs-120">
+<section class="cover image-bg fullscreen overlay overlay-heavy bg-dark vid-bg pt-xs-120 -is-desktop">
     <div class="fs-vid-background">
         <video muted loop preload="none">
             <source src="/assets/video/video.webm" type="video/webm">
@@ -312,20 +312,145 @@
 
 
     </div>
+</section>
 
 
-    <div class="v-align-transform nav-home -is-mobile">
-    	<div class="menu-wrapper">
-				<div class="logo">
-					<a href="/">{% include '../partials/KERALOCK-Logo.svg' %}</a>
-				</div>
-				<div class="skip">
-					<span class="icon ti-angle-double-down"></span>
-				</div>
-				
+
+
+
+
+
+<section class="image-bg overlay pt180 pb180 pt-xs-40 pb-xs-40 -is-mobile">
+    <div class="background-image-holder">
+        <img alt="image" class="background-image" src="/assets/img/fitness3.jpg" />
+    </div>
+    <div class="container">
+        {# <div class="row">
+            <div class="col-sm-12 text-center">
+                <h6 class="uppercase mb0">Willkommen in der Welt der Farbe</h6>
+                <h1>KERALOCK INSPIRATION</h1>
+            </div>
+        </div> #}
+        <div class="nav-home -is-mobile">
+			<div class="logo">
+				{% include '../partials/KERALOCK-Logo.svg' %}
+			</div>
+			<div class="skip">
+				<span class="icon ti-angle-double-down"></span>
+			</div>					
 		</div>
     </div>
     <!--end of container-->
 </section>
+
+<section class="image-bg bg-dark overlay pt160 pb160 pt-xs-40 pb-xs-40 -is-mobile">
+	<a href="inspiration.html">
+	    <div class="background-image-holder srcset INSPIRATION-02-Haarfarben">
+	        <img
+	            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+	            data-srcset="
+	                ./assets_build/home-mobile/KL-Keyvisual-INSPIRATION.jpg;320w 320w,
+	                ./assets_build/home-mobile/KL-Keyvisual-INSPIRATION.jpg;600w 600w,
+	                ./assets_build/home-mobile/KL-Keyvisual-INSPIRATION.jpg;800w 800w,
+	                ./assets_build/home-mobile/KL-Keyvisual-INSPIRATION.jpg;1200w 1200w,
+	                ./assets_build/home-mobile/KL-Keyvisual-INSPIRATION.jpg;1600w 1600w,
+	                ./assets_build/home-mobile/KL-Keyvisual-INSPIRATION.jpg;2000w 2000w," 
+	            data-sizes="100vw"
+	            class="lazyload">
+	    </div>
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-sm-12 ">
+	            	<h6 class="uppercase mb0">Haarfarben</h6>
+	                <h2 class="uppercase mb8">INSPIRATION</h2>
+	            </div>
+	        </div>
+	        <!--end of row-->
+	    </div>
+    </a>
+</section>
+
+<section class="image-bg bg-dark overlay pt160 pb160 pt-xs-40 pb-xs-40 -is-mobile">
+	<a href="inspiration.html">
+	    <div class="background-image-holder srcset INSPIRATION-02-Haarfarben">
+	        <img
+	            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+	            data-srcset="
+	                ./assets_build/home-mobile/KL-Keyvisual-DELUXE.jpg;320w 320w,
+	                ./assets_build/home-mobile/KL-Keyvisual-DELUXE.jpg;600w 600w,
+	                ./assets_build/home-mobile/KL-Keyvisual-DELUXE.jpg;800w 800w,
+	                ./assets_build/home-mobile/KL-Keyvisual-DELUXE.jpg;1200w 1200w,
+	                ./assets_build/home-mobile/KL-Keyvisual-DELUXE.jpg;1600w 1600w,
+	                ./assets_build/home-mobile/KL-Keyvisual-DELUXE.jpg;2000w 2000w," 
+	            data-sizes="100vw"
+	            class="lazyload">
+	    </div>
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-sm-12 ">
+	            	<h6 class="uppercase mb0">Dauerwelle</h6>
+	                <h2 class="uppercase mb8">DE LUXE</h2>
+	            </div>
+	        </div>
+	        <!--end of row-->
+	    </div>
+    </a>
+</section>
+
+<section class="image-bg bg-dark overlay pt160 pb160 pt-xs-40 pb-xs-40 -is-mobile">
+	<a href="inspiration.html">
+	    <div class="background-image-holder srcset INSPIRATION-02-Haarfarben">
+	        <img
+	            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+	            data-srcset="
+	                ./assets_build/home-mobile/KL-Keyvisual-NIGHT.jpg;320w 320w,
+	                ./assets_build/home-mobile/KL-Keyvisual-NIGHT.jpg;600w 600w,
+	                ./assets_build/home-mobile/KL-Keyvisual-NIGHT.jpg;800w 800w,
+	                ./assets_build/home-mobile/KL-Keyvisual-NIGHT.jpg;1200w 1200w,
+	                ./assets_build/home-mobile/KL-Keyvisual-NIGHT.jpg;1600w 1600w,
+	                ./assets_build/home-mobile/KL-Keyvisual-NIGHT.jpg;2000w 2000w," 
+	            data-sizes="100vw"
+	            class="lazyload">
+	    </div>
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-sm-12 ">
+	            	<h6 class="uppercase mb0">Color Hairsprays</h6>
+	                <h2 class="uppercase mb8">NIGHT LIFE</h2>
+	            </div>
+	        </div>
+	        <!--end of row-->
+	    </div>
+    </a>
+</section>
+
+<section class="image-bg bg-dark overlay pt160 pb160 pt-xs-40 pb-xs-40 -is-mobile">
+	<a href="inspiration.html">
+	    <div class="background-image-holder srcset INSPIRATION-02-Haarfarben">
+	        <img
+	            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+	            data-srcset="
+	                ./assets_build/home-mobile/KL-Keyvisual-CARE.jpg;320w 320w,
+	                ./assets_build/home-mobile/KL-Keyvisual-CARE.jpg;600w 600w,
+	                ./assets_build/home-mobile/KL-Keyvisual-CARE.jpg;800w 800w,
+	                ./assets_build/home-mobile/KL-Keyvisual-CARE.jpg;1200w 1200w,
+	                ./assets_build/home-mobile/KL-Keyvisual-CARE.jpg;1600w 1600w,
+	                ./assets_build/home-mobile/KL-Keyvisual-CARE.jpg;2000w 2000w," 
+	            data-sizes="100vw"
+	            class="lazyload">
+	    </div>
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-sm-12 ">
+	            	<h6 class="uppercase mb0">HaarfFoamshampoosarben</h6>
+	                <h2 class="uppercase mb8">Care</h2>
+	            </div>
+	        </div>
+	        <!--end of row-->
+	    </div>
+    </a>
+</section>
+
+
 {% endblock %}
 

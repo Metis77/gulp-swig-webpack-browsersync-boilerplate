@@ -1,12 +1,4 @@
 .nav-home {
-	
-
-
-
-
-
-
-
 	/*
 	 * interaction
 	 */
@@ -29,7 +21,7 @@
 		display: none;
 		text-align: center;
 	}
-	@media all and (max-width: 990px) {
+	@media all and (max-width: $breakpointTablet) {
 		display: none;
 		&.-is-mobile {
 			display: block;

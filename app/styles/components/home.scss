@@ -33,8 +33,6 @@
 	    }
     }
 
-
-
 	.nav-home {
 		z-index: 20;
 	}
@@ -55,10 +53,6 @@
 			opacity .3s ease-in-out,
 			filer .3s ease-in-out;
 	}
-	// &.is-hover .bg-item {
-		
-	// 	transform: matrix(1, 0, 0, 1, 0, 0);
-	// }
 
 
 
@@ -70,6 +64,8 @@
 		transform: matrix(1, 0, 0, 1, 0, 0);
 		filter: sepia(25%);
 	}
+
+
 	
 
 }
@@ -79,7 +75,7 @@
  * fs-vid-background
  */
 .fs-vid-background {
-	@media all and (max-width: 990px) {
+	@media all and (max-width: $breakpointTablet) {
 		display: none;
 	}
 	video {
@@ -98,20 +94,25 @@
 
 	+ .background-image-holder {
 		
-		@media all and (max-width: 990px) {
+		@media all and (max-width: $breakpointTablet) {
 
 			background: url(/assets/img/home15.jpg);
 		}
 		background: none;
 	}
 
-
-	
-
 }
 
 
-
+/*
+ * mobile content
+ */
+.-is-desktop {
+	@media all and (max-width: $breakpointTablet) {
+		display: none;
+	}
+}
+	
 
 
 

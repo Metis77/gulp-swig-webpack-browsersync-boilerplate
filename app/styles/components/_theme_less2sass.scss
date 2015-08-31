@@ -325,7 +325,8 @@ footer{ padding: 72px 0; }
 	section{ padding: 80px 0; }
 }
 
-.overlay:before{ @include overlay-params(.3,$bg-dark); }
+.overlay:before{ @include overlay-params(.3,$bg-dark);
+	pointer-events: none; }
 .overlay-heavy:before{ opacity: .6; }
 .bg-light.overlay:before{ @include overlay-params(.1,#fff); }
 
