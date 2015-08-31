@@ -11,52 +11,118 @@
 {% block content %}
 <section class="cover image-bg fullscreen overlay overlay-heavy bg-dark vid-bg pt-xs-120">
     <div class="fs-vid-background">
-        <video autoplay muted loop>
+        <video muted loop preload="none">
             <source src="/assets/video/video.webm" type="video/webm">
             <source src="/assets/video/video.mp4" type="video/mp4">
             <source src="/assets/video/video.ogv" type="video/ogg">
         </video>
     </div>
     <div class="background-image-holder">
-        <img alt="image" class="background-image" src="/assets/img/home15.jpg" />
+        {# <img alt="image" class="background-image" src="/assets/img/home15.jpg" /> #}
     </div>
 
     <div class="bg-container">
-    	<div class="bg-item overlay bg-item-inspiration">
+    	<div class="bg-item overlay srcset bg-item-inspiration">
     		<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
-    			srcset="assets_build/home/KL-Keyvisual-INSPIRATION.jpg;600w 600w" 
-    			sizes="100vw" alt="" 
+    			data-srcset="
+    				assets_build/home/KL-Keyvisual-INSPIRATION.jpg;1000w 1000w,
+    				assets_build/home/KL-Keyvisual-INSPIRATION.jpg;1300w 1300w,
+    				assets_build/home/KL-Keyvisual-INSPIRATION.jpg;1600w 1600w,
+    				assets_build/home/KL-Keyvisual-INSPIRATION.jpg;1900w 1900w,
+    				assets_build/home/KL-Keyvisual-INSPIRATION.jpg;2200w 2200w,
+    				assets_build/home/KL-Keyvisual-INSPIRATION.jpg;2600w 1000w,
+    				assets_build/home/KL-Keyvisual-INSPIRATION.jpg;3000w 3000w" 
+    			sizes="100vw" 
     			class="bg1">
-    		<img src="assets_build/home/KL-Keyvisual-INSPIRATION.png" 
-    			srcset="" 
+    		<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+    			data-srcset="
+    				assets_build/home/KL-Keyvisual-INSPIRATION.png;1000w 1000w,
+    				assets_build/home/KL-Keyvisual-INSPIRATION.png;1300w 1300w,
+    				assets_build/home/KL-Keyvisual-INSPIRATION.png;1600w 1600w,
+    				assets_build/home/KL-Keyvisual-INSPIRATION.png;1900w 1900w,
+    				assets_build/home/KL-Keyvisual-INSPIRATION.png;2200w 2200w,
+    				assets_build/home/KL-Keyvisual-INSPIRATION.png;2600w 1000w,
+    				assets_build/home/KL-Keyvisual-INSPIRATION.png;3000w 3000w" 
     			sizes="100vw" alt="" 
     			class="bg2">
     	</div>
+
     	<div class="bg-item overlay bg-item-deluxe">
-    		<img src="assets_build/home/KL-Keyvisual-DELUXE.jpg" 
-    			srcset="" 
-    			sizes="100vw" alt="" class="bg1">
-    		<img src="assets_build/home/KL-Keyvisual-DELUXE.png" 
-    			srcset="" 
-    			sizes="100vw" alt="" class="bg2">
+    		<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+    			data-srcset="
+    				assets_build/home/KL-Keyvisual-DELUXE.jpg;1000w 1000w,
+    				assets_build/home/KL-Keyvisual-DELUXE.jpg;1300w 1300w,
+    				assets_build/home/KL-Keyvisual-DELUXE.jpg;1600w 1600w,
+    				assets_build/home/KL-Keyvisual-DELUXE.jpg;1900w 1900w,
+    				assets_build/home/KL-Keyvisual-DELUXE.jpg;2200w 2200w,
+    				assets_build/home/KL-Keyvisual-DELUXE.jpg;2600w 1000w,
+    				assets_build/home/KL-Keyvisual-DELUXE.jpg;3000w 3000w" 
+    			sizes="100vw" 
+    			class="bg1">
+    		<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+    			data-srcset="
+    				assets_build/home/KL-Keyvisual-DELUXE.png;1000w 1000w,
+    				assets_build/home/KL-Keyvisual-DELUXE.png;1300w 1300w,
+    				assets_build/home/KL-Keyvisual-DELUXE.png;1600w 1600w,
+    				assets_build/home/KL-Keyvisual-DELUXE.png;1900w 1900w,
+    				assets_build/home/KL-Keyvisual-DELUXE.png;2200w 2200w,
+    				assets_build/home/KL-Keyvisual-DELUXE.png;2600w 1000w,
+    				assets_build/home/KL-Keyvisual-DELUXE.png;3000w 3000w" 
+    			sizes="100vw" alt="" 
+    			class="bg2">
     	</div>
+
     	<div class="bg-item overlay bg-item-nightlife">
-    		<img src="assets_build/home/KL-Keyvisual-NIGHT.jpg" 
-    			srcset="" 
-    			sizes="100vw" alt="" class="bg1">
-    		<img src="assets_build/home/KL-Keyvisual-NIGHT.png" 
-    			srcset="" 
-    			sizes="100vw" alt="" class="bg2">
+    		<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+    			data-srcset="
+    				assets_build/home/KL-Keyvisual-NIGHT.jpg;1000w 1000w,
+    				assets_build/home/KL-Keyvisual-NIGHT.jpg;1300w 1300w,
+    				assets_build/home/KL-Keyvisual-NIGHT.jpg;1600w 1600w,
+    				assets_build/home/KL-Keyvisual-NIGHT.jpg;1900w 1900w,
+    				assets_build/home/KL-Keyvisual-NIGHT.jpg;2200w 2200w,
+    				assets_build/home/KL-Keyvisual-NIGHT.jpg;2600w 1000w,
+    				assets_build/home/KL-Keyvisual-NIGHT.jpg;3000w 3000w" 
+    			sizes="100vw" 
+    			class="bg1">
+    		<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+    			data-srcset="
+    				assets_build/home/KL-Keyvisual-NIGHT.png;1000w 1000w,
+    				assets_build/home/KL-Keyvisual-NIGHT.png;1300w 1300w,
+    				assets_build/home/KL-Keyvisual-NIGHT.png;1600w 1600w,
+    				assets_build/home/KL-Keyvisual-NIGHT.png;1900w 1900w,
+    				assets_build/home/KL-Keyvisual-NIGHT.png;2200w 2200w,
+    				assets_build/home/KL-Keyvisual-NIGHT.png;2600w 1000w,
+    				assets_build/home/KL-Keyvisual-NIGHT.png;3000w 3000w" 
+    			sizes="100vw" alt="" 
+    			class="bg2">
 
     	</div>
+
     	<div class="bg-item overlay bg-item-care">
-    		<img src="assets_build/home/KL-Keyvisual-CARE.jpg" 
-    			srcset="" 
-    			sizes="100vw" alt="" class="bg1">
-    		<img src="assets_build/home/KL-Keyvisual-CARE.png" 
-    			srcset="" 
-    			sizes="100vw" alt="" class="bg2">
+    		<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+    			data-srcset="
+    				assets_build/home/KL-Keyvisual-CARE.jpg;1000w 1000w,
+    				assets_build/home/KL-Keyvisual-CARE.jpg;1300w 1300w,
+    				assets_build/home/KL-Keyvisual-CARE.jpg;1600w 1600w,
+    				assets_build/home/KL-Keyvisual-CARE.jpg;1900w 1900w,
+    				assets_build/home/KL-Keyvisual-CARE.jpg;2200w 2200w,
+    				assets_build/home/KL-Keyvisual-CARE.jpg;2600w 1000w,
+    				assets_build/home/KL-Keyvisual-CARE.jpg;3000w 3000w" 
+    			sizes="100vw" 
+    			class="bg1">
+    		<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+    			data-srcset="
+    				assets_build/home/KL-Keyvisual-CARE.png;1000w 1000w,
+    				assets_build/home/KL-Keyvisual-CARE.png;1300w 1300w,
+    				assets_build/home/KL-Keyvisual-CARE.png;1600w 1600w,
+    				assets_build/home/KL-Keyvisual-CARE.png;1900w 1900w,
+    				assets_build/home/KL-Keyvisual-CARE.png;2200w 2200w,
+    				assets_build/home/KL-Keyvisual-CARE.png;2600w 1000w,
+    				assets_build/home/KL-Keyvisual-CARE.png;3000w 3000w" 
+    			sizes="100vw" alt="" 
+    			class="bg2">
     	</div>
+
     </div>
 
     <div class="v-align-transform nav-home">
@@ -241,13 +307,23 @@
 			          </div>
 		        </div>
 		        
-		        
-		   
-		        
 			</div>
 
 
 
+    </div>
+
+
+    <div class="v-align-transform nav-home -is-mobile">
+    	<div class="menu-wrapper">
+				<div class="logo">
+					<a href="/">{% include '../partials/KERALOCK-Logo.svg' %}</a>
+				</div>
+				<div class="skip">
+					<span class="icon ti-angle-double-down"></span>
+				</div>
+				
+		</div>
     </div>
     <!--end of container-->
 </section>

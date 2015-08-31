@@ -19,4 +19,21 @@
 			opacity: 1;
 		}
 	}
+
+
+
+	/* 
+	 * mobile
+	 */
+	&.-is-mobile {
+		display: none;
+		text-align: center;
+	}
+	@media all and (max-width: 990px) {
+		display: none;
+		&.-is-mobile {
+			display: block;
+		}
+	}
+	
 }

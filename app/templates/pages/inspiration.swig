@@ -49,7 +49,7 @@
             <div class="col-sm-12 text-center">
                 <h2 class="uppercase mb8">Haarfarbe</h2>
                 <p class="lead mb40">Intensive, langanhaltende und leuchtende Farben in 12 aufregenden Nuancen.</p>
-                <a class="btn btn-lg btn-white mb0" href="detailseite.html">Produkte</a>
+                <a class="btn btn-lg btn-white mb0" href="inspiration/Haarfarben.html">Produkte</a>
             </div>
         </div>
         <!--end of row-->
@@ -75,7 +75,7 @@
             <div class="col-sm-12 text-center">
                 <h2 class="uppercase mb8">Blondierungen</h2>
                 <p class="lead mb40">A brief description of the tour.</p>
-                <a class="btn btn-lg btn-white mb0" href="detailseite.html">Produkte</a>
+                <a class="btn btn-lg btn-white mb0" href="inspiration/_detailseite.html">Produkte</a>
             </div>
         </div>
         <!--end of row-->
@@ -101,7 +101,7 @@
             <div class="col-sm-12 text-center">
                 <h2 class="uppercase mb8">Haarfarb-Entferner</h2>
                 <p class="lead mb40">Haarfarbe von Hals, Gesicht und Händen ganz einfach und problemlos entfernen.</p>
-                <a class="btn btn-lg btn-white mb0" href="detailseite.html">Produkte</a>
+                <a class="btn btn-lg btn-white mb0" href="inspiration/_detailseite.html">Produkte</a>
             </div>
         </div>
         <!--end of row-->
@@ -128,7 +128,7 @@
             <div class="col-sm-12 text-center">
                 <h2 class="uppercase mb8">Tönungsshampoos</h2>
                 <p class="lead mb40">A brief description of the tour.</p>
-                <a class="btn btn-lg btn-white mb0" href="detailseite.html">Produkte</a>
+                <a class="btn btn-lg btn-white mb0" href="inspiration/_detailseite.html">Produkte</a>
             </div>
         </div>
         <!--end of row-->

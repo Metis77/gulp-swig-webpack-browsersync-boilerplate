@@ -44,6 +44,10 @@ svg.logo {
 
 		display: block;
 		margin-right: 50px;
+		@media all and (max-width: 990px) {
+			margin-right: 0;
+			pointer-events: none;  
+		}
 	}
 }
 

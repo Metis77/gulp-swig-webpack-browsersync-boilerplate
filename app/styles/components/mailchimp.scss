@@ -1,10 +1,16 @@
 
 
 .mce_inline_error,
-.mce-success-response {
+#mce-success-response {
 	margin-top: 1em !important;
 }
 
-.mce-success-response {
-	color: green;
+div.mce_inline_error {
+	background: #ce3838 !important;
 }
+div#mce-success-response {
+	padding: 5px 10px;
+	background: #47b475 !important;
+}
+
+    
