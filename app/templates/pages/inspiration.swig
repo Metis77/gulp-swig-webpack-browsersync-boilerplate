@@ -3,7 +3,8 @@
 {% extends "../layouts/default.swig" %}
 
 
-{% block pagetitle %}Inspiration - Keralock{% endblock %}
+{% block pagetitle %}Inspiration // Keralock{% endblock %}
+{% block description %}{% endblock %}
 
 
 {% block content %}
@@ -24,8 +25,25 @@
 </section>
 
 
+
+
+
+
+
 <section class="image-bg bg-dark parallax overlay pt160 pb160 pt-xs-40 pb-xs-40">
-    <div class="background-image-holder INSPIRATION-02-Haarfarben"></div>
+    <div class="background-image-holder srcset INSPIRATION-02-Haarfarben">
+        <img
+            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+            data-srcset="
+                ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-02-Haarfarben.jpg;320w 320w,
+                ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-02-Haarfarben.jpg;600w 600w,
+                ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-02-Haarfarben.jpg;800w 800w,
+                ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-02-Haarfarben.jpg;1200w 1200w,
+                ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-02-Haarfarben.jpg;1600w 1600w,
+                ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-02-Haarfarben.jpg;2000w 2000w," 
+            data-sizes="100vw"
+            class="lazyload">
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-sm-12 text-center">
@@ -39,7 +57,19 @@
     <!--end of container-->
 </section>
 <section class="image-bg bg-dark parallax overlay pt160 pb160 pt-xs-40 pb-xs-40">
-    <div class="background-image-holder INSPIRATION-03-Blondierungen"></div>
+    <div class="background-image-holder srcset INSPIRATION-03-Blondierungen">
+        <img
+            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+            data-srcset="
+                ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-03-Blondierungen.jpg;320w 320w,
+                ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-03-Blondierungen.jpg;600w 600w,
+                ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-03-Blondierungen.jpg;800w 800w,
+                ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-03-Blondierungen.jpg;1200w 1200w,
+                ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-03-Blondierungen.jpg;1600w 1600w,
+                ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-03-Blondierungen.jpg;2000w 2000w," 
+            data-sizes="100vw"
+            class="lazyload">
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-sm-12 text-center">
@@ -53,7 +83,19 @@
     <!--end of container-->
 </section>
 <section class="image-bg bg-dark parallax overlay pt160 pb160 pt-xs-40 pb-xs-40">
-    <div class="background-image-holder INSPIRATION-05-Entferner"></div>
+    <div class="background-image-holder srcset INSPIRATION-05-Entferner">
+        <img
+            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+            data-srcset="
+                ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-05-Entferner.jpg;320w 320w,
+                ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-05-Entferner.jpg;600w 600w,
+                ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-05-Entferner.jpg;800w 800w,
+                ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-05-Entferner.jpg;1200w 1200w,
+                ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-05-Entferner.jpg;1600w 1600w,
+                ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-05-Entferner.jpg;2000w 2000w," 
+            data-sizes="100vw"
+            class="lazyload">
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-sm-12 text-center">
@@ -68,7 +110,19 @@
 </section>
 
 <section class="image-bg bg-dark parallax overlay pt160 pb160 pt-xs-40 pb-xs-40">
-    <div class="background-image-holder INSPIRATION-04-Toenung"></div>
+    <div class="background-image-holder srcset INSPIRATION-04-Toenung">
+        <img
+            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+            data-srcset="
+                ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-04-Toenung.jpg;320w 320w,
+                ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-04-Toenung.jpg;600w 600w,
+                ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-04-Toenung.jpg;800w 800w,
+                ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-04-Toenung.jpg;1200w 1200w,
+                ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-04-Toenung.jpg;1600w 1600w,
+                ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-04-Toenung.jpg;2000w 2000w," 
+            data-sizes="100vw"
+            class="lazyload">
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-sm-12 text-center">
@@ -93,16 +147,80 @@
             </div>
         </div>
         <!--end of row-->
+
+
         <div class="row mb40 mb-xs-24">
             <div class="col-sm-6 col-sm-offset-3">
-                <form class="form-newsletter halves" data-success="Thanks for your registration, we will be in touch shortly." data-error="Please fill all fields correctly.">
-                    <input type="text" name="email" class="mb0 transparent validate-email validate-required signup-email-field" placeholder="Email Address" />
-                    <input type="submit" class="btn-white mb0" value="Keep Me Informed" />
-                    <iframe srcdoc="<!-- Begin MailChimp Signup Form --><link href=&quot;https://cdn-images.mailchimp.com/embedcode/classic-081711.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;><style type=&quot;text/css&quot;>	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */</style><div id=&quot;mc_embed_signup&quot;><form action=&quot;//mrare.us8.list-manage.com/subscribe/post?u=77142ece814d3cff52058a51f&amp;id=94d040322a&quot; method=&quot;post&quot; id=&quot;mc-embedded-subscribe-form&quot; name=&quot;mc-embedded-subscribe-form&quot; class=&quot;validate&quot; target=&quot;_blank&quot; novalidate>    <div id=&quot;mc_embed_signup_scroll&quot;>	<h2>Subscribe to our mailing list</h2><div class=&quot;indicates-required&quot;><span class=&quot;asterisk&quot;>*</span> indicates required</div><div class=&quot;mc-field-group&quot;>	<label for=&quot;mce-EMAIL&quot;>Email Address  <span class=&quot;asterisk&quot;>*</span></label>	<input type=&quot;email&quot; value=&quot;&quot; name=&quot;EMAIL&quot; class=&quot;required email&quot; id=&quot;mce-EMAIL&quot;></div><div class=&quot;mc-field-group&quot;>	<label for=&quot;mce-FNAME&quot;>First Name </label>	<input type=&quot;text&quot; value=&quot;&quot; name=&quot;FNAME&quot; class=&quot;&quot; id=&quot;mce-FNAME&quot;></div><div class=&quot;mc-field-group&quot;>	<label for=&quot;mce-LNAME&quot;>Last Name </label>	<input type=&quot;text&quot; value=&quot;&quot; name=&quot;LNAME&quot; class=&quot;&quot; id=&quot;mce-LNAME&quot;></div>	<div id=&quot;mce-responses&quot; class=&quot;clear&quot;>		<div class=&quot;response&quot; id=&quot;mce-error-response&quot; style=&quot;display:none&quot;></div>		<div class=&quot;response&quot; id=&quot;mce-success-response&quot; style=&quot;display:none&quot;></div>	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->    <div style=&quot;position: absolute; left: -5000px;&quot;><input type=&quot;text&quot; name=&quot;b_77142ece814d3cff52058a51f_94d040322a&quot; tabindex=&quot;-1&quot; value=&quot;&quot;></div>    <div class=&quot;clear&quot;><input type=&quot;submit&quot; value=&quot;Subscribe&quot; name=&quot;subscribe&quot; id=&quot;mc-embedded-subscribe&quot; class=&quot;button&quot;></div>    </div></form></div><script type='text/javascript' src='https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script><!--End mc_embed_signup-->" class="mail-list-form">
-                    </iframe>
-                </form>
+
+
+                <!-- Begin MailChimp Signup Form -->
+                <div id="mc_embed_signup">
+                    <form action="//derhaeuptling.us4.list-manage.com/subscribe/post?u=2d43fc9067bed7a64e70772fc&amp;id=a9f274bf52" 
+                    method="post" 
+                    id="mc-embedded-subscribe-form" 
+                    name="mc-embedded-subscribe-form" 
+                    class="validate form-newsletter halves" 
+                    target="_blank" 
+                    novalidate>
+                        <div id="mc_embed_signup_scroll">
+                            
+                            <div class="mc-field-group">
+                                <input type="text" 
+                                    value="" name="EMAIL" 
+                                    class="required email mb0 transparent validate-email validate-required signup-email-field" 
+                                    id="mce-EMAIL"
+                                    placeholder="Email Address">
+                                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" 
+                                class="button btn-white mb0">
+
+                            </div>
+                                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                            <div style="position: absolute; left: -5000px;"><input type="text" name="b_2d43fc9067bed7a64e70772fc_a9f274bf52" tabindex="-1" value=""></div>
+                            
+                            <div id="mce-responses" class="clear">
+                                <div class="response" id="mce-error-response" style="display:none"></div>
+                                <div class="response" id="mce-success-response" style="display:none"></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+
+                <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+                <script type='text/javascript'>
+                    (function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='MMERGE3';ftypes[3]='birthday';fnames[4]='MMERGE4';ftypes[4]='date'; /*
+                     * Translated default messages for the $ validation plugin.
+                     * Locale: DE
+                     */
+                    $.extend($.validator.messages, {
+                        required: "Dieses Feld ist ein Pflichtfeld.",
+                        maxlength: $.validator.format("Geben Sie bitte maximal {0} Zeichen ein."),
+                        minlength: $.validator.format("Geben Sie bitte mindestens {0} Zeichen ein."),
+                        rangelength: $.validator.format("Geben Sie bitte mindestens {0} und maximal {1} Zeichen ein."),
+                        email: "Geben Sie bitte eine gültige E-Mail Adresse ein.",
+                        url: "Geben Sie bitte eine gültige URL ein.",
+                        date: "Bitte geben Sie ein gültiges Datum ein.",
+                        number: "Geben Sie bitte eine Nummer ein.",
+                        digits: "Geben Sie bitte nur Ziffern ein.",
+                        equalTo: "Bitte denselben Wert wiederholen.",
+                        range: $.validator.format("Geben Sie bitten einen Wert zwischen {0} und {1}."),
+                        max: $.validator.format("Geben Sie bitte einen Wert kleiner oder gleich {0} ein."),
+                        min: $.validator.format("Geben Sie bitte einen Wert größer oder gleich {0} ein."),
+                        creditcard: "Geben Sie bitte ein gültige Kreditkarten-Nummer ein."
+                    });}(jQuery));var $mcj = jQuery.noConflict(true);
+                </script>
+                <!--End mc_embed_signup-->
+
+
             </div>
         </div>
+
+
+
+
+
+
+
         
     </div>
     <!--end of container-->

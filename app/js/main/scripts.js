@@ -29,7 +29,7 @@ $(document).ready(function() {
 
     $('.background-image-holder').each(function() {
         // only if img available
-        if ( $(this).children('img').length ) { 
+        if ( $(this).children('img').length && !$(this).hasClass('srcset') ) {
             var imgSrc = $(this).children('img').attr('src');
             $(this).css('background', 'url("' + imgSrc + '")');
             $(this).children('img').hide();
@@ -518,7 +518,8 @@ $(document).ready(function() {
 
     // Contact form code
 
-    $('form.form-email, form.form-newsletter').submit(function(e) {
+    // $('form.form-email, form.form-newsletter').submit(function(e) {
+    $('form.form-email').submit(function(e) {
 
         // return false so form submits through jQuery rather than reloading page.
         if (e.preventDefault) e.preventDefault();

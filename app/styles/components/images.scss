@@ -1,0 +1,43 @@
+
+
+.background-image-holder.srcset {
+	img {
+		//  reset
+		display: block;	
+		max-width: inherit;
+
+		
+		// fill container
+		position: absolute;
+		top: 50%;                          // Vertical center offset
+		left: 50%;                         // Horizontal center offset
+
+
+		transform: translate(-50%,-50%);   // Cover effect: compensate the offset
+
+		min-width: 100%;                   // Expand
+		min-height: 100%; 
+		width: auto;                       // Keep aspect ratio
+		height: auto;
+		z-index: -1;                       // Put on background
+		overflow: hidden;
+	}
+
+}
+
+
+
+
+
+/*
+ * lazysizes
+ */
+ 
+.lazyload,
+.lazyloading {
+    opacity: 0;
+}
+.lazyloaded {
+    opacity: 1;
+    transition: opacity 300ms;
+}

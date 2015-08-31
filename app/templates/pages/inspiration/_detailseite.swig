@@ -1,12 +1,13 @@
-{% extends "../layouts/default.swig" %}
+{% extends "../../layouts/default.swig" %}
 
 
-{% block pagetitle %}Inspiration - Keralock{% endblock %}
+{% block pagetitle %} // Keralock{% endblock %}
+{% block description %}{% endblock %}
 
 {% block content %}
 <section class="image-bg overlay pt240 pb240 pt-xs-180 pb-xs-180">
     <div class="background-image-holder">
-        <img alt="image" class="background-image" src="assets/img/fitness3.jpg" />
+        <img alt="image" class="background-image" src="/assets/img/fitness3.jpg" />
     </div>
     <div class="container">
         <div class="row">
@@ -27,7 +28,7 @@
 <section class="image-square left">
     <div class="col-md-6 image">
         <div class="background-image-holder">
-            <img alt="image" class="background-image" src="assets/img/fitness6.jpg" />
+            <img alt="image" class="background-image" src="/assets/img/fitness6.jpg" />
         </div>
     </div>
     <div class="col-md-6 col-md-offset-1 content overflow-hidden">
@@ -45,7 +46,7 @@
 <section class="image-square right bg-secondary">
     <div class="col-md-6 image">
         <div class="background-image-holder">
-            <img alt="image" class="background-image" src="assets/img/fitness5.jpg" />
+            <img alt="image" class="background-image" src="/assets/img/fitness5.jpg" />
         </div>
     </div>
     <div class="col-md-6 content">
@@ -200,7 +201,7 @@
     <div class="container">
         <div class="row mb48 mb-xs-24">
             <div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1 text-center">
-                <img alt="Pic" class="mb16" src="assets/img/vent2.png" />
+                <img alt="Pic" class="mb16" src="/assets/img/vent2.png" />
                 <h5 class="uppercase">Tips &amp; More</h5>
             </div>
         </div>

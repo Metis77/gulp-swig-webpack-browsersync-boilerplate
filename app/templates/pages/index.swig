@@ -3,6 +3,7 @@
 {% extends "../layouts/default.swig" %}
 
 {% block pagetitle %}Keralock{% endblock %}
+{% block description %}{% endblock %}
 
 {% block nav %}
 {% endblock %}
@@ -22,35 +23,37 @@
 
     <div class="bg-container">
     	<div class="bg-item overlay bg-item-inspiration">
-    		<img src="assets_build/home/KL-Keyvisual-INSPIRATION-3000px.jpg" 
-    			srcset="assets_build/home/KL-Keyvisual-INSPIRATION-3000px.jpg;600w 600w" 
-    			sizes="100vw" alt="" class="bg1">
-    		<img src="assets_build/home/KL-Keyvisual-INSPIRATION-3000px.png" 
+    		<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+    			srcset="assets_build/home/KL-Keyvisual-INSPIRATION.jpg;600w 600w" 
+    			sizes="100vw" alt="" 
+    			class="bg1">
+    		<img src="assets_build/home/KL-Keyvisual-INSPIRATION.png" 
     			srcset="" 
-    			sizes="100vw" alt="" class="bg2">
+    			sizes="100vw" alt="" 
+    			class="bg2">
     	</div>
     	<div class="bg-item overlay bg-item-deluxe">
-    		<img src="assets_build/home/KL-Keyvisual-DELUXE-3000px.jpg" 
+    		<img src="assets_build/home/KL-Keyvisual-DELUXE.jpg" 
     			srcset="" 
     			sizes="100vw" alt="" class="bg1">
-    		<img src="assets_build/home/KL-Keyvisual-DELUXE-3000px.png" 
+    		<img src="assets_build/home/KL-Keyvisual-DELUXE.png" 
     			srcset="" 
     			sizes="100vw" alt="" class="bg2">
     	</div>
     	<div class="bg-item overlay bg-item-nightlife">
-    		<img src="assets_build/home/KL-Keyvisual-NIGHT-3000px.jpg" 
+    		<img src="assets_build/home/KL-Keyvisual-NIGHT.jpg" 
     			srcset="" 
     			sizes="100vw" alt="" class="bg1">
-    		<img src="assets_build/home/KL-Keyvisual-NIGHT-3000px.png" 
+    		<img src="assets_build/home/KL-Keyvisual-NIGHT.png" 
     			srcset="" 
     			sizes="100vw" alt="" class="bg2">
 
     	</div>
     	<div class="bg-item overlay bg-item-care">
-    		<img src="assets_build/home/KL-Keyvisual-CARE-3000px.jpg" 
+    		<img src="assets_build/home/KL-Keyvisual-CARE.jpg" 
     			srcset="" 
     			sizes="100vw" alt="" class="bg1">
-    		<img src="assets_build/home/KL-Keyvisual-CARE-3000px.png" 
+    		<img src="assets_build/home/KL-Keyvisual-CARE.png" 
     			srcset="" 
     			sizes="100vw" alt="" class="bg2">
     	</div>

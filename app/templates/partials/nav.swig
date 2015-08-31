@@ -3,7 +3,7 @@
     <nav class="absolute transparent">
         <div class="nav-bar">
             <div class="module left">
-                <a href="index.html">
+                <a href="/index.html">
                     {% include '../partials/KERALOCK-Logo.svg' %}
                 </a>
             </div>
@@ -14,34 +14,35 @@
                 <div class="module left">
                     <ul class="menu bg-light">
                         <li class="has-dropdown bg-light">
-                            <a href="inspiration.html" {% if page == 'inspiration' %}class="active"{% endif %}>
+                            <a href="/inspiration.html" {% if page == 'inspiration' %}class="active"{% endif %}>
                                 Inspiration
                             </a>
                             <ul>
                                 <li>
-                                    <a href="detailseite.html">
+                                    <a href="/inspiration/Haarfarben.html">
                                         Haarfarben
                                     </a>
 
                                 </li>
                                 <li>
-                                    <a href="detailseite.html">
+                                    <a href="/inspiration/Blondierungen.html">
                                         Blondierungen
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="detailseite.html">
+                                    <a href="/inspiration/Blondierungen.html">
                                         Haarfarb-Entferner
                                     </a>
                                 <li>
-                                    <a href="detailseite.html">
+                                    <a href="/inspiration/Blondierungen.html">
                                         Tönungsshampoos
                                     </a>
                                 </li>
                             </ul>
                         </li>
+
                         <li class="has-dropdown">
-                            <a href="inspiration.html">
+                            <a href="/inspiration.html">
                                 DE LUXE
                             </a>
                             <ul>
@@ -67,8 +68,9 @@
                                 </li>
                             </ul>
                         </li>
+
                         <li class="has-dropdown">
-                            <a href="inspiration.html">
+                            <a href="/inspiration.html">
                                 NIGHT LIFE
                             </a>
                             <ul>
@@ -89,10 +91,10 @@
                                     </a>
                                 </li>
                             </ul>
-        
                         </li>
+
                         <li class="has-dropdown">
-                            <a href="inspiration.html">
+                            <a href="/inspiration.html">
                                 CARE
                             </a>
                             <ul>
