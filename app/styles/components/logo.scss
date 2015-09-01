@@ -57,9 +57,19 @@ svg.logo {
 
 
 /* footer */
-footer .logo {
+footer {
 	svg.logo {
+		position: relative;
+		top: -20px;
 		width: 100px;
 		height: auto;
+	}
+	@media (max-width: 768px) {
+		.row > * {
+			text-align: center;
+		}
+		.social-list {
+			margin-top: 20px;	
+		}
 	}
 }

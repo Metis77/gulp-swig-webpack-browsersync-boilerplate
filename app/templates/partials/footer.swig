@@ -6,7 +6,7 @@
 			</div>
 			<div class="col-sm-6 text-center">
 				
-				<ul class="list-inline social-list">
+				<ul class="list-inline">
 					<li><a href="#">Kontakt / Händler</a></li>
 					<li><a href="#">Unternehmen</a></li>
 					<li><a href="#">Datenschutz</a></li>
