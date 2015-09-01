@@ -25,9 +25,10 @@ svg.logo {
   	}
 
 
- //  	.page_home & {
-	// 	width: 60%;
-	// }
+	.-small & {
+		max-height: 100%;
+		width: 100%;
+	}
 }
 
 
@@ -50,6 +51,9 @@ svg.logo {
 		}
 	}
 }
+
+
+
 
 
 /* footer */

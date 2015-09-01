@@ -1,21 +1,20 @@
 
 $(document).ready(function() { 
 "use strict";
-
+	
+	var throttleTimer;
+	var isMobile;
 	var breakpointTablet = 990;
-	var isMobile = (/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera);
+	
 
 
 
 
 
-
-	/*
-	 * toggle video and hover images 
-	 * if > tablet && no mobile
-	 */
-	$(window).on("load resize",function(e) {
-
+	function doneResizing(argument) {
+		var thatWidth = document.documentElement.clientWidth;
+		isMobile = (/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)
+		
 		/* video && video bg */ 
 		if (!isMobile) {
 			$('video').prop({
@@ -29,29 +28,41 @@ $(document).ready(function() {
 		}
 	
 		/* lazyload */
-		if (window.innerWidth > breakpointTablet && !isMobile) {
+		if ( thatWidth > breakpointTablet && !isMobile) {
 			$('.bg-container .bg-item img').addClass('lazyload')
 		}
-		if ( window.innerWidth < breakpointTablet ) {
-			$('.image-bg.-is-small img').addClass('lazyload')
+		if ( thatWidth < breakpointTablet ) {
+			$('.image-bg.-small img').addClass('lazyload')
 		}
 
 		if ( isMobile ) {
-			$('.image-bg.-is-small img').addClass('lazyload')
+			$('.image-bg.-small img').addClass('lazyload')
 		}
 
 
 		/* mobile test */
 		if ( isMobile ) {
-			$('.image-bg.-is-small').addClass('-is-mobile')
+			$('.image-bg.-small').addClass('-is-mobile')
 		} else {
-			$('.image-bg.-is-small').removeClass('-is-mobile')
+			$('.image-bg.-small').removeClass('-is-mobile')
 		}
 
 
+		// console.log('-is-mobile: '+ isMobile)
+		// console.log('document.documentElement.clientWidth '+thatWidth)
+	}
+	doneResizing()
 
+
+
+	/*
+	 * toggle video and hover images 
+	 * if > tablet && no mobile
+	 */
+	$(window).on("resize",function(e) {
+		clearTimeout(throttleTimer);
+    	throttleTimer = setTimeout(doneResizing, 100);
 	})
-
 
 
 
@@ -70,6 +81,23 @@ $(document).ready(function() {
 
 		
 	});
+
+
+
+
+	/*
+	 * scroll animation
+	 */
+	$('a[href^=#]').on('click', function(e){
+	    var href = $(this).attr('href');
+	    $('html, body').animate({
+	        scrollTop:$(href).offset().top - $('.nav-bar').outerHeight()
+	    },'slow');
+	    e.preventDefault();
+	});
+
+
+
 
 
 });

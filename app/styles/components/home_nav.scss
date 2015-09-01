@@ -12,19 +12,21 @@
 		}
 	}
 
-
-
 	/* 
 	 * mobile
 	 */
-	.-is-small & {
+	.-mobile-headline & {
+		display: block;
+		margin: 0 auto;
+		width: 80%;
 		text-align: center;
-	}
-	// @media all and (max-width: $breakpointTablet) {
-	// 	display: none;
-	// 	&.-is-small {
-	// 		display: block;
-	// 	}
-	// }
-	
+
+		.skip {
+			margin-top: 20%;
+			.icon {
+				font-size: 40px;
+			}
+		}
+
+	}	
 }

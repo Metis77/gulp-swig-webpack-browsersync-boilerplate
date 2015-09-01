@@ -1,10 +1,12 @@
 
 
 .background-image-holder.srcset {
-
-	.parallax>& img{
+	
+	// .-small & img,
+	.parallax>& img	{
 		max-width: inherit;
 	}
+	
 	img {
 		//  reset
 		display: block;	

@@ -9,7 +9,7 @@
 {% endblock %}
 
 {% block content %}
-<section class="cover image-bg fullscreen overlay overlay-heavy bg-dark vid-bg pt-xs-120 -is-desktop">
+<section class="cover image-bg fullscreen overlay bg-dark vid-bg pt-xs-120 -desktop">
     <div class="fs-vid-background">
         <video muted loop preload="none">
             <source src="/assets/video/wave.webm" type="video/webm">
@@ -327,7 +327,7 @@
 #}
 
 
-<section class="image-bg overlay pt180 pb180 pt-xs-40 pb-xs-40 -is-small">
+<section class="image-bg overlay pt64 pb64 .pt-sm-40 .pb-sm-40 pt-xs-40 pb-xs-48 -small -mobile-headline">
     <div class="background-image-holder">
         <img alt="image" class="background-image" src="/assets/img/home15.jpg" />
     </div>
@@ -343,15 +343,18 @@
 				{% include '../partials/KERALOCK-Logo.svg' %}
 			</div>
 			<div class="skip">
-				<span class="icon ti-angle-double-down"></span>
+				<a href="#anchor-inspiration" class="anchor-link">
+					<div>NEXT</div>
+					<span class="icon ti-angle-double-down"></span>
+				</a>
 			</div>					
 		</div>
     </div>
     <!--end of container-->
 </section>
 
-<section class="image-bg bg-dark overlay pt160 pb160 pt-xs-40 pb-xs-40 -is-small">
-	<a href="inspiration.html">
+<section id="anchor-inspiration" class="image-bg bg-dark overlay pt160 pb160 .pt-sm-96 .pb-sm-96 pt-xs-48 pb-xs-48 -small">
+	<a href="inspiration.html" >
 	    <div class="background-image-holder srcset INSPIRATION-02-Haarfarben">
 	        <img
 	            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
@@ -377,7 +380,7 @@
     </a>
 </section>
 
-<section class="image-bg bg-dark overlay pt160 pb160 pt-xs-40 pb-xs-40 -is-small">
+<section class="image-bg bg-dark overlay pt160 pb160 .pt-sm-96 .pb-sm-96 pt-xs-48 pb-xs-48 -small">
 	<a href="inspiration.html">
 	    <div class="background-image-holder srcset INSPIRATION-02-Haarfarben">
 	        <img
@@ -404,7 +407,7 @@
     </a>
 </section>
 
-<section class="image-bg bg-dark overlay pt160 pb160 pt-xs-40 pb-xs-40 -is-small">
+<section class="image-bg bg-dark overlay pt160 pb160 .pt-sm-96 .pb-sm-96 pt-xs-48 pb-xs-48 -small">
 	<a href="inspiration.html">
 	    <div class="background-image-holder srcset INSPIRATION-02-Haarfarben">
 	        <img
@@ -431,7 +434,7 @@
     </a>
 </section>
 
-<section class="image-bg bg-dark overlay pt160 pb160 pt-xs-40 pb-xs-40 -is-small">
+<section class="image-bg bg-dark overlay pt160 pb160 .pt-sm-96 .pb-sm-96 pt-xs-48 pb-xs-48 -small">
 	<a href="inspiration.html">
 	    <div class="background-image-holder srcset INSPIRATION-02-Haarfarben">
 	        <img

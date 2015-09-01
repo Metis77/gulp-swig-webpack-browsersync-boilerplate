@@ -1,10 +1,15 @@
 
+.cover {
+	.nav-home {
+		z-index: 20;
+	}
+}
 
 
-
-
-.fullscreen {
-	.bg-container,
+/*
+ * hover images
+ */
+.cover {
 	.bg-item  {
 	    height: 100%;
 	    width: 100%;
@@ -33,11 +38,6 @@
 	    }
     }
 
-	.nav-home {
-		z-index: 20;
-	}
-
-
 	/* 
 	 * interaction 
 	 */
@@ -53,9 +53,6 @@
 			opacity .3s ease-in-out,
 			filer .3s ease-in-out;
 	}
-
-
-
 	&.is-hover-inspiration .bg-item-inspiration,
 	&.is-hover-deluxe .bg-item-deluxe,
 	&.is-hover-nightlife .bg-item-nightlife,
@@ -65,23 +62,25 @@
 		filter: sepia(25%);
 	}
 
-	/* mobile / small */
-	// .bg-container {
-	// 	display: none;
-	// }
-
-	
-
 }
+
+
 
 
 /*
- * fs-vid-background
+ * video-background
  */
-.overlay .fs-vid-background:before {
-	display: none;
-}
-.fs-vid-background {
+.page_home .fs-vid-background {
+
+	/* reset */
+	z-index: inherit;
+	&:before {
+		display: none;
+	}
+
+
+
+	/* custom styles */
 	@media all and (max-width: $breakpointTablet) {
 		display: none;
 	}
@@ -97,6 +96,8 @@
 
 
 		transform: translate(-50%,-50%); 
+
+
 	}
 
 	+ .background-image-holder {
@@ -108,26 +109,33 @@
 		}
 		background: none;
 	}
-
 }
+
+
+
+
 
 
 /*
  * mobile content
  */
-.-is-desktop {
+.-desktop {
 	@media all and (max-width: $breakpointTablet) {
 		display: none;
 	}
 }
-.-is-small {
+.-small {
 	display: none;
+	
 	@media all and (max-width: $breakpointTablet) {
 		display: block;
+
 	}
-	&.-is-mobile {
+
+	&.-is-mobile:not(.-mobile-headline) {
 		display: block;
 	}
+	
 }
 	
 
