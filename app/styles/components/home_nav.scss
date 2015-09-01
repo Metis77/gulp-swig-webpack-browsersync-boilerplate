@@ -17,15 +17,14 @@
 	/* 
 	 * mobile
 	 */
-	&.-is-mobile {
-		display: none;
+	.-is-small & {
 		text-align: center;
 	}
-	@media all and (max-width: $breakpointTablet) {
-		display: none;
-		&.-is-mobile {
-			display: block;
-		}
-	}
+	// @media all and (max-width: $breakpointTablet) {
+	// 	display: none;
+	// 	&.-is-small {
+	// 		display: block;
+	// 	}
+	// }
 	
 }

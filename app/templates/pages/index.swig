@@ -12,9 +12,9 @@
 <section class="cover image-bg fullscreen overlay overlay-heavy bg-dark vid-bg pt-xs-120 -is-desktop">
     <div class="fs-vid-background">
         <video muted loop preload="none">
-            <source src="/assets/video/video.webm" type="video/webm">
-            <source src="/assets/video/video.mp4" type="video/mp4">
-            <source src="/assets/video/video.ogv" type="video/ogg">
+            <source src="/assets/video/wave.webm" type="video/webm">
+            <source src="/assets/video/wave.mp4" type="video/mp4">
+            <source src="/assets/video/wave.ogv" type="video/ogg">
         </video>
     </div>
     <div class="background-image-holder">
@@ -320,9 +320,16 @@
 
 
 
-<section class="image-bg overlay pt180 pb180 pt-xs-40 pb-xs-40 -is-mobile">
+
+
+{# 
+	Mobile HTML
+#}
+
+
+<section class="image-bg overlay pt180 pb180 pt-xs-40 pb-xs-40 -is-small">
     <div class="background-image-holder">
-        <img alt="image" class="background-image" src="/assets/img/fitness3.jpg" />
+        <img alt="image" class="background-image" src="/assets/img/home15.jpg" />
     </div>
     <div class="container">
         {# <div class="row">
@@ -331,7 +338,7 @@
                 <h1>KERALOCK INSPIRATION</h1>
             </div>
         </div> #}
-        <div class="nav-home -is-mobile">
+        <div class="nav-home">
 			<div class="logo">
 				{% include '../partials/KERALOCK-Logo.svg' %}
 			</div>
@@ -343,7 +350,7 @@
     <!--end of container-->
 </section>
 
-<section class="image-bg bg-dark overlay pt160 pb160 pt-xs-40 pb-xs-40 -is-mobile">
+<section class="image-bg bg-dark overlay pt160 pb160 pt-xs-40 pb-xs-40 -is-small">
 	<a href="inspiration.html">
 	    <div class="background-image-holder srcset INSPIRATION-02-Haarfarben">
 	        <img
@@ -356,7 +363,7 @@
 	                ./assets_build/home-mobile/KL-Keyvisual-INSPIRATION.jpg;1600w 1600w,
 	                ./assets_build/home-mobile/KL-Keyvisual-INSPIRATION.jpg;2000w 2000w," 
 	            data-sizes="100vw"
-	            class="lazyload">
+	            class="">
 	    </div>
 	    <div class="container">
 	        <div class="row">
@@ -370,7 +377,7 @@
     </a>
 </section>
 
-<section class="image-bg bg-dark overlay pt160 pb160 pt-xs-40 pb-xs-40 -is-mobile">
+<section class="image-bg bg-dark overlay pt160 pb160 pt-xs-40 pb-xs-40 -is-small">
 	<a href="inspiration.html">
 	    <div class="background-image-holder srcset INSPIRATION-02-Haarfarben">
 	        <img
@@ -383,7 +390,7 @@
 	                ./assets_build/home-mobile/KL-Keyvisual-DELUXE.jpg;1600w 1600w,
 	                ./assets_build/home-mobile/KL-Keyvisual-DELUXE.jpg;2000w 2000w," 
 	            data-sizes="100vw"
-	            class="lazyload">
+	            class="">
 	    </div>
 	    <div class="container">
 	        <div class="row">
@@ -397,7 +404,7 @@
     </a>
 </section>
 
-<section class="image-bg bg-dark overlay pt160 pb160 pt-xs-40 pb-xs-40 -is-mobile">
+<section class="image-bg bg-dark overlay pt160 pb160 pt-xs-40 pb-xs-40 -is-small">
 	<a href="inspiration.html">
 	    <div class="background-image-holder srcset INSPIRATION-02-Haarfarben">
 	        <img
@@ -410,7 +417,7 @@
 	                ./assets_build/home-mobile/KL-Keyvisual-NIGHT.jpg;1600w 1600w,
 	                ./assets_build/home-mobile/KL-Keyvisual-NIGHT.jpg;2000w 2000w," 
 	            data-sizes="100vw"
-	            class="lazyload">
+	            class="">
 	    </div>
 	    <div class="container">
 	        <div class="row">
@@ -424,7 +431,7 @@
     </a>
 </section>
 
-<section class="image-bg bg-dark overlay pt160 pb160 pt-xs-40 pb-xs-40 -is-mobile">
+<section class="image-bg bg-dark overlay pt160 pb160 pt-xs-40 pb-xs-40 -is-small">
 	<a href="inspiration.html">
 	    <div class="background-image-holder srcset INSPIRATION-02-Haarfarben">
 	        <img
@@ -437,7 +444,7 @@
 	                ./assets_build/home-mobile/KL-Keyvisual-CARE.jpg;1600w 1600w,
 	                ./assets_build/home-mobile/KL-Keyvisual-CARE.jpg;2000w 2000w," 
 	            data-sizes="100vw"
-	            class="lazyload">
+	            class="">
 	    </div>
 	    <div class="container">
 	        <div class="row">

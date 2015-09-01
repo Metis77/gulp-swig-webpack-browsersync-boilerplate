@@ -1,16 +1,15 @@
-$breakpointTablet : 1030px;
+$breakpointTablet : 990px;
 
 @import 'base/bootstrap';
 
-@import 'vendor/flexslider';
+// @import 'vendor/flexslider';
 // @import 'vendor/lightbox.min';
-@import 'vendor/ytplayer';
+// @import 'vendor/ytplayer';
 
-@import 'components/themify-icons';
-@import 'components/theme_less2sass';
-// @import 'components/theme';
+@import 'theme/themify-icons';
+@import 'theme/theme_less2sass';
 
-@import 'components/font-robotocondensed';
+@import 'theme/font-robotocondensed';
 /*@import 'font-oswald';*/
 
 

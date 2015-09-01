@@ -4,7 +4,7 @@
 
 
 .fullscreen {
-	// .bg-container,
+	.bg-container,
 	.bg-item  {
 	    height: 100%;
 	    width: 100%;
@@ -17,7 +17,7 @@
 	    
 	    z-index: 10;
 	}
-
+	
 	.bg-item {
 		background-color: black;
 	    img {
@@ -65,6 +65,10 @@
 		filter: sepia(25%);
 	}
 
+	/* mobile / small */
+	// .bg-container {
+	// 	display: none;
+	// }
 
 	
 
@@ -74,6 +78,9 @@
 /*
  * fs-vid-background
  */
+.overlay .fs-vid-background:before {
+	display: none;
+}
 .fs-vid-background {
 	@media all and (max-width: $breakpointTablet) {
 		display: none;
@@ -93,9 +100,10 @@
 	}
 
 	+ .background-image-holder {
-		
+		&.-is-novideo {
+			background: url(/assets/img/home15.jpg);
+		}
 		@media all and (max-width: $breakpointTablet) {
-
 			background: url(/assets/img/home15.jpg);
 		}
 		background: none;
@@ -110,6 +118,15 @@
 .-is-desktop {
 	@media all and (max-width: $breakpointTablet) {
 		display: none;
+	}
+}
+.-is-small {
+	display: none;
+	@media all and (max-width: $breakpointTablet) {
+		display: block;
+	}
+	&.-is-mobile {
+		display: block;
 	}
 }
 	

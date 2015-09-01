@@ -1,11 +1,13 @@
 
 
 .background-image-holder.srcset {
+
+	.parallax>& img{
+		max-width: inherit;
+	}
 	img {
 		//  reset
 		display: block;	
-		max-width: inherit;
-
 		
 		// fill container
 		position: absolute;
@@ -17,12 +19,11 @@
 
 		min-width: 100%;                   // Expand
 		min-height: 100%; 
-		width: 100%;                       // Keep aspect ratio
+		width: auto;                       // Keep aspect ratio
 		height: auto;
 		z-index: -1;                       // Put on background
 		overflow: hidden;
 	}
-
 }
 
 
