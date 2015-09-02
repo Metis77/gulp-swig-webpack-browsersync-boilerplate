@@ -32,8 +32,9 @@
     				assets_build/home/KL-Keyvisual-INSPIRATION.jpg;2200w 2200w,
     				assets_build/home/KL-Keyvisual-INSPIRATION.jpg;2600w 1000w,
     				assets_build/home/KL-Keyvisual-INSPIRATION.jpg;3000w 3000w" 
-    			sizes="100vw" 
-    			class="bg1">
+    			data-sizes="100vw" 
+    			class="bg1"
+    			alt="">
     		<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
     			data-srcset="
     				assets_build/home/KL-Keyvisual-INSPIRATION.png;1000w 1000w,
@@ -43,8 +44,9 @@
     				assets_build/home/KL-Keyvisual-INSPIRATION.png;2200w 2200w,
     				assets_build/home/KL-Keyvisual-INSPIRATION.png;2600w 1000w,
     				assets_build/home/KL-Keyvisual-INSPIRATION.png;3000w 3000w" 
-    			sizes="100vw" alt="" 
-    			class="bg2">
+    			data-sizes="100vw"
+    			class="bg2"
+    			alt="">
     	</div>
 
     	<div class="bg-item overlay bg-item-deluxe">
@@ -57,8 +59,9 @@
     				assets_build/home/KL-Keyvisual-DELUXE.jpg;2200w 2200w,
     				assets_build/home/KL-Keyvisual-DELUXE.jpg;2600w 1000w,
     				assets_build/home/KL-Keyvisual-DELUXE.jpg;3000w 3000w" 
-    			sizes="100vw" 
-    			class="bg1">
+    			data-sizes="100vw" 
+    			class="bg1"
+    			alt="">
     		<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
     			data-srcset="
     				assets_build/home/KL-Keyvisual-DELUXE.png;1000w 1000w,
@@ -68,8 +71,9 @@
     				assets_build/home/KL-Keyvisual-DELUXE.png;2200w 2200w,
     				assets_build/home/KL-Keyvisual-DELUXE.png;2600w 1000w,
     				assets_build/home/KL-Keyvisual-DELUXE.png;3000w 3000w" 
-    			sizes="100vw" alt="" 
-    			class="bg2">
+    			data-sizes="100vw" 
+    			class="bg2"
+    			alt="">
     	</div>
 
     	<div class="bg-item overlay bg-item-nightlife">
@@ -82,8 +86,9 @@
     				assets_build/home/KL-Keyvisual-NIGHT.jpg;2200w 2200w,
     				assets_build/home/KL-Keyvisual-NIGHT.jpg;2600w 1000w,
     				assets_build/home/KL-Keyvisual-NIGHT.jpg;3000w 3000w" 
-    			sizes="100vw" 
-    			class="bg1">
+    			data-sizes="100vw" 
+    			class="bg1"
+    			alt="">
     		<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
     			data-srcset="
     				assets_build/home/KL-Keyvisual-NIGHT.png;1000w 1000w,
@@ -93,8 +98,9 @@
     				assets_build/home/KL-Keyvisual-NIGHT.png;2200w 2200w,
     				assets_build/home/KL-Keyvisual-NIGHT.png;2600w 1000w,
     				assets_build/home/KL-Keyvisual-NIGHT.png;3000w 3000w" 
-    			sizes="100vw" alt="" 
-    			class="bg2">
+    			data-sizes="100vw" 
+    			class="bg2"
+    			alt="">
 
     	</div>
 
@@ -108,8 +114,9 @@
     				assets_build/home/KL-Keyvisual-CARE.jpg;2200w 2200w,
     				assets_build/home/KL-Keyvisual-CARE.jpg;2600w 1000w,
     				assets_build/home/KL-Keyvisual-CARE.jpg;3000w 3000w" 
-    			sizes="100vw" 
-    			class="bg1">
+    			data-sizes="100vw" 
+    			class="bg1"
+    			alt="">
     		<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
     			data-srcset="
     				assets_build/home/KL-Keyvisual-CARE.png;1000w 1000w,
@@ -119,8 +126,9 @@
     				assets_build/home/KL-Keyvisual-CARE.png;2200w 2200w,
     				assets_build/home/KL-Keyvisual-CARE.png;2600w 1000w,
     				assets_build/home/KL-Keyvisual-CARE.png;3000w 3000w" 
-    			sizes="100vw" alt="" 
-    			class="bg2">
+    			data-sizes="100vw"
+    			class="bg2"
+    			alt="">
     	</div>
 
     </div>
@@ -131,7 +139,7 @@
 				<div class="logo">
 					<a href="/">{% include '../partials/KERALOCK-Logo.svg' %}</a>
 				</div>
-				<div class="item-nav" data="inspiration">
+				<div class="item-nav" data-kat="inspiration">
 					<div class="center-wrapper sound-roll1">
 						<div class="link-wrapper">
 							<a href="inspiration.html" data-linkimg="competition">
@@ -183,7 +191,7 @@
 		             </div>
 		        </div>
 		        
-		       	<div class="item-nav" data="deluxe">
+		       	<div class="item-nav" data-kat="deluxe">
 		        	<div class="center-wrapper">
 			        	<div class="link-wrapper sound-roll1">
 				        	<a href="inspiration.html">
@@ -204,26 +212,27 @@
 				             		</div>	
 			             		</a>
 			             	</li>
-			             								<li class="sound-roll2">             	
-									<a class="all-episodes" href="http://www.pacorabanne.com/invictus/en-WW/#!/episodes">
-										<div class="link-text">
-											All the episodes										<div class="link-hover-wrapper">
-												<div class="link-hover">
-													All the episodes											</div>
-											</div>
-										</div>	
-									</a>
-								</li>            	
-									         		<div class="cursor">
-			            		<div class="fine"></div>
-			            		<div class="large"></div>
-			            	</div>
+			             	<li class="sound-roll2">             	
+								<a class="all-episodes" href="http://www.pacorabanne.com/invictus/en-WW/#!/episodes">
+									<div class="link-text">
+										All the episodes										<div class="link-hover-wrapper">
+											<div class="link-hover">
+												All the episodes											</div>
+										</div>
+									</div>	
+								</a>
+								<div class="cursor">
+				            		<div class="fine"></div>
+				            		<div class="large"></div>
+				            	</div>
+							</li>            	
+			         		
 				                                    	          	
 			             </ul>
 		         	</div>
 		        </div>
 			             
-		        <div class="item-nav" data="nightlife">
+		        <div class="item-nav" data-kat="nightlife">
 		        	<div class="center-wrapper">
 			        	<div class="link-wrapper sound-roll1">
 				        	<a href="inspiration.html" data-linkimg="candidats">
@@ -236,7 +245,7 @@
 		             </div>
 		        </div>                    
 
-		        <div class="item-nav" data="care">
+		        <div class="item-nav" data-kat="care">
 		        	        	
 		        	<div class="center-wrapper">
 			        	<div class="link-wrapper sound-roll1">
@@ -366,7 +375,8 @@
 	                ./assets_build/home-mobile/KL-Keyvisual-INSPIRATION.jpg;1600w 1600w,
 	                ./assets_build/home-mobile/KL-Keyvisual-INSPIRATION.jpg;2000w 2000w," 
 	            data-sizes="100vw"
-	            class="">
+	            class=""
+	            alt="">
 	    </div>
 	    <div class="container">
 	        <div class="row">
@@ -393,7 +403,8 @@
 	                ./assets_build/home-mobile/KL-Keyvisual-DELUXE.jpg;1600w 1600w,
 	                ./assets_build/home-mobile/KL-Keyvisual-DELUXE.jpg;2000w 2000w," 
 	            data-sizes="100vw"
-	            class="">
+	            class=""
+	            alt="">
 	    </div>
 	    <div class="container">
 	        <div class="row">
@@ -420,7 +431,8 @@
 	                ./assets_build/home-mobile/KL-Keyvisual-NIGHT.jpg;1600w 1600w,
 	                ./assets_build/home-mobile/KL-Keyvisual-NIGHT.jpg;2000w 2000w," 
 	            data-sizes="100vw"
-	            class="">
+	            class=""
+	            alt="">
 	    </div>
 	    <div class="container">
 	        <div class="row">
@@ -447,7 +459,8 @@
 	                ./assets_build/home-mobile/KL-Keyvisual-CARE.jpg;1600w 1600w,
 	                ./assets_build/home-mobile/KL-Keyvisual-CARE.jpg;2000w 2000w," 
 	            data-sizes="100vw"
-	            class="">
+	            class=""
+	            alt="">
 	    </div>
 	    <div class="container">
 	        <div class="row">

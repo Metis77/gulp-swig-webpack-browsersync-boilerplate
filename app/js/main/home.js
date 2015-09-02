@@ -74,7 +74,7 @@ $(document).ready(function() {
 		event.preventDefault();
 
 		var that = $(this)
-		var data = that.parent().parent().attr('data')
+		var data = that.parent().parent().attr('data-kat')
 
 		$(this).toggleClass('is-nav-hover')
 		$('.fullscreen').toggleClass('is-hover is-hover-'+data);

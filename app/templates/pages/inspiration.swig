@@ -42,7 +42,8 @@
                 ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-02-Haarfarben.jpg;1600w 1600w,
                 ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-02-Haarfarben.jpg;2000w 2000w," 
             data-sizes="100vw"
-            class="lazyload">
+            class="lazyload"
+            alt="">
     </div>
     <div class="container">
         <div class="row">
@@ -68,7 +69,8 @@
                 ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-03-Blondierungen.jpg;1600w 1600w,
                 ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-03-Blondierungen.jpg;2000w 2000w," 
             data-sizes="100vw"
-            class="lazyload">
+            class="lazyload"
+            alt="">
     </div>
     <div class="container">
         <div class="row">
@@ -94,7 +96,8 @@
                 ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-05-Entferner.jpg;1600w 1600w,
                 ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-05-Entferner.jpg;2000w 2000w," 
             data-sizes="100vw"
-            class="lazyload">
+            class="lazyload"
+            alt="">
     </div>
     <div class="container">
         <div class="row">
@@ -121,7 +124,8 @@
                 ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-04-Toenung.jpg;1600w 1600w,
                 ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-04-Toenung.jpg;2000w 2000w," 
             data-sizes="100vw"
-            class="lazyload">
+            class="lazyload"
+            alt="">
     </div>
     <div class="container">
         <div class="row">

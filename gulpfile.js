@@ -22,7 +22,7 @@ var gulp    		= require("gulp"),
 
 var app   = './app/',
     dist  = './dist/',
-    srcImages = 'assets/**/*';
+    srcImages = './assets_generate/**/*';
 
 var imgFilter = filter('**/*.+(jpg|png|gif)', {restore: true});
 
@@ -149,7 +149,7 @@ gulp.task('js', function() {
             app+'js/main/*.js',
         ])
         .pipe(concat('main.js'))
-        // .pipe(uglify())
+        .pipe(uglify())
         .pipe(gulp.dest(dist+'js/'))
         .on("end", reload);
 });
