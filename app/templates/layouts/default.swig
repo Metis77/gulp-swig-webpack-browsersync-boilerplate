@@ -13,10 +13,12 @@
 		{# <script src="/assets/js/respimage.min.js" async=""></script>
 		<script src="/assets/js/lazysizes.min.js" async=""></script>
         <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> #}
+		
 
         <script>
         	(function(h){h.className = h.className.replace('no-js', '')})(document.documentElement)
         </script>
+
         
     </head>
     <body class="page_{{ page }}">
@@ -33,23 +35,23 @@
 				{% include '../partials/footer.swig' %}
 			{% endblock %}
 		</div>
-
-
-	    <script src="/assets/js/basket.full.min.js"></script>
+		
+		<script src="/assets/js/basket.full.min.js"></script>
 		<script>
 			basket
 				.require(
 					{ url: 'assets/js/respimage.min.js'},
 					{ url: 'assets/js/lazysizes.min.js'},
-					{ url: 'https://code.jquery.com/jquery-1.11.3.min.js' }
+					{ url: 'assets/js/jquery-1.11.3.min.js' }
 				)
 				.then(function () {
-					basket
-						.require(
-							{ url: '/js/main.js' }
-						)
-				});
+					basket.require({ url: '/js/main.js' });
+			    }, function (error) {
+			        console.log(error);
+			    });
 		</script>
+
+	    
 
 	    {# <script src="/js/main.js"></script> #}
     </body>

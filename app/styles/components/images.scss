@@ -2,10 +2,7 @@
 
 .background-image-holder.srcset {
 	
-	// .-small & img,
-	.parallax>& img	{
-		max-width: inherit;
-	}
+	
 	
 	img {
 		//  reset
@@ -26,7 +23,22 @@
 		z-index: -1;                       // Put on background
 		overflow: hidden;
 	}
+	
+
+	.parallax > & {
+		@media (max-width: 767px) {
+		    top: -50vh !important;
+		    transform: none !important;
+		}
+
+		// .-small & img,
+		img {
+			max-width: inherit;
+		}
+	}
+
 }
+
 
 
 
