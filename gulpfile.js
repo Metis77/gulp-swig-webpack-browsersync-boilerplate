@@ -1,9 +1,7 @@
 var gulp    		= require("gulp"),
     gutil 			= require("gulp-util"),
-    filter          = require("gulp-filter");
     inlineResize    = require("gulp-inline-resize"),
     gm              = require('gulp-gm'),
-    changed         = require('gulp-changed'),
 
     concat          = require('gulp-concat'),
     uglify          = require('gulp-uglify'),
@@ -20,13 +18,18 @@ var gulp    		= require("gulp"),
     merge           = require("merge-stream");
 
 var newer = require('gulp-newer');
+var plumber = require('gulp-plumber');
 
+
+
+
+/*
+ * myVars
+ */
 var app         = './app/',
     dist        = './dist/',
     assets      = ['./assets/**/*', './assets/**/.*'],
     assetsImages = './assets_generate/**/*';
-
-var imgFilter   = filter('**/*.+(jpg|png|gif)', {restore: true})
 
 
 /*
@@ -47,84 +50,19 @@ gulp.task('production', function() {
 /**
  * Templates task - compiles templates.
  */
-// function getTemplates() {
-//     var templateStream = gulp.src(app+'templates/pages/**/*.swig', {
-//             base: app+'templates/pages/'
-//         })
-//         .pipe(swig({
-//             defaults: { cache: false },
-//             load_json: true,
-//             json_path: app+'templates/data/'
-//         }));
-
-//     var assetsStream = gulp.src(assetsImages);
-
-//     return merge(templateStream, assetsStream)
-//         // .pipe(changed(app+'templates/pages/**/*'))
-//         .pipe(inlineResize({replaceIn:[".html"]}));
-// }
-
-// gulp.task('templates', function() {
-//   return getTemplates()
-//     // .pipe(imgFilter)
-//     // .pipe(gm(function (gmfile) {
-//     //   return gmfile.quality(80);
-//     // }))
-//     // .pipe(imgFilter.restore)
-//     .pipe(changed(dist))
-//     .pipe(gulp.dest(dist))
-//     .on("end", reload);
-// });
-
-
-
 gulp.task('templates', function() {
     var templateStream = gulp.src(app+'templates/pages/**/*.swig', {
             base: app+'templates/pages/'
         })
+        .pipe(plumber())
         .pipe(swig({
             defaults: { cache: false },
             load_json: true,
             json_path: app+'templates/data/'
-        }));
-
-    var assetsStream = gulp.src(assetsImages);
-
-    return merge(templateStream, assetsStream)
-        .pipe(newer(dist+'*.html'))
-        .pipe(inlineResize({replaceIn:[".html"]}))
-        .pipe(gulp.dest(dist))
-        .on("end", reload);
-});
-
-
-
-
-
-
-
-
-/**
- * img compression
- */
-gulp.task('img', function () {
-  gulp.src(dist+'assets_build/**/*')
-    .pipe(gm(function (gmfile) {
-      return gmfile.quality(80);
-    }))
-    .pipe(gulp.dist('./dist/assets_build/'));
-});
-
-
-
-
-
-/**
- *  SASS
- *  https://github.com/sindresorhus/gulp-autoprefixer/issues/8
- */
-function getSass() {
+        }))
+    
     var styleStream = gulp.src(app + 'styles/main.scss')
+        .pipe(plumber())
         .pipe(sourcemaps.init())
         .pipe(sass(
             {
@@ -148,25 +86,36 @@ function getSass() {
                 ],
             }
         ))
-        .pipe(sourcemaps.write('.'));
 
     var assetsStream = gulp.src(assetsImages);
 
-    return merge(styleStream, assetsStream)
-          .pipe(inlineResize({replaceIn:[".css"]}));
-}
-
-gulp.task('sass', function() {
-  return getSass()
-    // .pipe(imgFilter)
-    // .pipe(gm(function (gmfile) {
-    //   return gmfile.quality(80);
-    // }))
-    // .pipe(imgFilter.restore)
-    .pipe(gulp.dest(dist))
-    .on("end", reload);
+    return merge(templateStream, assetsStream, styleStream)
+        .pipe(newer(dist+'*.html'))
+        .pipe(sourcemaps.write('.'))
+        .pipe(inlineResize({replaceIn:['.html','.css']}))
+        
+        .pipe(gulp.dest(dist))
+        .on("end", reload);
 });
 
+
+
+
+
+
+
+
+/**
+ * img compression
+ */
+gulp.task('img', function () {
+  gulp.src(dist+'assets_build/**/*')
+    .pipe(plumber())
+    .pipe(gm(function (gmfile) {
+      return gmfile.quality(80);
+    }))
+    .pipe(gulp.dist('./dist/assets_build/'));
+});
 
 
 
@@ -180,6 +129,7 @@ gulp.task('js', function() {
             app+'js/libraries/*.js',
             app+'js/main/*.js',
         ])
+        .pipe(plumber())
         .pipe(concat('main.js'))
         .pipe(uglify())
         .pipe(gulp.dest(dist+'js/'))
@@ -193,6 +143,7 @@ gulp.task('js', function() {
  */
 gulp.task('copy', function () {
     return gulp.src(assets)
+        .pipe(plumber())
         .pipe(newer(dist))
         .pipe(gulp.dest(dist))
         .on("end", reload);
@@ -205,7 +156,7 @@ gulp.task('copy', function () {
  */
 
 // Static Server + watching scss/html files
-gulp.task('serve', ['templates', 'sass', 'js', 'copy'], function() {
+gulp.task('serve', ['templates', 'js', 'copy'], function() {
 
     browserSync.init({
         server: dist,
@@ -215,8 +166,8 @@ gulp.task('serve', ['templates', 'sass', 'js', 'copy'], function() {
     });
 
     gulp.watch(app + 'templates/**/*', ['templates']);
+    gulp.watch(app + 'styles/**/*', ['templates']);
     gulp.watch(app + 'js/**/*', ['js']);
-    gulp.watch(app + 'styles/**/*', ['sass']);
     gulp.watch(assets, ['copy'])
 
 });

@@ -28,10 +28,7 @@
     				assets_build/home/KL-Keyvisual-INSPIRATION.jpg;1000w 1000w,
     				assets_build/home/KL-Keyvisual-INSPIRATION.jpg;1300w 1300w,
     				assets_build/home/KL-Keyvisual-INSPIRATION.jpg;1600w 1600w,
-    				assets_build/home/KL-Keyvisual-INSPIRATION.jpg;1900w 1900w,
-    				assets_build/home/KL-Keyvisual-INSPIRATION.jpg;2200w 2200w,
-    				assets_build/home/KL-Keyvisual-INSPIRATION.jpg;2600w 1000w,
-    				assets_build/home/KL-Keyvisual-INSPIRATION.jpg;3000w 3000w" 
+    				assets_build/home/KL-Keyvisual-INSPIRATION.jpg;1900w 1900w" 
     			data-sizes="100vw" 
     			class="bg1"
     			alt="">
@@ -40,10 +37,7 @@
     				assets_build/home/KL-Keyvisual-INSPIRATION.png;1000w 1000w,
     				assets_build/home/KL-Keyvisual-INSPIRATION.png;1300w 1300w,
     				assets_build/home/KL-Keyvisual-INSPIRATION.png;1600w 1600w,
-    				assets_build/home/KL-Keyvisual-INSPIRATION.png;1900w 1900w,
-    				assets_build/home/KL-Keyvisual-INSPIRATION.png;2200w 2200w,
-    				assets_build/home/KL-Keyvisual-INSPIRATION.png;2600w 1000w,
-    				assets_build/home/KL-Keyvisual-INSPIRATION.png;3000w 3000w" 
+    				assets_build/home/KL-Keyvisual-INSPIRATION.png;1900w 1900w" 
     			data-sizes="100vw"
     			class="bg2"
     			alt="">
@@ -55,10 +49,7 @@
     				assets_build/home/KL-Keyvisual-DELUXE.jpg;1000w 1000w,
     				assets_build/home/KL-Keyvisual-DELUXE.jpg;1300w 1300w,
     				assets_build/home/KL-Keyvisual-DELUXE.jpg;1600w 1600w,
-    				assets_build/home/KL-Keyvisual-DELUXE.jpg;1900w 1900w,
-    				assets_build/home/KL-Keyvisual-DELUXE.jpg;2200w 2200w,
-    				assets_build/home/KL-Keyvisual-DELUXE.jpg;2600w 1000w,
-    				assets_build/home/KL-Keyvisual-DELUXE.jpg;3000w 3000w" 
+    				assets_build/home/KL-Keyvisual-DELUXE.jpg;1900w 1900w" 
     			data-sizes="100vw" 
     			class="bg1"
     			alt="">
@@ -67,10 +58,7 @@
     				assets_build/home/KL-Keyvisual-DELUXE.png;1000w 1000w,
     				assets_build/home/KL-Keyvisual-DELUXE.png;1300w 1300w,
     				assets_build/home/KL-Keyvisual-DELUXE.png;1600w 1600w,
-    				assets_build/home/KL-Keyvisual-DELUXE.png;1900w 1900w,
-    				assets_build/home/KL-Keyvisual-DELUXE.png;2200w 2200w,
-    				assets_build/home/KL-Keyvisual-DELUXE.png;2600w 1000w,
-    				assets_build/home/KL-Keyvisual-DELUXE.png;3000w 3000w" 
+    				assets_build/home/KL-Keyvisual-DELUXE.png;1900w 1900w" 
     			data-sizes="100vw" 
     			class="bg2"
     			alt="">
@@ -82,10 +70,7 @@
     				assets_build/home/KL-Keyvisual-NIGHT.jpg;1000w 1000w,
     				assets_build/home/KL-Keyvisual-NIGHT.jpg;1300w 1300w,
     				assets_build/home/KL-Keyvisual-NIGHT.jpg;1600w 1600w,
-    				assets_build/home/KL-Keyvisual-NIGHT.jpg;1900w 1900w,
-    				assets_build/home/KL-Keyvisual-NIGHT.jpg;2200w 2200w,
-    				assets_build/home/KL-Keyvisual-NIGHT.jpg;2600w 1000w,
-    				assets_build/home/KL-Keyvisual-NIGHT.jpg;3000w 3000w" 
+    				assets_build/home/KL-Keyvisual-NIGHT.jpg;1900w 1900w" 
     			data-sizes="100vw" 
     			class="bg1"
     			alt="">
@@ -94,10 +79,7 @@
     				assets_build/home/KL-Keyvisual-NIGHT.png;1000w 1000w,
     				assets_build/home/KL-Keyvisual-NIGHT.png;1300w 1300w,
     				assets_build/home/KL-Keyvisual-NIGHT.png;1600w 1600w,
-    				assets_build/home/KL-Keyvisual-NIGHT.png;1900w 1900w,
-    				assets_build/home/KL-Keyvisual-NIGHT.png;2200w 2200w,
-    				assets_build/home/KL-Keyvisual-NIGHT.png;2600w 1000w,
-    				assets_build/home/KL-Keyvisual-NIGHT.png;3000w 3000w" 
+    				assets_build/home/KL-Keyvisual-NIGHT.png;1900w 1900w" 
     			data-sizes="100vw" 
     			class="bg2"
     			alt="">
@@ -110,10 +92,7 @@
     				assets_build/home/KL-Keyvisual-CARE.jpg;1000w 1000w,
     				assets_build/home/KL-Keyvisual-CARE.jpg;1300w 1300w,
     				assets_build/home/KL-Keyvisual-CARE.jpg;1600w 1600w,
-    				assets_build/home/KL-Keyvisual-CARE.jpg;1900w 1900w,
-    				assets_build/home/KL-Keyvisual-CARE.jpg;2200w 2200w,
-    				assets_build/home/KL-Keyvisual-CARE.jpg;2600w 1000w,
-    				assets_build/home/KL-Keyvisual-CARE.jpg;3000w 3000w" 
+    				assets_build/home/KL-Keyvisual-CARE.jpg;1900w 1900w" 
     			data-sizes="100vw" 
     			class="bg1"
     			alt="">
@@ -122,10 +101,7 @@
     				assets_build/home/KL-Keyvisual-CARE.png;1000w 1000w,
     				assets_build/home/KL-Keyvisual-CARE.png;1300w 1300w,
     				assets_build/home/KL-Keyvisual-CARE.png;1600w 1600w,
-    				assets_build/home/KL-Keyvisual-CARE.png;1900w 1900w,
-    				assets_build/home/KL-Keyvisual-CARE.png;2200w 2200w,
-    				assets_build/home/KL-Keyvisual-CARE.png;2600w 1000w,
-    				assets_build/home/KL-Keyvisual-CARE.png;3000w 3000w" 
+    				assets_build/home/KL-Keyvisual-CARE.png;1900w 1900w" 
     			data-sizes="100vw"
     			class="bg2"
     			alt="">
@@ -371,9 +347,7 @@
 	                ./assets_build/home-mobile/KL-Keyvisual-INSPIRATION.jpg;320w 320w,
 	                ./assets_build/home-mobile/KL-Keyvisual-INSPIRATION.jpg;600w 600w,
 	                ./assets_build/home-mobile/KL-Keyvisual-INSPIRATION.jpg;800w 800w,
-	                ./assets_build/home-mobile/KL-Keyvisual-INSPIRATION.jpg;1200w 1200w,
-	                ./assets_build/home-mobile/KL-Keyvisual-INSPIRATION.jpg;1600w 1600w,
-	                ./assets_build/home-mobile/KL-Keyvisual-INSPIRATION.jpg;2000w 2000w," 
+	                ./assets_build/home-mobile/KL-Keyvisual-INSPIRATION.jpg;1000w 1000w" 
 	            data-sizes="100vw"
 	            class=""
 	            alt="">
@@ -399,9 +373,7 @@
 	                ./assets_build/home-mobile/KL-Keyvisual-DELUXE.jpg;320w 320w,
 	                ./assets_build/home-mobile/KL-Keyvisual-DELUXE.jpg;600w 600w,
 	                ./assets_build/home-mobile/KL-Keyvisual-DELUXE.jpg;800w 800w,
-	                ./assets_build/home-mobile/KL-Keyvisual-DELUXE.jpg;1200w 1200w,
-	                ./assets_build/home-mobile/KL-Keyvisual-DELUXE.jpg;1600w 1600w,
-	                ./assets_build/home-mobile/KL-Keyvisual-DELUXE.jpg;2000w 2000w," 
+	                ./assets_build/home-mobile/KL-Keyvisual-DELUXE.jpg;1000w 1000w" 
 	            data-sizes="100vw"
 	            class=""
 	            alt="">
@@ -427,9 +399,7 @@
 	                ./assets_build/home-mobile/KL-Keyvisual-NIGHT.jpg;320w 320w,
 	                ./assets_build/home-mobile/KL-Keyvisual-NIGHT.jpg;600w 600w,
 	                ./assets_build/home-mobile/KL-Keyvisual-NIGHT.jpg;800w 800w,
-	                ./assets_build/home-mobile/KL-Keyvisual-NIGHT.jpg;1200w 1200w,
-	                ./assets_build/home-mobile/KL-Keyvisual-NIGHT.jpg;1600w 1600w,
-	                ./assets_build/home-mobile/KL-Keyvisual-NIGHT.jpg;2000w 2000w," 
+	                ./assets_build/home-mobile/KL-Keyvisual-NIGHT.jpg;1000w 1000w" 
 	            data-sizes="100vw"
 	            class=""
 	            alt="">
@@ -455,9 +425,7 @@
 	                ./assets_build/home-mobile/KL-Keyvisual-CARE.jpg;320w 320w,
 	                ./assets_build/home-mobile/KL-Keyvisual-CARE.jpg;600w 600w,
 	                ./assets_build/home-mobile/KL-Keyvisual-CARE.jpg;800w 800w,
-	                ./assets_build/home-mobile/KL-Keyvisual-CARE.jpg;1200w 1200w,
-	                ./assets_build/home-mobile/KL-Keyvisual-CARE.jpg;1600w 1600w,
-	                ./assets_build/home-mobile/KL-Keyvisual-CARE.jpg;2000w 2000w," 
+	                ./assets_build/home-mobile/KL-Keyvisual-CARE.jpg;1000w 1000w" 
 	            data-sizes="100vw"
 	            class=""
 	            alt="">

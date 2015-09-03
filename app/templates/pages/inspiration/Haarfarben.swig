@@ -28,7 +28,7 @@
 <section class="image-square left">
     <div class="col-md-6 image">
         <div class="background-image-holder">
-            <img alt="image" class="background-image" src="../assets_build/home/KL-Keyvisual-INSPIRATION.jpg;200w" />
+            <img alt="image" class="background-image" src="../assets_build/home/KL-Keyvisual-INSPIRATION.jpg;600w" />
         </div>
     </div>
     <div class="col-md-6 col-md-offset-1 content overflow-hidden">
