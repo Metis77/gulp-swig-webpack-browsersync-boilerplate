@@ -34,15 +34,14 @@
     <div class="background-image-holder srcset INSPIRATION-02-Haarfarben">
         <img
             src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-            data-srcset="
+            srcset="
                 ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-02-Haarfarben.jpg;320w 320w,
                 ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-02-Haarfarben.jpg;600w 600w,
                 ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-02-Haarfarben.jpg;800w 800w,
                 ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-02-Haarfarben.jpg;1200w 1200w,
                 ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-02-Haarfarben.jpg;1600w 1600w,
                 ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-02-Haarfarben.jpg;2000w 2000w," 
-            data-sizes="100vw"
-            class="lazyload"
+            sizes="100vw"
             alt="">
     </div>
     <div class="container">

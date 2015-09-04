@@ -92,8 +92,12 @@ gulp.task('templates', function() {
     return merge(templateStream, assetsStream, styleStream)
         .pipe(newer(dist+'*.html'))
         .pipe(sourcemaps.write('.'))
-        .pipe(inlineResize({replaceIn:['.html','.css']}))
-        
+        .pipe(inlineResize(
+            {
+                replaceIn:['.html','.css'], 
+                naiveCache: {destFolder: dist} 
+            }
+        ))
         .pipe(gulp.dest(dist))
         .on("end", reload);
 });
