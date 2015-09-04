@@ -42,10 +42,11 @@
 				.require(
 					{ url: 'assets/js/respimage.min.js'},
 					{ url: 'assets/js/lazysizes.min.js'},
-					{ url: 'assets/js/jquery-1.11.3.min.js' },
-					{ url: '/js/main.js' }
+					{ url: 'assets/js/jquery-1.11.3.min.js' }
+					
 				)
 				.then(function () {
+					basket.require({ url: '/js/main.js' })
 
 			    }, function (error) {
 			        console.log(error);
