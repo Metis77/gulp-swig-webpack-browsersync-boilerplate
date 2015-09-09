@@ -13,8 +13,9 @@
 		{# <script src="/assets/js/respimage.min.js" async=""></script>
 		<script src="/assets/js/lazysizes.min.js" async=""></script>
         <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> #}
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="/js/main.js" async></script>
 		
-
         <script>
         	(function(h){h.className = h.className.replace('no-js', '')})(document.documentElement)
         </script>
@@ -36,7 +37,7 @@
 			{% endblock %}
 		</div>
 		
-		<script src="/assets/js/basket.full.min.js"></script>
+		{# <script src="/assets/js/basket.full.min.js"></script>
 		<script>
 			basket
 				.require(
@@ -51,10 +52,10 @@
 			    }, function (error) {
 			        console.log(error);
 			    });
-		</script>
+		</script> #}
 
 	    
 
-	    {# <script src="/js/main.js"></script> #}
+	    
     </body>
 </html>	

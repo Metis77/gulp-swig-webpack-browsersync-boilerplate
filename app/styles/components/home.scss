@@ -47,11 +47,12 @@
 		filter: sepia(0%);
 		will-change: transform, opacity, filter;
 
-
-		transition: 
-			transform .3s ease-in-out,
-			opacity .3s ease-in-out,
-			filer .3s ease-in-out;
+		transition: all .3s ease-in-out;
+		// transition: 
+		// 	transform .3s ease-in-out,
+		// 	opacity .3s ease-in-out,
+		// 	filer .3s ease-in-out;
+		
 	}
 	&.is-hover-inspiration .bg-item-inspiration,
 	&.is-hover-deluxe .bg-item-deluxe,

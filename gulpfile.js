@@ -19,6 +19,8 @@ var gulp    		= require("gulp"),
 
 var newer = require('gulp-newer');
 var plumber = require('gulp-plumber');
+// var webpack = require('gulp-webpack');
+var webpack = require('webpack-stream');
 
 
 
@@ -39,7 +41,7 @@ gulp.task('default', function() {
 	gulp.start('serve');
 });
 gulp.task('production', function() {
-	gulp.start('sass', 'templates', 'js');
+	gulp.start('sass', 'templates', 'webpack');
 });
 
 
@@ -128,18 +130,42 @@ gulp.task('img', function () {
 /**
  * JavaScript - main.js task.
  */
-gulp.task('js', function() {
-    return gulp.src([
-            app+'js/libraries/*.js',
-            app+'js/main/*.js',
-        ])
-        .pipe(plumber())
-        .pipe(concat('main.js'))
-        .pipe(uglify())
-        .pipe(gulp.dest(dist+'js/'))
-        .on("end", reload);
-});
+// gulp.task('js', function() {
+//     return gulp.src([
+//             app+'js/libraries/*.js',
+//             app+'js/main/*.js',
+//         ])
+//         .pipe(plumber())
+//         .pipe(concat('main.js'))
+//         .pipe(uglify())
+//         .pipe(gulp.dest(dist+'js/'))
+//         .on("end", reload);
+// });
 
+
+
+/**
+ * Webpack
+ */
+gulp.task('webpack', function() {
+    return  gulp.src(app+'js/entry.js')
+    // .pipe(plumber())
+    .pipe(webpack({
+        path: '/dist',
+
+        entry: app+'js/entry.js',
+        output: {
+            filename: '[name].js',
+        },
+        externals: {
+            // require("jquery") is external and available on the global var jQuery
+            "jquery": "jQuery",
+        },
+        devtool: "source-map",
+    }))
+    //.pipe(uglify())
+    .pipe(gulp.dest(dist+'js'));
+});
 
 
 /**
@@ -160,7 +186,7 @@ gulp.task('copy', function () {
  */
 
 // Static Server + watching scss/html files
-gulp.task('serve', ['templates', 'js', 'copy'], function() {
+gulp.task('serve', ['templates', 'webpack', 'copy'], function() {
 
     browserSync.init({
         server: dist,
@@ -171,7 +197,7 @@ gulp.task('serve', ['templates', 'js', 'copy'], function() {
 
     gulp.watch(app + 'templates/**/*', ['templates']);
     gulp.watch(app + 'styles/**/*', ['templates']);
-    gulp.watch(app + 'js/**/*', ['js']);
+    gulp.watch(app + 'js/**/*', ['webpack']);
     gulp.watch(assets, ['copy'])
 
 });
