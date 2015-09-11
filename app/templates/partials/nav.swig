@@ -42,7 +42,7 @@
                         </li>
 
                         <li class="has-dropdown">
-                            <a href="/inspiration.html">
+                            <a href="/deluxe.html">
                                 DE LUXE
                             </a>
                             <ul>

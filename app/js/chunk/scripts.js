@@ -128,9 +128,9 @@ $(document).ready(function() {
 
         // Compensate the height of parallax element for inline nav
 
-        // if ($(window).width() > 768) {
-        //     $('.parallax:nth-of-type(1) .background-image-holder').css('top', -($('nav').outerHeight(true)));
-        // }
+        if ($(window).width() > 768) {
+            $('.parallax:nth-of-type(1) .background-image-holder').css('top', -($('nav').outerHeight(true)));
+        }
 
         // Adjust fullscreen elements
 

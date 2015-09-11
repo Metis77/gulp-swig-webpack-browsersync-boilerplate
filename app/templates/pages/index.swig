@@ -170,14 +170,14 @@
 		       	<div class="item-nav" data-kat="deluxe">
 		        	<div class="center-wrapper">
 			        	<div class="link-wrapper sound-roll1">
-				        	<a href="inspiration.html">
+				        	<a href="deluxe.html">
 				        		Dauerwellen<br><span>DE LUXE</span></a>
 				            <div class="cursor">
 				            	<div class="fine" style="opacity: 0.3; transform: matrix(1, 0, 0, 1, 0, 0); width: 0%;"></div>
 				            	<div class="large" style="visibility: visible; width: 27px; opacity: 1;"></div>
 				            </div> 
 			            </div>            
-			            <ul class="submenu">		            	
+			            {# <ul class="submenu">		            	
 			             	<li class="sound-roll2">             	
 			             		<a href="http://www.pacorabanne.com/invictus/en-WW/#!/episodes">
 				             		<div class="link-text">
@@ -204,7 +204,7 @@
 							</li>            	
 			         		
 				                                    	          	
-			             </ul>
+			             </ul> #}
 		         	</div>
 		        </div>
 			             

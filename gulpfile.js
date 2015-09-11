@@ -1,27 +1,22 @@
-var gulp    		= require("gulp"),
-    gutil 			= require("gulp-util"),
-    inlineResize    = require("gulp-inline-resize"),
-    gm              = require('gulp-gm'),
+var gulp    		= require("gulp");
+var gutil 			= require("gulp-util");
+var merge           = require("merge-stream");
+var newer           = require('gulp-newer');
+var plumber         = require('gulp-plumber');
+var uglify          = require('gulp-uglify');
+    
+var inlineResize    = require("gulp-inline-resize");
+var gm              = require('gulp-gm');
 
-    concat          = require('gulp-concat'),
-    uglify          = require('gulp-uglify'),
+var sass 			= require('gulp-sass');
+var sourcemaps 		= require('gulp-sourcemaps');
+var autoprefixer 	= require('gulp-autoprefixer');
 
-    sass 			= require('gulp-sass'),
-    sourcemaps 		= require('gulp-sourcemaps'),
-    autoprefixer 	= require('gulp-autoprefixer'),
-
-    swig            = require('gulp-swig'),
-
-    browserSync     = require('browser-sync').create(),
-    reload          = browserSync.reload,
-
-    merge           = require("merge-stream");
-
-var newer   = require('gulp-newer');
-var plumber = require('gulp-plumber');
+var swig            = require('gulp-swig');
 
 var webpack = require('webpack');
-// var webpack = require('webpack-stream');
+
+var browserSync     = require('browser-sync').create();
 
 
 
@@ -102,7 +97,7 @@ gulp.task('templates', function() {
             }
         ))
         .pipe(gulp.dest(dist))
-        .on("end", reload);
+        .on("end", browserSync.reload);
 });
 
 
@@ -144,6 +139,10 @@ gulp.task('img', function () {
 // });
 
 
+
+/**
+ * Webpack
+ */
 gulp.task('webpack', function() {
     return webpack({
         context: __dirname + "/app/js",
@@ -171,28 +170,9 @@ gulp.task('webpack', function() {
 });
 
 
-/**
- * Webpack
- */
-// gulp.task('webpack', function() {
-//     return  gulp.src(app+'js/entry.js')
-//     // .pipe(plumber())
-//     .pipe(webpack({
-//         path: '/dist',
 
-//         entry: app+'js/entry.js',
-//         output: {
-//             filename: '[name].js',
-//         },
-//         externals: {
-//             // require("jquery") is external and available on the global var jQuery
-//             "jquery": "jQuery",
-//         },
-//         devtool: "source-map",
-//     }))
-//     //.pipe(uglify())
-//     .pipe(gulp.dest(dist+'js'));
-// });
+
+
 
 
 /**
@@ -203,7 +183,7 @@ gulp.task('copy', function () {
         .pipe(plumber())
         .pipe(newer(dist))
         .pipe(gulp.dest(dist))
-        .on("end", reload);
+        .on("end", browserSync.reload);
 });
 
 

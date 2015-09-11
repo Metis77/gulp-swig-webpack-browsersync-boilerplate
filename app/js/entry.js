@@ -1,5 +1,3 @@
-
-
 /**
  * static includes
  *
@@ -20,24 +18,15 @@ require("jquery");
 require.ensure([], function(require) {
 	require("./libraries/bootstrap.min.js");
 	require("./libraries/flexslider.min.js");
-
-	require("./chunk/basic.js");
-	require("./chunk/scripts.js");
-	require("./chunk/home.js");
-
-	if ($('.parallax').length) {
+	
+	$( document ).ready(function() {
 		require("./libraries/parallax.js");
-		// Compensate the height of parallax element for inline nav
-        if ($(window).width() > 768) {
-            $('.parallax:nth-of-type(1) .background-image-holder').css('top', -($('nav').outerHeight(true)));
-        }
-	}
+	    require("./chunk/basic.js");
+		require("./chunk/scripts.js");
+		require("./chunk/home.js");
+	});
+
 }, 'common');
-
-
-
-
-
 
 
 

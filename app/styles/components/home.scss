@@ -131,8 +131,9 @@
 	@media all and (max-width: $breakpointTablet) {
 		display: block;
 
-	}
+		
 
+	}
 	&.-is-mobile:not(.-mobile-headline) {
 		display: block;
 	}

@@ -1,23 +1,18 @@
-{% extends "../../layouts/default.swig" %}
+{% extends "../layouts/default.swig" %}
 
 
-{% block pagetitle %}Haararben - Keralock{% endblock %}
+{% block pagetitle %} // Keralock{% endblock %}
 {% block description %}{% endblock %}
 
 {% block content %}
-<section class="image-bg overlay pt240 pb240 pt-xs-180 pb-xs-180">
+<section class="image-bg bg-dark parallax overlay pt160 pb160 pt-xs-40 pb-xs-40">
     <div class="background-image-holder">
-        <img alt="image" class="background-image" src="../assets/img/fitness3.jpg" />
+        <img alt="image" class="background-image" src="/assets_build/header/KL-Keyvisual-CARE-L3.jpg" />
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-sm-12 text-center">
-                <h1 class="mb0 uppercase bold ">Haarfarben</h1>
-                <h5 class="uppercase mb32">Intensive, langanhaltende und leuchtende Farben <br> in 12 aufregenden Nuancen</h5>
-                {# <p class="lead mb0">
-                    Einfach, sicher und voller Leuchtkraft: <br class="hidden-sm" />
-                    KERALOCK Blondierungen                                
-                </p> #}
+            <div class="col-sm-6">
+                <h1 class="mb0 uppercase bold ">DE LUXE</h1>
             </div>
         </div>
         <!--end of row-->
@@ -28,7 +23,7 @@
 <section class="image-square left">
     <div class="col-md-6 image">
         <div class="background-image-holder">
-            <img alt="image" class="background-image" src="../assets_build/home/KL-Keyvisual-INSPIRATION.jpg;800w" />
+            <img alt="image" class="background-image" src="assets_build/DELUXE/KL-DELUXE-L3-02-intensiv-DW.jpg;600w" />
         </div>
     </div>
     <div class="col-md-6 col-md-offset-1 content overflow-hidden">
@@ -46,7 +41,7 @@
 <section class="image-square right bg-secondary">
     <div class="col-md-6 image">
         <div class="background-image-holder">
-            <img alt="image" class="background-image" src="../assets/img/fitness5.jpg" />
+            <img alt="image" class="background-image" src="/assets/img/fitness5.jpg" />
         </div>
     </div>
     <div class="col-md-6 content">
@@ -142,7 +137,7 @@
             <div class="col-md-3 col-sm-4">
                 <div class="image-tile outer-title text-center">
                     <a href="#">
-                        <img alt="Pic" class="product-thumb" src="../assets/img/shop-product-1.jpg" />
+                        <img alt="Pic" class="product-thumb" src="/assets/img/shop-product-1.jpg" />
                     </a>
                     <div class="title">
                         <h5 class="mb0">Adrian
@@ -155,7 +150,7 @@
             <div class="col-md-3 col-sm-4">
                 <div class="image-tile outer-title text-center">
                     <a href="#">
-                        <img alt="Pic" class="product-thumb" src="../assets/img/shop-product-2.jpg" />
+                        <img alt="Pic" class="product-thumb" src="/assets/img/shop-product-2.jpg" />
                     </a>
                     <div class="title">
                         <h5 class="mb0">Stanley
@@ -168,7 +163,7 @@
             <div class="col-md-3 col-sm-4">
                 <div class="image-tile outer-title text-center">
                     <a href="#">
-                        <img alt="Pic" class="product-thumb" src="../assets/img/shop-product-7.jpg" />
+                        <img alt="Pic" class="product-thumb" src="/assets/img/shop-product-7.jpg" />
                     </a>
                     <div class="title">
                         <h5 class="mb0">Vladimir
@@ -181,7 +176,7 @@
             <div class="col-md-3 col-sm-4">
                 <div class="image-tile outer-title text-center">
                     <a href="#">
-                        <img alt="Pic" class="product-thumb" src="../assets/img/shop-product-3.jpg" />
+                        <img alt="Pic" class="product-thumb" src="/assets/img/shop-product-3.jpg" />
                     </a>
                     <div class="title">
                         <h5 class="mb0">Luka
@@ -201,7 +196,7 @@
     <div class="container">
         <div class="row mb48 mb-xs-24">
             <div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1 text-center">
-                <img alt="Pic" class="mb16" src="../assets/img/vent2.png" />
+                <img alt="Pic" class="mb16" src="/assets/img/vent2.png" />
                 <h5 class="uppercase">Tips &amp; More</h5>
             </div>
         </div>

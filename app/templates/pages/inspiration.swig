@@ -35,12 +35,12 @@
         <img
             src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
             srcset="
-                ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-02-Haarfarben.jpg;320w 320w,
-                ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-02-Haarfarben.jpg;600w 600w,
-                ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-02-Haarfarben.jpg;800w 800w,
-                ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-02-Haarfarben.jpg;1200w 1200w,
-                ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-02-Haarfarben.jpg;1600w 1600w,
-                ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-02-Haarfarben.jpg;2000w 2000w," 
+                ./assets_build/INSPIRATION/KL-INSPIRATION-02-Haarfarben.jpg;320w 320w,
+                ./assets_build/INSPIRATION/KL-INSPIRATION-02-Haarfarben.jpg;600w 600w,
+                ./assets_build/INSPIRATION/KL-INSPIRATION-02-Haarfarben.jpg;800w 800w,
+                ./assets_build/INSPIRATION/KL-INSPIRATION-02-Haarfarben.jpg;1200w 1200w,
+                ./assets_build/INSPIRATION/KL-INSPIRATION-02-Haarfarben.jpg;1600w 1600w,
+                ./assets_build/INSPIRATION/KL-INSPIRATION-02-Haarfarben.jpg;2000w 2000w," 
             sizes="100vw"
             alt="">
     </div>
@@ -61,12 +61,12 @@
         <img
             src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
             data-srcset="
-                ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-03-Blondierungen.jpg;320w 320w,
-                ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-03-Blondierungen.jpg;600w 600w,
-                ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-03-Blondierungen.jpg;800w 800w,
-                ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-03-Blondierungen.jpg;1200w 1200w,
-                ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-03-Blondierungen.jpg;1600w 1600w,
-                ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-03-Blondierungen.jpg;2000w 2000w," 
+                ./assets_build/INSPIRATION/KL-INSPIRATION-03-Blondierungen.jpg;320w 320w,
+                ./assets_build/INSPIRATION/KL-INSPIRATION-03-Blondierungen.jpg;600w 600w,
+                ./assets_build/INSPIRATION/KL-INSPIRATION-03-Blondierungen.jpg;800w 800w,
+                ./assets_build/INSPIRATION/KL-INSPIRATION-03-Blondierungen.jpg;1200w 1200w,
+                ./assets_build/INSPIRATION/KL-INSPIRATION-03-Blondierungen.jpg;1600w 1600w,
+                ./assets_build/INSPIRATION/KL-INSPIRATION-03-Blondierungen.jpg;2000w 2000w," 
             data-sizes="100vw"
             class="lazyload"
             alt="">
@@ -88,12 +88,12 @@
         <img
             src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
             data-srcset="
-                ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-05-Entferner.jpg;320w 320w,
-                ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-05-Entferner.jpg;600w 600w,
-                ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-05-Entferner.jpg;800w 800w,
-                ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-05-Entferner.jpg;1200w 1200w,
-                ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-05-Entferner.jpg;1600w 1600w,
-                ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-05-Entferner.jpg;2000w 2000w," 
+                ./assets_build/INSPIRATION/KL-INSPIRATION-05-Entferner.jpg;320w 320w,
+                ./assets_build/INSPIRATION/KL-INSPIRATION-05-Entferner.jpg;600w 600w,
+                ./assets_build/INSPIRATION/KL-INSPIRATION-05-Entferner.jpg;800w 800w,
+                ./assets_build/INSPIRATION/KL-INSPIRATION-05-Entferner.jpg;1200w 1200w,
+                ./assets_build/INSPIRATION/KL-INSPIRATION-05-Entferner.jpg;1600w 1600w,
+                ./assets_build/INSPIRATION/KL-INSPIRATION-05-Entferner.jpg;2000w 2000w," 
             data-sizes="100vw"
             class="lazyload"
             alt="">
@@ -116,12 +116,12 @@
         <img
             src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
             data-srcset="
-                ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-04-Toenung.jpg;320w 320w,
-                ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-04-Toenung.jpg;600w 600w,
-                ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-04-Toenung.jpg;800w 800w,
-                ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-04-Toenung.jpg;1200w 1200w,
-                ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-04-Toenung.jpg;1600w 1600w,
-                ./assets_build/KL-Visuals-Level2/KL-INSPIRATION-04-Toenung.jpg;2000w 2000w," 
+                ./assets_build/INSPIRATION/KL-INSPIRATION-04-Toenung.jpg;320w 320w,
+                ./assets_build/INSPIRATION/KL-INSPIRATION-04-Toenung.jpg;600w 600w,
+                ./assets_build/INSPIRATION/KL-INSPIRATION-04-Toenung.jpg;800w 800w,
+                ./assets_build/INSPIRATION/KL-INSPIRATION-04-Toenung.jpg;1200w 1200w,
+                ./assets_build/INSPIRATION/KL-INSPIRATION-04-Toenung.jpg;1600w 1600w,
+                ./assets_build/INSPIRATION/KL-INSPIRATION-04-Toenung.jpg;2000w 2000w," 
             data-sizes="100vw"
             class="lazyload"
             alt="">
@@ -187,7 +187,7 @@
                         </div>
                     </form>
                 </div>
-
+{# 
 
                 <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
                 <script type='text/javascript'>
@@ -213,7 +213,7 @@
                     });}(jQuery));var $mcj = jQuery.noConflict(true);
                 </script>
                 <!--End mc_embed_signup-->
-
+ #}
 
             </div>
         </div>
