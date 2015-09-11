@@ -17,10 +17,11 @@ var gulp    		= require("gulp"),
 
     merge           = require("merge-stream");
 
-var newer = require('gulp-newer');
+var newer   = require('gulp-newer');
 var plumber = require('gulp-plumber');
-// var webpack = require('gulp-webpack');
-var webpack = require('webpack-stream');
+
+var webpack = require('webpack');
+// var webpack = require('webpack-stream');
 
 
 
@@ -143,29 +144,55 @@ gulp.task('img', function () {
 // });
 
 
-
-/**
- * Webpack
- */
 gulp.task('webpack', function() {
-    return  gulp.src(app+'js/entry.js')
-    // .pipe(plumber())
-    .pipe(webpack({
-        path: '/dist',
-
-        entry: app+'js/entry.js',
+    return webpack({
+        context: __dirname + "/app/js",
+        entry: {
+            main: "./entry.js"
+        },
         output: {
-            filename: '[name].js',
+            path: "./dist/js/",
+            publicPath: "/js/",
+
+            filename: "[name].js",
+
         },
         externals: {
             // require("jquery") is external and available on the global var jQuery
             "jquery": "jQuery",
+            "$": "jQuery",
         },
         devtool: "source-map",
-    }))
-    //.pipe(uglify())
-    .pipe(gulp.dest(dist+'js'));
+    }, function(err, stats) {
+        if(err) throw new gutil.PluginError("webpack", err);
+        // gutil.log("[webpack]", stats.toString({}));
+        browserSync.reload();        
+    })
 });
+
+
+/**
+ * Webpack
+ */
+// gulp.task('webpack', function() {
+//     return  gulp.src(app+'js/entry.js')
+//     // .pipe(plumber())
+//     .pipe(webpack({
+//         path: '/dist',
+
+//         entry: app+'js/entry.js',
+//         output: {
+//             filename: '[name].js',
+//         },
+//         externals: {
+//             // require("jquery") is external and available on the global var jQuery
+//             "jquery": "jQuery",
+//         },
+//         devtool: "source-map",
+//     }))
+//     //.pipe(uglify())
+//     .pipe(gulp.dest(dist+'js'));
+// });
 
 
 /**
