@@ -1,0 +1,3 @@
+{% macro product %}
+Product
+{% endmacro %}

@@ -1,3 +1,5 @@
+{% include "../macros/_imports.swig" %}
+
 <!doctype html>
 <html lang="en" class="no-js">
     <head>

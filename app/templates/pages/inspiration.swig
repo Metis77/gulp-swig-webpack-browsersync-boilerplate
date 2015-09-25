@@ -26,36 +26,18 @@
 
 
 
+{# category(img, h2, p, href, hrefText) #}
+{{ category(
+    './assets_build/INSPIRATION/KL-INSPIRATION-02-Haarfarben.jpg',
+    'Haarfarbe',
+    'Intensive, langanhaltende und leuchtende Farben in 12 aufregenden Nuancen.',
+    'inspiration/Haarfarben.html',
+    'Produkte'
+) }}
 
 
 
 
-<section class="image-bg bg-dark parallax overlay pt160 pb160 pt-xs-40 pb-xs-40">
-    <div class="background-image-holder srcset INSPIRATION-02-Haarfarben">
-        <img
-            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-            srcset="
-                ./assets_build/INSPIRATION/KL-INSPIRATION-02-Haarfarben.jpg;320w 320w,
-                ./assets_build/INSPIRATION/KL-INSPIRATION-02-Haarfarben.jpg;600w 600w,
-                ./assets_build/INSPIRATION/KL-INSPIRATION-02-Haarfarben.jpg;800w 800w,
-                ./assets_build/INSPIRATION/KL-INSPIRATION-02-Haarfarben.jpg;1200w 1200w,
-                ./assets_build/INSPIRATION/KL-INSPIRATION-02-Haarfarben.jpg;1600w 1600w,
-                ./assets_build/INSPIRATION/KL-INSPIRATION-02-Haarfarben.jpg;2000w 2000w," 
-            sizes="100vw"
-            alt="">
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 text-center">
-                <h2 class="uppercase mb8">Haarfarbe</h2>
-                <p class="lead mb40">Intensive, langanhaltende und leuchtende Farben in 12 aufregenden Nuancen.</p>
-                <a class="btn btn-lg btn-white mb0" href="inspiration/Haarfarben.html">Produkte</a>
-            </div>
-        </div>
-        <!--end of row-->
-    </div>
-    <!--end of container-->
-</section>
 <section class="image-bg bg-dark parallax overlay pt160 pb160 pt-xs-40 pb-xs-40">
     <div class="background-image-holder srcset INSPIRATION-03-Blondierungen">
         <img
