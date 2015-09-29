@@ -3,7 +3,7 @@
 {% extends "../layouts/default.swig" %}
 
 
-{% block pagetitle %}Inspiration // Keralock{% endblock %}
+{% block pagetitle %}INSPIRATION // Keralock{% endblock %}
 {% block description %}{% endblock %}
 
 
@@ -108,7 +108,7 @@
                         </div>
                     </form>
                 </div>
-{# 
+
 
                 <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
                 <script type='text/javascript'>
@@ -134,7 +134,7 @@
                     });}(jQuery));var $mcj = jQuery.noConflict(true);
                 </script>
                 <!--End mc_embed_signup-->
- #}
+
 
             </div>
         </div>

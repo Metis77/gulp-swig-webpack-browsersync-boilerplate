@@ -125,45 +125,6 @@
 				            	<div class="large" style="visibility: visible; width: 27px; opacity: 1;"></div>
 				            </div> 
 			            </div>
-			            {# <ul class="submenu sound-roll2" style="display: none;">
-			             	<li style="opacity: 0; transform: matrix(1, 0, 0, 1, -40, 0);">
-			             		<a href="http://www.pacorabanne.com/invictus/en-WW/#!/competition/seasonthree">
-				             		<div class="link-text">
-					             		Season 3			             		<div class="link-hover-wrapper">
-					             			
-					             			<div class="link-hover">
-					             				Season 3			             			</div>
-					             		</div>
-				             		</div>	
-			             		</a>
-			             	</li>
-			             	<li style="opacity: 0; transform: matrix(1, 0, 0, 1, -40, 0);">
-			             		<a href="http://www.pacorabanne.com/invictus/en-WW/#!/competition/nickyoungquest">
-				             		<div class="link-text">
-					             		Nick Youngquest			             		<div class="link-hover-wrapper">
-					             			<div class="link-hover">
-					             				Nick Youngquest			             			</div>
-					             		</div>
-				             		</div>
-			             		</a>
-			             	</li>
-			             	
-			             	<li style="opacity: 0; transform: matrix(1, 0, 0, 1, -40, 0);">
-			             		<a href="http://www.pacorabanne.com/invictus/en-WW/#!/competition/roberto"> 
-				             		<div class="link-text">
-					             		season 2			             		<div class="link-hover-wrapper">
-					             			<div class="link-hover">
-					             				season 2			             			</div>
-					             		</div>
-				             		</div>
-				             	</a>	
-			             	</li>
-			             	
-			         		<div class="cursor" style="opacity: 0; transform: matrix(1, 0, 0, 1, -40, 0);">
-			            		<div class="fine" style="width: 0%; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"></div>
-			            		<div class="large" style="opacity: 1;"></div>
-			            	</div>	                   	             	
-			             </ul> #}
 		             </div>
 		        </div>
 		        
@@ -232,70 +193,10 @@
 				            	<div class="large" style="visibility: visible; width: 27px; opacity: 1;"></div>
 				            </div> 
 			            </div>
-			             {# <ul class="submenu">
-			             	<li class="sound-roll2">             	
-			             		<a href="http://www.pacorabanne.com/invictus/en-WW/#!/perfumes">
-				             		<div class="link-text">
-					             		The fragrance			             		<div class="link-hover-wrapper">
-					             			<div class="link-hover">
-					             				The fragrance			             			</div>
-					             		</div>
-				             		</div>	
-			             		</a>
-			             	</li>
-			             	<li class="sound-roll2">             	
-			             		<a href="http://www.pacorabanne.com/invictus/en-WW/#!/perfumes/range">
-				             		<div class="link-text">
-					             		The range			             		<div class="link-hover-wrapper">
-					             			<div class="link-hover">
-					             				The range			             			</div>
-					             		</div>
-				             		</div>	
-			             		</a>
-			             	</li> 
-			             	<li class="sound-roll2">             	
-			             		<a href="http://www.pacorabanne.com/invictus/en-WW/#!/perfumes/film">
-				             		<div class="link-text">
-					             		The film			             		<div class="link-hover-wrapper">
-					             			<div class="link-hover">
-					             				The film			             			</div>
-					             		</div>
-				             		</div>	
-			             		</a>
-			             	</li> 
-			             	<li class="sound-roll2">             	
-			             		<a href="http://www.pacorabanne.com/invictus/en-WW/#!/perfumes/makingof">
-				             		<div class="link-text">
-					             		Making of			             		<div class="link-hover-wrapper">
-					             			<div class="link-hover">
-					             				Making of			             			</div>
-					             		</div>
-				             		</div>	
-			             		</a>
-			             	</li> 
-			             	<li class="sound-roll2 ar">             	
-			             		<a target="_blank" href="http://www.wojooh.com/sa-en/invictusedt100ml?___store=ksa_en">
-				             		<div class="link-text">
-					             					             		<div class="link-hover-wrapper">
-					             			<div class="link-hover">
-					             							             			</div>
-					             		</div>
-				             		</div>	
-			             		</a>
-			             	</li> 
-			         		<div class="cursor">
-			            		<div class="fine"></div>
-			            		<div class="large"></div>
-			            	</div>
-			             	             	            	
-			             </ul> #}
 			          </div>
 		        </div>
 		        
 			</div>
-
-
-
     </div>
 </section>
 

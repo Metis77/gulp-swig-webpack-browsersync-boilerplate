@@ -46,6 +46,7 @@
 $green: #47b475;
 $red: #e31d3b;
 $red2: #fc4f4f;
+$kl_red: #e83c4a;
 $hyperblu: #3b3be8;
 $gunmetal: #333347;
 $trunavy: #282a38;
@@ -339,6 +340,13 @@ footer{ padding: 72px 0; }
 .background-multiply .background-image-holder{ background-color: $color-primary !important; background-blend-mode: multiply; }
 .background-image-holder.fadeIn{ opacity: 1; }
 .parallax > .background-image-holder, .parallax .slides li > .background-image-holder{ height: 100vh; top: -50vh; transition: all 0s ease !important; transition: opacity 0.3s ease !important; -webkit-transform-style: preserve-3d; }
+.parallax.height_small {
+	> .background-image-holder,
+	.slides li > .background-image-holder {
+		height: 700px;
+		top: -300px
+	}
+}
 .parallax:first-child .slides li > .background-image-holder, .parallax:first-child .background-image-holder{ top: 0; }
 .main-container > a:first-child + .parallax .background-image-holder{ top: 0; } 
 
@@ -350,8 +358,11 @@ footer{ padding: 72px 0; }
 /*!---------- 6. BUTTONS ----------*/
 
 .btn{ font-family: $heading-font,"Helvetica Neue",Helvetica,Arial,sans-serif; border: 2px solid $color-primary; padding: 0 26px; height: 40px; min-width: 150px; line-height: 36px; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; border-radius: 0; color: $color-primary; text-align: center; @include transition(0.3s); margin-right: 8px; margin-bottom: 24px; }
+.btn { color: $kl_red; border-color: $kl_red;}
 .btn:last-child, .btn:last-of-type{ margin-right: 0; }
-.btn:hover{ background: $color-primary; color: #fff; }
+// .btn:hover{ background: $color-primary; color: #fff; }
+.btn:hover{ background: $kl_red; color: #fff; }
+
 .btn-icon{ width: 40px; height: 40px; font-size: 20px; min-width: 0; padding: 0; line-height: 38px; }
 .btn-lg{ height: 50px; line-height: 46px; min-width: 200px; }
 .btn-icon.btn-lg{ width: 50px; height: 50px; line-height: 49px; font-size: 24px; min-width: 0; }
@@ -359,6 +370,7 @@ footer{ padding: 72px 0; }
 .btn-sm{ height: 30px; font-size: 11px; line-height: 27px; min-width: 0; }
 .btn-filled{ background: $color-primary; color: #fff; }
 .btn-white,.image-bg .btn, .image-bg .btn:visited{ color: #fff; border-color: #fff; }
+
 .btn-white:hover, .image-bg .btn:hover, .image-bg .btn:visited:hover{ background: #fff; color: #222; }
 .image-bg .btn.btn-filled, .image-bg .btn-filled:visited{ border-color: $color-primary; }
 .image-bg .btn-filled:hover{ border-color: #fff; }
@@ -367,7 +379,8 @@ body.btn-rounded .btn{ border-radius: 25px !important; }
 .bg-light .btn{ border-color: #222; color: #222; }
 .bg-light .btn:visited, .bg-light .btn:visited:hover{ color: #222; }
 .bg-light .btn-filled, .bg-light .btn-filled:visited{ color: #fff; }
-.btn:visited{ color: $color-primary; }
+// .btn:visited{ color: $color-primary; }
+.btn:visited{ color: $kl_red; }
 .btn-white:visited,.btn:visited:hover{ color: #fff; }
 .btn-white:visited:hover{ color: #222; }
 .btn-filled:visited{ color: #fff; }
@@ -703,7 +716,18 @@ form iframe.mail-list-form{ display: none;}
 .accordion-1 .title:hover{ background: #eee; }
 .accordion-1 .active .title:hover{ background: $color-primary; }
 
-.accordion-2 .title{ font-size: 16px; font-weight: 500; padding: 16px 0; border-bottom: 1px solid #ccc; @include transition(0.3s); opacity: .7; }
+.accordion-2 .title{ 
+	font-size: 16px; font-weight: 500; padding: 16px 0; border-bottom: 1px solid #ccc; @include transition(0.3s); opacity: .7; 
+	position: relative;
+	&:before {
+		position: absolute;
+		top: 1.5em;
+	}
+	h4 {
+		padding-left: 1.5em;
+	}
+}
+
 .accordion-2 .title:before{ content: "\e622"; font-family: 'themify'; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; }
 .accordion-2 .active .title{ opacity: 1; }
 .accordion-2 .active .title:before{ content: '\e61a'; }

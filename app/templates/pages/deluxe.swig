@@ -1,13 +1,13 @@
 {% extends "../layouts/default.swig" %}
 
 
-{% block pagetitle %} // Keralock{% endblock %}
+{% block pagetitle %} DE LUXE // Keralock{% endblock %}
 {% block description %}{% endblock %}
 
 {% block content %}
-<section class="image-bg bg-dark parallax overlay pt160 pb160 pt-xs-40 pb-xs-40">
+<section class="image-bg bg-dark parallax height_small overlay pt160 pb160 pt-xs-40 pb-xs-40">
     <div class="background-image-holder">
-        <img alt="image" class="background-image" src="/assets_build/header/KL-Keyvisual-CARE-L3.jpg" />
+        <img alt="image" class="background-image" src="/assets_build/header/KL-Keyvisual-DELUXE-L3.jpg" />
     </div>
     <div class="container">
         <div class="row">
@@ -76,38 +76,53 @@
 <section>
     <div class="container">
         <div class="row mb80 mb-xs-40">
-            <div class="col-sm-6 col-sm-offset-3 text-center">
-                <h2 class="uppercase bold italic fade-3-4 mb0">Einfache Anwendung</h2>
+            <div class="col-sm-6 col-sm-offset-3 ">
+                <h2 class="uppercase bold italic">Einfache Anwendung</h2>
+                <p class="lead">Die KERALOCK Dauerwellen sind speziell für die einfache Anwendung zu Hause konzipiert – ganz ohne Friseur. </p>
+                
+                
+                <ol>
+                    <li>Haare feucht auf Wickler drehen.</li>
+                    <li>Well-Lotion auftragen und einwirken lassen.</li>
+                    <li>Mit Wasser abspülen und Fixierung weitere 10 Minuten einwirken lassen. <br>
+                    Abdrehen, auswaschen – fertig</li>
+                </ol>
+
             </div>
         </div>
         
         <div class="row mb80 mb-xs-40">
-            <div class="col-sm-6 col-sm-offset-3 text-center">
-                <h2 class="uppercase bold italic fade-3-4 mb0">Ergebnis</h2>
+            <div class="col-sm-6 col-sm-offset-3">
+                <h2 class="uppercase bold italic">Ergebnis</h2>
+                <p class="lead">Geschontes Haar mit natürlichem Glanz, elastisch und leicht kämmbar. Freuen Sie sich auf mehr Volumen, Vitalität und Spannkraft für Ihre Frisur.</p>
             </div>
         </div>
 
         <div class="row mb80 mb-xs-40">
-            <div class="col-sm-6 col-sm-offset-3 text-center">
-                <h2 class="uppercase bold italic fade-3-4 mb0">Tipp</h2>
+            <div class="col-sm-6 col-sm-offset-3">
+                <h2 class="uppercase bold italic">Tipp</h2>
+                <p class="lead">Waschen Sie Ihr Haar vor einer Dauerwelle einige Male mit einen Shampoo zur Tiefenreinigung, um die Haarstruktur vollständig von Pflegerückständen zu befreien.</p>
             </div>
         </div>
         
 
 </section>
 
+
+
+
 <section>
     <div class="container">
-        <div class="row mb80 mb-xs-40">
+        <div class="row">
             <div class="col-sm-6 col-sm-offset-3 text-center">
-                <h2 class="uppercase bold italic fade-3-4 mb0">FAQ</h2>
+                <h2 class="uppercase bold italic">FAQ</h2>
             </div>
         </div>
         
 
         <div class="row">
             <div class="col-sm-10 col-sm-offset-1">
-                <ul class="accordion accordion-2">
+                <ul class="accordion accordion-2 one-open">
                     <li>
                         <div class="title">
                             <h4 class="inline-block mb0">Können die Blond-Produkte auch bei dunklem Haar angewendet werden?</h4>
@@ -165,4 +180,6 @@
 
 
 {% include '../partials/mailchimp.swig' %}
+
+
 {% endblock %}
