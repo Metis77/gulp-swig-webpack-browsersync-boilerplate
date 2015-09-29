@@ -36,90 +36,29 @@
 ) }}
 
 
+{{ category(
+    './assets_build/INSPIRATION/KL-INSPIRATION-03-Blondierungen.jpg',
+    'Blondierungen',
+    'A brief description.',
+    'inspiration/_detailseite.html',
+    'Produkte'
+) }}
 
+{{ category(
+    './assets_build/INSPIRATION/KL-INSPIRATION-05-Entferner.jpg',
+    'Haarfarb-Entferner',
+    'Haarfarbe von Hals, Gesicht und Händen ganz einfach und problemlos entfernen.',
+    'inspiration/_detailseite.html',
+    'Produkte'
+) }}
 
-<section class="image-bg bg-dark parallax overlay pt160 pb160 pt-xs-40 pb-xs-40">
-    <div class="background-image-holder srcset INSPIRATION-03-Blondierungen">
-        <img
-            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-            data-srcset="
-                ./assets_build/INSPIRATION/KL-INSPIRATION-03-Blondierungen.jpg;320w 320w,
-                ./assets_build/INSPIRATION/KL-INSPIRATION-03-Blondierungen.jpg;600w 600w,
-                ./assets_build/INSPIRATION/KL-INSPIRATION-03-Blondierungen.jpg;800w 800w,
-                ./assets_build/INSPIRATION/KL-INSPIRATION-03-Blondierungen.jpg;1200w 1200w,
-                ./assets_build/INSPIRATION/KL-INSPIRATION-03-Blondierungen.jpg;1600w 1600w,
-                ./assets_build/INSPIRATION/KL-INSPIRATION-03-Blondierungen.jpg;2000w 2000w," 
-            data-sizes="100vw"
-            class="lazyload"
-            alt="">
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 text-center">
-                <h2 class="uppercase mb8">Blondierungen</h2>
-                <p class="lead mb40">A brief description of the tour.</p>
-                <a class="btn btn-lg btn-white mb0" href="inspiration/_detailseite.html">Produkte</a>
-            </div>
-        </div>
-        <!--end of row-->
-    </div>
-    <!--end of container-->
-</section>
-<section class="image-bg bg-dark parallax overlay pt160 pb160 pt-xs-40 pb-xs-40">
-    <div class="background-image-holder srcset INSPIRATION-05-Entferner">
-        <img
-            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-            data-srcset="
-                ./assets_build/INSPIRATION/KL-INSPIRATION-05-Entferner.jpg;320w 320w,
-                ./assets_build/INSPIRATION/KL-INSPIRATION-05-Entferner.jpg;600w 600w,
-                ./assets_build/INSPIRATION/KL-INSPIRATION-05-Entferner.jpg;800w 800w,
-                ./assets_build/INSPIRATION/KL-INSPIRATION-05-Entferner.jpg;1200w 1200w,
-                ./assets_build/INSPIRATION/KL-INSPIRATION-05-Entferner.jpg;1600w 1600w,
-                ./assets_build/INSPIRATION/KL-INSPIRATION-05-Entferner.jpg;2000w 2000w," 
-            data-sizes="100vw"
-            class="lazyload"
-            alt="">
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 text-center">
-                <h2 class="uppercase mb8">Haarfarb-Entferner</h2>
-                <p class="lead mb40">Haarfarbe von Hals, Gesicht und Händen ganz einfach und problemlos entfernen.</p>
-                <a class="btn btn-lg btn-white mb0" href="inspiration/_detailseite.html">Produkte</a>
-            </div>
-        </div>
-        <!--end of row-->
-    </div>
-    <!--end of container-->
-</section>
-
-<section class="image-bg bg-dark parallax overlay pt160 pb160 pt-xs-40 pb-xs-40">
-    <div class="background-image-holder srcset INSPIRATION-04-Toenung">
-        <img
-            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-            data-srcset="
-                ./assets_build/INSPIRATION/KL-INSPIRATION-04-Toenung.jpg;320w 320w,
-                ./assets_build/INSPIRATION/KL-INSPIRATION-04-Toenung.jpg;600w 600w,
-                ./assets_build/INSPIRATION/KL-INSPIRATION-04-Toenung.jpg;800w 800w,
-                ./assets_build/INSPIRATION/KL-INSPIRATION-04-Toenung.jpg;1200w 1200w,
-                ./assets_build/INSPIRATION/KL-INSPIRATION-04-Toenung.jpg;1600w 1600w,
-                ./assets_build/INSPIRATION/KL-INSPIRATION-04-Toenung.jpg;2000w 2000w," 
-            data-sizes="100vw"
-            class="lazyload"
-            alt="">
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 text-center">
-                <h2 class="uppercase mb8">Tönungsshampoos</h2>
-                <p class="lead mb40">A brief description of the tour.</p>
-                <a class="btn btn-lg btn-white mb0" href="inspiration/_detailseite.html">Produkte</a>
-            </div>
-        </div>
-        <!--end of row-->
-    </div>
-    <!--end of container-->
-</section>
+{{ category(
+    './assets_build/INSPIRATION/KL-INSPIRATION-04-Toenung.jpg',
+    'Tönungsshampoos',
+    'A brief description.',
+    'inspiration/_detailseite.html',
+    'Produkte'
+) }}
 
 
 

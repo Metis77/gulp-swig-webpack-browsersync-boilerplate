@@ -16,9 +16,9 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12 text-center">
-                <h2 class="uppercase mb8">{{ h2 }}</h2>
-                <p class="lead mb40">{{ p }}</p>
-                <a class="btn btn-lg btn-white mb0" href="{{ href }}">{{ hrefText }}</a>
+                <h2 class="uppercase mb8">{{ h2|safe }}</h2>
+                <p class="lead mb40">{{ p|safe }}</p>
+                <a class="btn btn-lg btn-white mb0" href="{{ href }}">{{ hrefText|safe }}</a>
             </div>
         </div>
         <!--end of row-->
