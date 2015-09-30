@@ -1,0 +1,11 @@
+.image-square {
+	.background-image-holder {
+		will-change: transform;
+	}
+	&.left:hover .background-image-holder {
+		transform: translate3D(-40%,0,0);
+	}
+	&.right:hover .background-image-holder {
+		transform: translate3D(40%,0,0);
+	}
+}

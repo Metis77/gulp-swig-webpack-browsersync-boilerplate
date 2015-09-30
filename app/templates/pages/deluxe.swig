@@ -58,7 +58,7 @@
     'Bestellen'
 ) }}
 
-{{product(
+{# {{product(
     'Powercurl <br>Dauerwelle',
     '<b>KERALOCK NIGHT LIFE </b><br>'+
         'Für individuelles Locken-Styling.',
@@ -68,12 +68,12 @@
     button_url,
     'Bestellen'
 ) }}
+ #}
 
 
 
 
-
-<section>
+<section class="bg-primary">
     <div class="container">
         <div class="row mb80 mb-xs-40">
             <div class="col-sm-6 col-sm-offset-3 ">

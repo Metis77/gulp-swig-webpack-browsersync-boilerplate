@@ -11,6 +11,7 @@
     <div class="col-md-6 image">
         <div class="background-image-holder">
             <img alt="image" class="background-image" src="{{src_bg}};600w" />
+            <img alt="{{headline|safe}}" class="img_hover" src="{{src_hover}}" >
         </div>
     </div>
     <div class="col-md-6 col-md-offset-1 content overflow-hidden">
