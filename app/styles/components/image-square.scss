@@ -1,11 +1,86 @@
 .image-square {
-	.background-image-holder {
+	$transitionWidth: 20vw;
+	.image {
+		overflow: hidden;
+		background-color: #444;
+	}
+	.img_hover {
+		position: absolute;
+	    height: 100%;
+	    top: 0;
+
+	    width: $transitionWidth;
+
+	    img {
+	  //   	height: 100%;
+			// width: auto;
+	    }
+	}
+	// .background-image-holder, {
+	// 	opacity: .5;
+	// }
+
+
+
+
+	/*
+	 * animation
+	 */
+	@keyframes open {
+        0%    {transform: translate3d(0,0,0);}
+        70%   {transform: translate3d(-30vw,0,0);}
+        100%  {transform: translate3d(-20vw,0,0);}
+    }
+
+
+	.background-image-holder,
+	.img_hover {
 		will-change: transform;
+		transition: all 0.3s ease-in-out;
+		
 	}
-	&.left:hover .background-image-holder {
-		transform: translate3D(-40%,0,0);
+	.img_hover {
+		transition: all 0.4s ease-in-out;
 	}
-	&.right:hover .background-image-holder {
-		transform: translate3D(40%,0,0);
+	
+
+	// init state
+	&.left {
+		.img_hover {
+			right: 0;
+			transform: translate3D( $transitionWidth,0,0) scale(.8);
+		}
 	}
+	&.right {
+		.img_hover {
+			left: 0;
+			transform: translate3D(-$transitionWidth,0,0) scale(.8);
+		}
+	}
+
+
+
+	// hover state
+	&.left:hover {
+		.img_hover {
+			transform: translate3D(0%,0,0) scale(1);
+		}
+		.background-image-holder {
+			transform: translate3D(-$transitionWidth,0,0);
+			// animation: open .5s ease-in-out;
+			// animation-fill-mode: forwards;
+			// // animation-iteration-count: 1;
+		}
+	} 
+	&.right:hover {
+		.img_hover {
+			transform: translate3D(0,0,0) scale(1);
+		}
+		.background-image-holder {
+			transform: translate3D($transitionWidth,0,0);
+		}
+	}
+
+
+
 }

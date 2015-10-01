@@ -31,7 +31,7 @@
     'Beruhigen Sie Ihre Kopfhaut: <br>Mit der Sensitiv Dauerwelle erreichen Sie eine besonders schonende Umformung.',
     'left',
     'assets_build/DELUXE/KL-DELUXE-L3-01-sensitiv-DW.jpg',
-    scr_hover,
+    'assets_build/DELUXE/KL-Packshots-sensitiv-DW.jpg',
     button_url,
     'Bestellen'
 ) }}
@@ -42,7 +42,7 @@
         'Modellieren Sie harmonische Wellen und sichtbares Volumen mit der KERALOCK Intensiv Dauerwelle.',
     'right',
     'assets_build/DELUXE/KL-DELUXE-L3-02-intensiv-DW.jpg',
-    scr_hover,
+    'assets_build/DELUXE/KL-Packshots-intensiv-DW.jpg',
     button_url,
     'Bestellen'
 ) }}
@@ -53,7 +53,7 @@
         'Modellieren Sie harmonische Wellen und sichtbares Volumen mit der KERALOCK Intensiv Dauerwelle.',
     'left',
     'assets_build/DELUXE/KL-DELUXE-L3-03-kaeuterschaum.jpg',
-    scr_hover,
+    'assets_build/DELUXE/KL-Packshots-Kraeuterschaum.jpg',
     button_url,
     'Bestellen'
 ) }}

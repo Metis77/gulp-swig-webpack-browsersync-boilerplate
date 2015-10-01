@@ -41,11 +41,11 @@
                             </ul>
                         </li>
 
-                        <li class="has-dropdown">
+                        <li>
                             <a href="/deluxe.html">
                                 DE LUXE
                             </a>
-                            <ul>
+                            {# <ul>
                                 <li>
                                     <a href="#">
                                         Sensitiv Dauerwelle
@@ -66,14 +66,14 @@
                                         Powercurl Dauerwelle
                                     </a>
                                 </li>
-                            </ul>
+                            </ul> #}
                         </li>
 
-                        <li class="has-dropdown">
+                        <li>
                             <a href="/inspiration.html">
                                 NIGHT LIFE
                             </a>
-                            <ul>
+                            {# <ul>
                                 <li>
                                     <a href="#">
                                         Strukturwechsel Crazy Curl
@@ -90,14 +90,14 @@
                                         color hairsprays
                                     </a>
                                 </li>
-                            </ul>
+                            </ul> #}
                         </li>
 
-                        <li class="has-dropdown">
+                        <li>
                             <a href="/inspiration.html">
                                 CARE
                             </a>
-                            <ul>
+                            {# <ul>
                                 <li>
                                     <a href="#">
                                         VOLUMEN-Shampoo
@@ -124,7 +124,7 @@
                                         FARBSCHUTZ-Shampoo
                                     </a>
                                 </li>
-                            </ul>
+                            </ul> #}
                         </li>
                     </ul>
                 </div>
