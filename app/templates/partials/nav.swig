@@ -1,6 +1,6 @@
 <div class="nav-container">
     <a id="top"></a>
-    <nav class="absolute transparent">
+    <nav class="absolute transparent bg-dark">
         <div class="nav-bar">
             <div class="module left">
                 <a href="/index.html">
@@ -70,7 +70,7 @@
                         </li>
 
                         <li>
-                            <a href="/inspiration.html">
+                            <a href="/night-life.html">
                                 NIGHT LIFE
                             </a>
                             {# <ul>
@@ -94,7 +94,7 @@
                         </li>
 
                         <li>
-                            <a href="/inspiration.html">
+                            <a href="/care.html">
                                 CARE
                             </a>
                             {# <ul>

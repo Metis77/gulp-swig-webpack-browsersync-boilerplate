@@ -16,16 +16,16 @@ require("jquery");
  */
 
 
+$( document ).ready(function() {
+	require("./libraries/bootstrap.min.js");
+	require("./libraries/flexslider.min.js");
 
-require("./libraries/bootstrap.min.js");
-require("./libraries/flexslider.min.js");
-
-require("./libraries/parallax.js");
-require("./chunk/basic.js");
-require("./chunk/scripts.js");
-require("./chunk/products.js");
-require("./chunk/home.js");
-
+	require("./libraries/parallax.js");
+	require("./chunk/basic.js");
+	require("./chunk/scripts.js");
+	require("./chunk/products.js");
+	require("./chunk/home.js");
+});
 
 
 // require.ensure([], function(require) {

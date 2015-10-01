@@ -172,8 +172,9 @@
 		        <div class="item-nav" data-kat="nightlife">
 		        	<div class="center-wrapper">
 			        	<div class="link-wrapper sound-roll1">
-				        	<a href="inspiration.html" data-linkimg="candidats">
-					            Color Hairsprays<br><span>NIGHT LIFE</span>		             </a>
+				        	<a href="night-life.html">
+					            Color Hairsprays<br><span>NIGHT LIFE</span>		             
+					        </a>
 				           <div class="cursor">
 				            	<div class="fine"></div>
 				            	<div class="large" style="visibility: visible; width: 27px; opacity: 1;"></div>
@@ -186,8 +187,9 @@
 		        	        	
 		        	<div class="center-wrapper">
 			        	<div class="link-wrapper sound-roll1">
-				        	<a href="inspiration.html" data-linkimg="fragrance">
-					            Foamshampoos<br><span>CARE</span>		            </a>
+				        	<a href="care.html">
+					            Foamshampoos<br><span>CARE</span>
+					        </a>
 				            <div class="cursor">
 				            	<div class="fine" style="opacity: 0.3; transform: matrix(1, 0, 0, 1, 0, 0); width: 0%;"></div>
 				            	<div class="large" style="visibility: visible; width: 27px; opacity: 1;"></div>

@@ -5,21 +5,13 @@
 {% block description %}{% endblock %}
 
 {% block content %}
-<section class="image-bg bg-dark parallax height_small overlay pt160 pb160 pt-xs-40 pb-xs-40">
-    <div class="background-image-holder">
-        <img alt="image" class="background-image" src="/assets_build/header/KL-Keyvisual-DELUXE-L3.jpg" />
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6">
-                <h1 class="mb0 uppercase bold ">DE LUXE</h1>
-            </div>
-        </div>
-        <!--end of row-->
-    </div>
-    <!--end of container-->
-</section>
 
+
+{{header_products(
+    'DE LUXE',
+    '',
+    '/assets_build/header/KL-Keyvisual-DELUXE-L3.jpg'
+)}}
 
 
 
@@ -73,10 +65,11 @@
 
 
 
+
 <section class="bg-primary">
     <div class="container">
-        <div class="row mb80 mb-xs-40">
-            <div class="col-sm-6 col-sm-offset-3 ">
+        <div class="row">
+            <div class="col-sm-6">
                 <h2 class="uppercase bold italic">Einfache Anwendung</h2>
                 <p class="lead">Die KERALOCK Dauerwellen sind speziell für die einfache Anwendung zu Hause konzipiert – ganz ohne Friseur. </p>
                 
@@ -89,24 +82,23 @@
                 </ol>
 
             </div>
-        </div>
-        
-        <div class="row mb80 mb-xs-40">
-            <div class="col-sm-6 col-sm-offset-3">
+
+            <div class="col-sm-6">
                 <h2 class="uppercase bold italic">Ergebnis</h2>
                 <p class="lead">Geschontes Haar mit natürlichem Glanz, elastisch und leicht kämmbar. Freuen Sie sich auf mehr Volumen, Vitalität und Spannkraft für Ihre Frisur.</p>
-            </div>
-        </div>
 
-        <div class="row mb80 mb-xs-40">
-            <div class="col-sm-6 col-sm-offset-3">
                 <h2 class="uppercase bold italic">Tipp</h2>
                 <p class="lead">Waschen Sie Ihr Haar vor einer Dauerwelle einige Male mit einen Shampoo zur Tiefenreinigung, um die Haarstruktur vollständig von Pflegerückständen zu befreien.</p>
             </div>
         </div>
-        
-
 </section>
+
+
+
+
+
+
+
 
 
 

@@ -35,12 +35,13 @@
 
 	.background-image-holder,
 	.img_hover {
-		will-change: transform;
+		will-change: transform, opacity;
 		transition: all 0.3s ease-in-out;
 		
 	}
 	.img_hover {
 		transition: all 0.4s ease-in-out;
+		opacity: 0;
 	}
 	
 
@@ -48,23 +49,32 @@
 	&.left {
 		.img_hover {
 			right: 0;
-			transform: translate3D( $transitionWidth,0,0) scale(.8);
+			transform: translate3D( $transitionWidth - 10vw,0,0) scale(.8);
 		}
 	}
 	&.right {
 		.img_hover {
 			left: 0;
-			transform: translate3D(-$transitionWidth,0,0) scale(.8);
+			transform: translate3D(-$transitionWidth + 10vw,0,0) scale(.8);
 		}
 	}
 
 
 
 	// hover state
-	&.left:hover {
+	&.left:hover,
+	&.right:hover {
 		.img_hover {
-			transform: translate3D(0%,0,0) scale(1);
+			opacity: 1;
 		}
+		.img_hover {
+			transform: translate3D(0,0,0) scale(1.02);
+		}
+	}
+	&.left:hover {
+		// .img_hover {
+		// 	transform: translate3D(0,0,0) scale(1.1);
+		// }
 		.background-image-holder {
 			transform: translate3D(-$transitionWidth,0,0);
 			// animation: open .5s ease-in-out;
@@ -73,9 +83,9 @@
 		}
 	} 
 	&.right:hover {
-		.img_hover {
-			transform: translate3D(0,0,0) scale(1);
-		}
+		// .img_hover {
+		// 	transform: translate3D(0,0,0) scale(1.1);
+		// }
 		.background-image-holder {
 			transform: translate3D($transitionWidth,0,0);
 		}

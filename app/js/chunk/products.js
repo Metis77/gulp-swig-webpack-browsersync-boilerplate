@@ -2,7 +2,6 @@
 
 $('.image-square')
 	.on('mouseenter', function(event) {
-		console.log('test')
 		$(this)
 			.addClass('-is-hover')
 			.removeClass('-is-out')

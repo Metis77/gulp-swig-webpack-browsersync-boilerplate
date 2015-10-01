@@ -15,14 +15,14 @@ svg.logo {
 		fill  : white;
   	}
 
-  	nav.fixed &,
-  	nav > .nav-open & {
-  		path,
-	 	polygon {
-			stroke: $bg-dark;
-			fill  : $bg-dark;
-		}
-  	}
+  // 	nav.fixed &,
+  // 	nav > .nav-open & {
+  // 		path,
+	 // 	polygon {
+		// 	stroke: $bg-dark;
+		// 	fill  : $bg-dark;
+		// }
+  // 	}
 
 
 	.-small & {
