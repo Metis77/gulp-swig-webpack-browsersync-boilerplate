@@ -6,19 +6,25 @@
 	}
 	.img_hover {
 		position: absolute;
-	    height: 100%;
 	    top: 0;
 
+	    height: 100%;
 	    width: $transitionWidth;
+		
+		padding: 10px;
+	    background-color: white;
 
 	    img {
-	  //   	height: 100%;
-			// width: auto;
+		    min-width: initial;
+		    min-height: initial;
+		    width: 100%;
+		    height: auto;
+		   
 	    }
 	}
-	// .background-image-holder, {
-	// 	opacity: .5;
-	// }
+	.background-image-holder, {
+		overflow: hidden;
+	}
 
 
 
@@ -26,11 +32,11 @@
 	/*
 	 * animation
 	 */
-	@keyframes open {
-        0%    {transform: translate3d(0,0,0);}
-        70%   {transform: translate3d(-30vw,0,0);}
-        100%  {transform: translate3d(-20vw,0,0);}
-    }
+	// @keyframes open {
+ //        0%    {transform: translate3d(0,0,0);}
+ //        70%   {transform: translate3d(-30vw,0,0);}
+ //        100%  {transform: translate3d(-20vw,0,0);}
+ //    }
 
 
 	.background-image-holder,
@@ -40,7 +46,7 @@
 		
 	}
 	.img_hover {
-		transition: all 0.4s ease-in-out;
+		transition: all 0.4s ease-out;
 		opacity: 0;
 	}
 	

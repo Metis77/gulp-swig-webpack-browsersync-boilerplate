@@ -10,16 +10,16 @@
 <section class="image-square {{side}}">
     <div class="col-md-6 image">
         <div class="img_hover srcset">
-            {# <img alt="{{headline|safe}}"  src="{{scr_hover}}" > #}
-            <img
+            <img alt="{{headline|safe}}"  src="{{scr_hover}}" >
+           {#  <img
                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
                 data-srcset="
                     {{ scr_hover }};320w 320w,
                     {{ scr_hover }};400w 400w,
                     {{ scr_hover }};500w 500w," 
-                data-sizes="31vw"
+                data-sizes="20vw"
                 class="lazyload"
-                alt="{{headline|safe}}">
+                alt="{{headline|safe}}"> #}
         </div>
         <div class="background-image-holder srcset">
             {# <img alt="image" class="background-image" src="{{src_bg}};600w" /> #}

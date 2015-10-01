@@ -8,6 +8,7 @@
 	img {
 		//  reset
 		display: block;	
+		max-width: initial;
 		
 		// fill container
 		position: absolute;
@@ -39,11 +40,6 @@
 		@media (max-width: 767px) {
 		    top: -50vh !important;
 		    transform: none !important;
-		}
-
-		// .-small & img,
-		img {
-			max-width: inherit;
 		}
 	}
 
