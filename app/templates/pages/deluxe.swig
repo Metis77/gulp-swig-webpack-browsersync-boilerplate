@@ -9,7 +9,7 @@
 
 {{header_products(
     'DE LUXE',
-    '',
+    'Dauerwellen',
     '/assets_build/header/KL-Keyvisual-DELUXE-L3.jpg'
 )}}
 
@@ -20,7 +20,7 @@
 
 {{product(
     'Sensitiv <br>Dauerwelle',
-    'Beruhigen Sie Ihre Kopfhaut: <br>Mit der Sensitiv Dauerwelle erreichen Sie eine besonders schonende Umformung.',
+    '<b>Für beanspruchtes und empfindliches Haar</b> <br>Beruhigen Sie Ihre Kopfhaut: <br>Mit der Sensitiv Dauerwelle erreichen Sie eine besonders schonende Umformung.',
     'left',
     'assets_build/DELUXE/KL-DELUXE-L3-01-sensitiv-DW.jpg',
     'assets_build/DELUXE/KL-Packshots-sensitiv-DW.jpg',
@@ -30,7 +30,7 @@
 
 {{product(
     'Intensiv <br>Dauerwelle',
-    'Endlich Locken! <br>'+
+    '<b>Für unbehandeltes, schwer wellbares Haar</b> <br>Endlich Locken! <br>'+
         'Modellieren Sie harmonische Wellen und sichtbares Volumen mit der KERALOCK Intensiv Dauerwelle.',
     'right',
     'assets_build/DELUXE/KL-DELUXE-L3-02-intensiv-DW.jpg',
@@ -41,8 +41,8 @@
 
 {{product(
     'Kräuterschaum <br>Dauerwelle',
-    'Endlich Locken! <br>'+
-        'Modellieren Sie harmonische Wellen und sichtbares Volumen mit der KERALOCK Intensiv Dauerwelle.',
+    '<b>Für unbehandeltes, normales und fettendes Haar</b> <br>Für jede Welle ist ein Kraut gewachsen: <br>'+
+        'Die Wirkstoffe der Kräuterschaum Dauerwelle sorgen für natürliche Vitalität.',
     'left',
     'assets_build/DELUXE/KL-DELUXE-L3-03-kaeuterschaum.jpg',
     'assets_build/DELUXE/KL-Packshots-Kraeuterschaum.jpg',

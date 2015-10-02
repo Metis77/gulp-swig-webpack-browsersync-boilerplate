@@ -15,7 +15,7 @@
         <div class="row">
             <div class="col-sm-6">
                 <h1 class="mb0 uppercase bold ">{{h1|safe}}</h1>
-                {% if h3 %}<h3>{{h3|safe}}</h3>{% endif %}
+                {% if h3 %}<h3 class="mb0">{{h3|safe}}</h3>{% endif %}
             </div>
         </div>
         <!--end of row-->
