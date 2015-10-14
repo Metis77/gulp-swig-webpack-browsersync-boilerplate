@@ -8,7 +8,7 @@
 	img {
 		//  reset
 		display: block;	
-		max-width: initial;
+		max-width: inherit; // initial not working on ie 9-11 
 		
 		// fill container
 		position: absolute;
@@ -26,7 +26,7 @@
 		overflow: hidden;
 
 		.-small & {
-			top: initial;
+			top: auto;
 			bottom: 0;
 			left: 0;
 			

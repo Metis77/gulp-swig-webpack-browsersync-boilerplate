@@ -241,6 +241,10 @@
     <!--end of container-->
 </section>
 
+
+
+
+
 <section id="anchor-inspiration" class="image-bg bg-dark overlay pt160 pb160 .pt-sm-96 .pb-sm-96 pt-xs-48 pb-xs-48 -small">
 	<a href="inspiration.html" >
 	    <div class="background-image-holder srcset INSPIRATION-02-Haarfarben">
