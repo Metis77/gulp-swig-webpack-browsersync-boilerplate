@@ -7,7 +7,7 @@
     image,
     cssClass
 ) %}
-<section class="image-bg bg-dark parallax {% if cssClass %}{{cssClass}}{% endif %} overlay pt160 pb160 pt-xs-40 pb-xs-40">
+<section class="image-bg bg-dark parallax {% if cssClass %}{{cssClass}}{% endif %} overlay pt160 pb160 pt-xs-64 pb-xs-64">
     <div class="background-image-holder">
         <img alt="image" class="background-image" src="{{image}}" />
     </div>

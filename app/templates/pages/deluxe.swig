@@ -10,7 +10,8 @@
 {{header_products(
     'DE LUXE',
     'Dauerwellen',
-    '/assets_build/header/KL-Keyvisual-DELUXE-L3.jpg'
+    '/assets_build/header/KL-Keyvisual-DELUXE-L3.jpg',
+    'height_small'
 )}}
 
 

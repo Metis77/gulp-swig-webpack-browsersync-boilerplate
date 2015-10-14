@@ -23,6 +23,7 @@ $( document ).ready(function() {
 	require("./libraries/parallax.js");
 	require("./chunk/basic.js");
 	require("./chunk/scripts.js");
+	require("./chunk/nav.js");
 	require("./chunk/products.js");
 	require("./chunk/home.js");
 });
