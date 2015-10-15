@@ -1,6 +1,7 @@
 {% extends "../layouts/default.swig" %}
 
 {% set page = 'home' %}
+
 {% block pagetitle %}Keralock{% endblock %}
 {% block description %}{% endblock %}
 

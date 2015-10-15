@@ -7,7 +7,7 @@
 	button_url,
 	button_text
 ) %}
-<section class="image-square {{side}}">
+<section class="image-square --image-square-effect {{side}}">
     <div class="col-md-6 image">
         <div class="img_hover srcset">
             <img alt="{{headline|safe}}"  src="{{scr_hover}}" >

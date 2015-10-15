@@ -68,34 +68,37 @@
 
 
 	// hover state
-	&.left:hover,
-	&.right:hover {
-		.img_hover {
-			opacity: 1;
+	&.--image-square-effect {
+		&.left:hover,
+		&.right:hover {
+			.img_hover {
+				opacity: 1;
+			}
+			.img_hover {
+				transform: translate3D(0,0,0) scale(1.02);
+			}
 		}
-		.img_hover {
-			transform: translate3D(0,0,0) scale(1.02);
+		&.left:hover {
+			// .img_hover {
+			// 	transform: translate3D(0,0,0) scale(1.1);
+			// }
+			.background-image-holder {
+				transform: translate3D(-$transitionWidth,0,0);
+				// animation: open .5s ease-in-out;
+				// animation-fill-mode: forwards;
+				// // animation-iteration-count: 1;
+			}
+		} 
+		&.right:hover {
+			// .img_hover {
+			// 	transform: translate3D(0,0,0) scale(1.1);
+			// }
+			.background-image-holder {
+				transform: translate3D($transitionWidth,0,0);
+			}
 		}
 	}
-	&.left:hover {
-		// .img_hover {
-		// 	transform: translate3D(0,0,0) scale(1.1);
-		// }
-		.background-image-holder {
-			transform: translate3D(-$transitionWidth,0,0);
-			// animation: open .5s ease-in-out;
-			// animation-fill-mode: forwards;
-			// // animation-iteration-count: 1;
-		}
-	} 
-	&.right:hover {
-		// .img_hover {
-		// 	transform: translate3D(0,0,0) scale(1.1);
-		// }
-		.background-image-holder {
-			transform: translate3D($transitionWidth,0,0);
-		}
-	}
+	
 
 
 
