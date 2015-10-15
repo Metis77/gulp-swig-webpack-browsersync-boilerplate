@@ -1,0 +1,7 @@
+.menu li a {
+	display: block;
+}
+.menu li a.active {
+	opacity: 1 !important;
+	background: linear-gradient(transparent 95%, white 95%, white 100% );
+}

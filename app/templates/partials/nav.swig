@@ -14,7 +14,7 @@
                 <div class="module left">
                     <ul class="menu bg-light">
                         <li class="has-dropdown bg-light">
-                            <a href="/inspiration.html" {% if page == 'inspiration' %}class="active"{% endif %}>
+                            <a href="/inspiration.html" class="{% if page == 'inspiration' %}active {% endif %}">
                                 Inspiration
                             </a>
                             <ul>
@@ -42,7 +42,7 @@
                         </li>
 
                         <li>
-                            <a href="/deluxe.html">
+                            <a href="/deluxe.html" class="{% if page == 'deluxe' %}active {% endif %}">
                                 DE LUXE
                             </a>
                             {# <ul>
@@ -70,7 +70,7 @@
                         </li>
 
                         <li>
-                            <a href="/night-life.html">
+                            <a href="/night-life.html" class="{% if page == 'night-life' %}active {% endif %}">
                                 NIGHT LIFE
                             </a>
                             {# <ul>
@@ -94,7 +94,7 @@
                         </li>
 
                         <li>
-                            <a href="/care.html">
+                            <a href="/care.html" class="{% if page == 'care' %}active {% endif %}">
                                 CARE
                             </a>
                             {# <ul>

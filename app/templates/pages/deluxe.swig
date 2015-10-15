@@ -1,5 +1,6 @@
 {% extends "../layouts/default.swig" %}
 
+{% set page = 'deluxe' %}
 
 {% block pagetitle %} DE LUXE // Keralock{% endblock %}
 {% block description %}{% endblock %}

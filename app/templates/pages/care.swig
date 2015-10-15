@@ -1,6 +1,6 @@
 {% extends "../layouts/default.swig" %}
 
-
+{% set page = 'care' %}
 {% block pagetitle %} NIGHT LIFE // Keralock{% endblock %}
 {% block description %}{% endblock %}
 
@@ -80,7 +80,8 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-6 col-sm-offset-3 text-center">
-                <h2 class="uppercase bold italic">FAQ zu KERALOCK Shampoo Mousse Volumen</h2>
+                <h2 class="uppercase bold italic">FAQ</h2>
+                <h2 class="uppercase bold italic">Foamshampoos</h2>
             </div>
         </div>
         

@@ -13,6 +13,7 @@ var sourcemaps 		= require('gulp-sourcemaps');
 var autoprefixer 	= require('gulp-autoprefixer');
 
 var swig            = require('gulp-swig');
+var htmlmin         = require('gulp-htmlmin');
 
 var webpack = require('webpack');
 
@@ -58,6 +59,13 @@ gulp.task('templates', function() {
             load_json: true,
             json_path: app+'templates/data/'
         }))
+        .pipe(htmlmin({
+            collapseWhitespace: true,
+            preserveLineBreaks: true,
+            
+            removeComments: true,
+            removeCommentsFromCDATA: true,
+        }))
     
     var styleStream = gulp.src(app + 'styles/main.scss')
         .pipe(plumber())
@@ -67,7 +75,6 @@ gulp.task('templates', function() {
                 outputStyle: 'compressed'
             }
         ))
-        .pipe(sourcemaps.write())
         .pipe(sourcemaps.init({loadMaps: true}))
         .pipe(autoprefixer(
             {
@@ -84,12 +91,13 @@ gulp.task('templates', function() {
                 ],
             }
         ))
+        .pipe(sourcemaps.write('.'))
 
     var assetsStream = gulp.src(assetsImages);
 
     return merge(templateStream, assetsStream, styleStream)
         .pipe(newer(dist+'*.html'))
-        .pipe(sourcemaps.write('.'))
+        // .pipe(sourcemaps.write('.'))
         .pipe(inlineResize(
             {
                 replaceIn:['.html','.css'], 
@@ -161,6 +169,12 @@ gulp.task('webpack', function() {
             "jquery": "jQuery",
             "$": "jQuery",
         },
+        plugins: [
+            new webpack.optimize.UglifyJsPlugin({
+              sourceMap: true,
+              mangle: true
+            })
+        ],
         devtool: "source-map",
     }, function(err, stats) {
         if(err) throw new gutil.PluginError("webpack", err);

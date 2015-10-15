@@ -41,7 +41,7 @@
  35. Footers
  36. Spacing
 
-/*!---------- 1. GLOBAL STYLES ----------*/
+/*---------- 1. GLOBAL STYLES ----------*/
 
 $green: #47b475;
 $red: #e31d3b;
@@ -108,7 +108,7 @@ hr.short-thick{ max-width: 50px; border-top: 5px solid #ccc; opacity: 1 !importa
 	.spread-children *{ margin-left: 6px; margin-right: 6px; }
 }
 
-/*!---------- 2. MIXINS ----------*/
+/*---------- 2. MIXINS ----------*/
 
 @mixin transition($time){
 	transition: all $time ease;
@@ -217,7 +217,7 @@ hr.short-thick{ max-width: 50px; border-top: 5px solid #ccc; opacity: 1 !importa
 	p,span,li{ color: $color; }
 }
 
-/*!---------- 3. TYPOGRAPHY ----------*/
+/*---------- 3. TYPOGRAPHY ----------*/
 
 @media all and (max-width: 767px){
 	.text-center-xs{ text-align: center !important; }
@@ -301,7 +301,7 @@ blockquote .author{ font-size: 12px; display: block; float: right; margin-top: 1
 	.text-left-xs{ text-align: left !important; }
 }
 
-/*!---------- 4. COLOURS ----------*/
+/*---------- 4. COLOURS ----------*/
 
 
 .bg-primary{ background: $color-primary !important; }
@@ -314,7 +314,7 @@ blockquote .author{ font-size: 12px; display: block; float: right; margin-top: 1
 .color-white{ color: #fff; }
 
 
-/*!---------- 5. SECTIONS ----------*/
+/*---------- 5. SECTIONS ----------*/
 
 section,footer{ padding: 96px 0; position: relative; overflow: hidden; }
 footer{ padding: 72px 0; }
@@ -355,7 +355,7 @@ footer{ padding: 72px 0; }
 }
 
 
-/*!---------- 6. BUTTONS ----------*/
+/*---------- 6. BUTTONS ----------*/
 
 .btn{ font-family: $heading-font,"Helvetica Neue",Helvetica,Arial,sans-serif; border: 2px solid $color-primary; padding: 0 26px; height: 40px; min-width: 150px; line-height: 36px; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; border-radius: 0; color: $color-primary; text-align: center; @include transition(0.3s); margin-right: 8px; margin-bottom: 24px; }
 .btn { color: $kl_red; border-color: $kl_red;}
@@ -389,7 +389,7 @@ body.btn-rounded .btn{ border-radius: 25px !important; }
 .bg-primary .btn{ color: #fff; border-color: #fff; }
 .bg-primary .btn:hover{ background: #fff; color: $color-primary; }
 
-/*!---------- 7. NAVIGATION ----------*/
+/*---------- 7. NAVIGATION ----------*/
 
 $nav-height: 55px;
 $nav-line-height: 53px;
@@ -592,12 +592,12 @@ nav.transparent.fixed.bg-dark .menu > li > a,nav.transparent.fixed.bg-dark .modu
 
 .nav-is-overlay nav{ opacity: 1; visibility: visible; @include translateX(0 !important); }
 
-/*!---------- 8. TOOLTIPS ----------*/
+/*---------- 8. TOOLTIPS ----------*/
 
 .tooltip{ font-weight: 600; font-size: 13px; }
 .tooltip-inner{ border-radius: 0; padding: 9px 24px 12px 24px; }
 
-/*!---------- 9. ALERTS ----------*/
+/*---------- 9. ALERTS ----------*/
 
 .alert{ margin-bottom: 24px; background: none; border-radius: 0; font-weight: 600; padding: 12px 16px; }
 .alert .close{ opacity: 1; font-size: 24px; top: -2px; right: -4px; @include transition(0.3s); }
@@ -606,7 +606,7 @@ nav.transparent.fixed.bg-dark .menu > li > a,nav.transparent.fixed.bg-dark .modu
 .alert-success{ border: 1px solid #60b963; color: #60b963; }
 .alert-danger{ border: 1px solid #c64444; color: #c64444; }
 
-/*!---------- 10. ICONS ----------*/
+/*---------- 10. ICONS ----------*/
 
 .icon{ font-size: 64px; display: inline-block; color: $bg-dark ; }
 .image-bg.bg-light .icon{ color: $bg-dark; }
@@ -625,7 +625,7 @@ nav.transparent.fixed.bg-dark .menu > li > a,nav.transparent.fixed.bg-dark .modu
 .embelish-icons{ position: absolute; top: 50%; @include translateY(-50%); @include scale(10); left: 50%; opacity: 0.05; z-index: -1; }
 
 
-/*!---------- 11. FORMS ----------*/
+/*---------- 11. FORMS ----------*/
 
 input,select,textarea{ font-family: $heading-font,"Helvetica Neue",Helvetica,Arial,sans-serif; }
 input[type="text"],textarea,select,input[type="password"]{ -webkit-appearance: none; -moz-appearance: none; appearance: none; }
@@ -696,7 +696,7 @@ form iframe.mail-list-form{ display: none;}
 	form.thirds input, form.halves input{ width: 100%; margin-bottom: 8px; }
 }
 
-/*!---------- 12. ACCORDIONS ----------*/
+/*---------- 12. ACCORDIONS ----------*/
 
 .accordion .title{ cursor: pointer; @extend .disable-select; }
 .accordion .content{ max-height: 0; overflow: hidden; @include transition(0.4s); }
@@ -735,7 +735,7 @@ form iframe.mail-list-form{ display: none;}
 .accordion-2 .title:hover{ opacity: 1; }
 
 
-/*!---------- 13. TABBED CONTENT ----------*/
+/*---------- 13. TABBED CONTENT ----------*/
 
 .tabs{ overflow: hidden; }
 .tabs li{ display: inline-block; cursor: pointer; }
@@ -801,7 +801,7 @@ form iframe.mail-list-form{ display: none;}
 	.icon-tabs .tab-title i{ font-size: 32px; }
 }
 
-/*!---------- 14. PROGRESS BARS ----------*/
+/*---------- 14. PROGRESS BARS ----------*/
 
 .progress-bars{ margin-bottom: 24px; }
 .progress{ height: auto; box-shadow: none; }
@@ -819,13 +819,13 @@ form iframe.mail-list-form{ display: none;}
 .progress-2 .bar-holder{ height: 16px; border-radius: 8px; overflow: hidden; border: 1px solid $color-primary; }
 .bg-primary .progress-2 .bar-holder{ border-color: lighten($color-primary,12%); }
 
-/*!---------- 15. STATS ----------*/
+/*---------- 15. STATS ----------*/
 
 .stat-2 h1{ font-size: 80px; line-height: 88px; }
 .stat-3 h1{ margin-bottom: 8px; font-size: 72px; line-height: 80px; }
 .stat-3 h6{ margin-bottom: 0; }
 
-/*!---------- 16. BREADCRUMBS ----------*/
+/*---------- 16. BREADCRUMBS ----------*/
 
 .breadcrumb{ margin-bottom: 24px; }
 .breadcrumb-2{ background: none; padding: 0; }
@@ -845,14 +845,14 @@ form iframe.mail-list-form{ display: none;}
 	.page-title-4 .breadcrumb, .page-title-2 .breadcrumb{ float: left; margin-top: 8	px; }
 }
 
-/*!---------- 17. PAGINATION ----------*/
+/*---------- 17. PAGINATION ----------*/
 
 .pagination{ margin: 0; }
 .pagination li{ @extend .number; }
 .pagination li a{ width: 32px; height: 32px; padding: 0; text-align: center; padding-top: 6px; margin: 0 4px; color: $bg-dark; font-weight: 400; }
 .pagination li a:hover, .pagination li.active a, .pagination li.active:hover a{ background: $color-primary; color: #fff; border-color: $color-primary; }
 
-/*!---------- 18. ICON FEATURES ----------*/
+/*---------- 18. ICON FEATURES ----------*/
 
 .feature.boxed{ padding: 32px; background: $bg-secondary; }
 .feature.boxed.bg-dark{ background: $bg-dark; }
@@ -908,7 +908,7 @@ form iframe.mail-list-form{ display: none;}
 .image-bg .feature.boxed{ background: rgba(34,34,34,0.4); }
 .bg-light .feature.bordered{ border-color: rgba(34,34,34,0.2); }
 
-/*!---------- 19. PRICING TABLES ----------*/
+/*---------- 19. PRICING TABLES ----------*/
 
 .pricing-table{ padding: 48px 32px; }
 .pricing-table .price{ @extend .number; font-size: 80px; line-height: 80px; font-weight: 300; color: $bg-dark; display: inline-block; margin-bottom: 16px; }
@@ -921,7 +921,7 @@ form iframe.mail-list-form{ display: none;}
 
 .pt-2 ul{ line-height: 36px; }
 
-/*!---------- 20. PAGE TITLES ----------*/
+/*---------- 20. PAGE TITLES ----------*/
 
 .page-title{ padding: 0; }
 .page-title .container{ @extend .v-align-transform; }
@@ -961,7 +961,7 @@ form iframe.mail-list-form{ display: none;}
 .page-title.fullscreen{ height: 100vh !important; padding-top: 0; }
 
 
-/*!---------- 21. WIDGETS ----------*/
+/*---------- 21. WIDGETS ----------*/
 
 .widget{ margin-bottom: 48px; }
 
@@ -1013,7 +1013,7 @@ form iframe.mail-list-form{ display: none;}
 .widget .flex-control-nav{ display: none; }
 .widget .image-slider{ margin: 0; }
 
-/*!---------- 22. IMAGE TILES ----------*/
+/*---------- 22. IMAGE TILES ----------*/
 
 img{ max-width: 100%; }
 
@@ -1049,7 +1049,7 @@ img{ max-width: 100%; }
 .border-thick.col-sm-6:first-child{ border-right: 8px solid #fff; }
 .border-thick.col-sm-6:last-child{ border-left: 8px solid #fff; }
 
-/*!---------- 23. SLIDERS ----------*/
+/*---------- 23. SLIDERS ----------*/
 
 .image-slider{ position: relative; }
 .image-slider .slides{ position: relative; overflow: hidden; }
@@ -1132,7 +1132,7 @@ img{ max-width: 100%; }
 	.kenburns .slides li .background-image-holder{ animation: none !important; -webkit-animation: none !important; }
 }
 
-/*!---------- 24. IMAGE GALLERIES ----------*/
+/*---------- 24. IMAGE GALLERIES ----------*/
 
 .instafeed.grid-gallery{ overflow: hidden; }
 .instafeed.grid-gallery li{ width: 25%; display: inline-block; float: left; padding: 8px; @include transition(0.3s); opacity: 1; }
@@ -1173,7 +1173,7 @@ img{ max-width: 100%; }
 .lb-nav a.lb-next:before{ content: "\e649"; right: 16px; }
 .lb-nav a.lb-prev:before{ content: "\e64a"; left: 16px; }
 
-/*!---------- 25. INTROS ----------*/
+/*---------- 25. INTROS ----------*/
 
 .cover{ @include heading-colors(#fff); @include text-colors(#fff); margin: 0; padding: 0; }
 .image-bg.bg-light{ @include heading-colors(#222); @include text-colors(#777); }
@@ -1197,7 +1197,7 @@ img{ max-width: 100%; }
 	.cover.fullscreen .slides li{ height: auto; padding: 80px 0; }
 }
 
-/*!---------- 26. SHOP ----------*/
+/*---------- 26. SHOP ----------*/
 
 .product-single .image-slider .label{ font-size: 12px; text-transform: uppercase ; position: absolute; z-index: 3; top: 16px; right: 16px; }
 .product-single .price{ font-size: 32px; font-weight: 300; line-height: 40px; display: inline-block; margin-right: 32px; }
@@ -1231,7 +1231,7 @@ th, td{ line-height: 24px !important; }
 .cart .remove-item{ display: inline-block; width: 24px; height: 24px; position: relative; border: 1px solid #c64444; color: #c64444; border-radius: 50%; text-align: center; font-size: 12px; @include transition(0.3s); }
 .cart .remove-item:hover{ color: #fff; background: #c64444; }
 
-/*!---------- 27. VIDEO ----------*/
+/*---------- 27. VIDEO ----------*/
 
 video:-webkit-full-screen, 
 audio:-webkit-full-screen { 
@@ -1317,7 +1317,7 @@ video{ max-width: 100%; }
 // 	.fs-vid-background{ display: none; }
 // }
 
-/*!---------- 28. BLOG ----------*/
+/*---------- 28. BLOG ----------*/
 
 .post-title .label{ margin-right: 16px; }
 .post-title h4{ position: relative; top: 2px; margin-bottom: 16px; }
@@ -1382,7 +1382,7 @@ video{ max-width: 100%; }
 }
 
 
-/*!---------- 29. IMAGE BLOCKS ----------*/
+/*---------- 29. IMAGE BLOCKS ----------*/
 
 .image-small{ max-height: 80px; }
 .image-xs{ max-height: 50px; }
@@ -1437,7 +1437,7 @@ video{ max-width: 100%; }
 section.image-zoom img{ @include transition(9s); }
 section.image-zoom:hover img{ @include scale(1.1); }
 
-/*!---------- 30. PORTOFLIO ----------*/
+/*---------- 30. PORTOFLIO ----------*/
 
 .filters{ overflow: hidden; display: inline-block; }
 .filters li{ float: left; margin-right: 32px; cursor: pointer; @extend .btn; @extend .btn-sm; border-color: rgba(255,255,255,0); opacity: .7; border-radius: 25px; @extend .disable-select; display: inline-block; }
@@ -1463,7 +1463,7 @@ section.image-zoom:hover img{ @include scale(1.1); }
 	.filters.floating li{ width: 50%; float: left; margin: 0; }
 }
 
-/*!---------- 31. TESTIMONIALS ----------*/
+/*---------- 31. TESTIMONIALS ----------*/
 
 .testimonials h4{ line-height: 40px; }
 .testimonials .quote-author{ display: inline-block; text-align: left; overflow: hidden; width: 250px; margin-top: 24px; }
@@ -1475,7 +1475,7 @@ section.image-zoom:hover img{ @include scale(1.1); }
 	.testimonials h4{ line-height: 26px; }
 }
 
-/*!---------- 32. COUNTDOWNS ----------*/
+/*---------- 32. COUNTDOWNS ----------*/
 
 .countdown{ font-size: 80px; line-height: 88px; @extend h1; font-weight: 100; text-transform: uppercase; }
 .image-bg .countdown{ color: #fff; }
@@ -1488,7 +1488,7 @@ section.image-zoom:hover img{ @include scale(1.1); }
 	.countdown{ font-size: 48px; line-height: 56px; }
 }
 
-/*!---------- 33. MAPS ----------*/
+/*---------- 33. MAPS ----------*/
 
 .map-holder{ overflow: hidden; position: relative; }
 .map-holder iframe{ border: none; position: absolute; width: 100%; height: 180%; top: -40%; left: 0; z-index: 1; }
@@ -1499,7 +1499,7 @@ section.image-zoom:hover img{ @include scale(1.1); }
 .map-canvas{ width: 100%; height: 100%; position: absolute; top: 0; }
 
 
-/*!---------- 34. TWITTER ----------*/
+/*---------- 34. TWITTER ----------*/
 
 .twitter-feed.thirds li{ width: 33.333333%; padding: 0 15px; float: left; }
 .twitter-feed.thirds ul{ overflow: hidden; }
@@ -1525,7 +1525,7 @@ section.image-zoom:hover img{ @include scale(1.1); }
 
 .sc-background-orange{ background: $color-primary !important; }
 
-/*!---------- 35. MODALS ----------*/
+/*---------- 35. MODALS ----------*/
 
 .foundry_modal{ overflow: hidden; max-width: 50%; width: 50%; position: fixed; padding: 80px 48px; @include transition(0.3s); opacity: 0; visibility: hidden; top: 50%; left: 50%; background: #fff; @extend .cast-shadow; transform: translateX(-50%) translateY(-40%); -webkit-transform: translateX(-50%) translateY(-40%); }
 .modal-screen{ position: fixed; width: 100%; height: 100%; background: $bg-dark; opacity: 0; z-index: 9998; @include transition(0.3s); visibility: hidden; top: 0; left: 0; }
@@ -1573,7 +1573,7 @@ section.image-zoom:hover img{ @include scale(1.1); }
 	.modal-strip .icon+p{ padding-left: 0; top: 0; }
 }
 
-/*!---------- 36. FOOTERS ----------*/
+/*---------- 36. FOOTERS ----------*/
 
 footer.bg-dark a{ color: #fff; }
 
@@ -1594,7 +1594,7 @@ footer.bg-dark a{ color: #fff; }
 .bg-dark .back-to-top:active, .bg-dark .back-to-top:focus{ color: #fff; }
 .bg-dark .back-to-top:hover{ background: none; }
 
-/*!---------- 36. SPACING ----------*/
+/*---------- 36. SPACING ----------*/
 
 .mr0{ margin-right: 0; }
 .mb0{ margin-bottom: 0 !important; }

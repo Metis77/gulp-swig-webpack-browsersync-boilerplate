@@ -11,6 +11,7 @@
     "gulp-autoprefixer": "^2.3.1",
     "gulp-concat": "^2.6.0",
     "gulp-gm": "0.0.8",
+    "gulp-htmlmin": "^1.2.0",
     "gulp-inline-resize": "^0.1.6",
     "gulp-newer": "^0.5.1",
     "gulp-plumber": "^1.0.1",

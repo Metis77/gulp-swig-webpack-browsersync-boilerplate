@@ -1,7 +1,6 @@
-{% set page = 'inspiration' %}
-
 {% extends "../layouts/default.swig" %}
 
+{% set page = 'inspiration' %}
 
 {% block pagetitle %}INSPIRATION // Keralock{% endblock %}
 {% block description %}{% endblock %}

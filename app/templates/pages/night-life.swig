@@ -1,5 +1,6 @@
 {% extends "../layouts/default.swig" %}
 
+{% set page = 'night-life' %}
 
 {% block pagetitle %} NIGHT LIFE // Keralock{% endblock %}
 {% block description %}{% endblock %}
