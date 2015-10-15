@@ -5,7 +5,7 @@ function navToggleTransparet() {
 	} else {
 		sel.addClass('transparent')
 	}
-	console.log(viewport().width);
+	// console.log(viewport().width);
 };
 
  	

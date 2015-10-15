@@ -23,8 +23,10 @@
 {# {% macro product(side,src_bg,scr_hover,headline,text,button) %} #}
 
 {{product(
-    'Straight Hair',
-    'KERALOCK STRAIGHT HAIR glättet lockiges und welliges Haar. Das glatte Ergebnis hält nicht nur einen Tag, sondern bis zur nächsten Haarwäsche. Eine hitze- und feuchtigkeitsbeständige Wirkformel glättet die Haarstruktur. Der Anti-Frizz-Effekt bändigt lockiges und welliges Haar vom Ansatz in die Spitzen. Freuen Sie sich auf geschmeidig glattes und gepflegtes Haar ohne Schädigung durch Glätteisen oder chemische Mittel.',
+    'Color <br>Trockenshampoo',
+    'Frisch gepflegte Haar ganz ohne Waschen und weniger Farbrückstände. Für ein sauberes Haargefühl in Sekundenschnelle!<br> <br> '+
+    'Erhältlich in den Farben: <br>'+
+    'Blond / Mittelbraun / Dunkelbraun / Schwarz / Rot',
     'left',
     'assets_build/NIGHT-LIFE/KL-NIGHT-L3-01-colour-hairsprays.jpg',
     'assets_build/NIGHT-LIFE/KL-Packshots-NL-blond.jpg',
@@ -37,29 +39,24 @@
         <div class="row">
             <div class="col-sm-6">
                 <h2 class="uppercase bold italic">Anwendung</h2>
-                <p class="lead">Die KERALOCK Dauerwellen sind speziell für die einfache Anwendung zu Hause konzipiert – ganz ohne Friseur. </p>
-
-                <ol>
-                    <li>STRAIGHT HAIR Shampoo kurz einwirken lassen und gründlich ausspülen.</li>
-                    <li>STRAIGHT HAIR Fixier Gel ins handtuchtrockene Haar kneten. Gut durchkämmen.</li>
-                    <li>Strähnenweise unter Streckung föhnen.</li>
-                </ol>
+                <p class="lead">Aus 20 cm Entfernung in kurzen Sprühstößen auf den Haaransatz verschiedener Haarpartien verteilen. <br>
+                Das Trockenshampoo mit Farbpartikeln mit den Fingerspitzen in das Haar einmassieren und dann sorgfältig ausbürsten.</p>
 
             </div>
 
             <div class="col-sm-6">
                 <h2 class="uppercase bold italic">Wirkung</h2>
-                <p class="lead">Aloe Vera, Sesamöl und Amisil®-Complex schützen Ihr Haar vor dem Austrocknen. Spezielle Biopolymere schließen die Schuppenschicht des Haares und machen es wunderbar geschmeidig, leicht frisierbar und glänzend.</p>
+                <p class="lead">Das Trockenshampoo mit Farbpartikeln verleiht dem Haar extra lange Frische ohne es zu waschen.</p>
 
                 <h2 class="uppercase bold italic">Haartyp</h2>
-                <p class="lead">Für normales, lockiges, welliges oder widerspenstiges Haar.</p>
+                <p class="lead">Für normales, lockiges, welliges oder widerspenstiges Haar. </p>
             </div>
         </div>
 </section>
 
 
 
-<section>
+{# <section>
     <div class="container">
         <div class="row">
             <div class="col-sm-6 col-sm-offset-3 text-center">
@@ -110,7 +107,7 @@
     <!--end of container-->
 </section>
 
-
+ #}
 
 
 
@@ -129,7 +126,7 @@
     'Feine Strähnchen, kräftige Blocksträhnen und farbige Haarspitzen: <br> Mit den auswaschbaren anwendbaren KERALOCK NIGHT LIFE color hairsprays ist alles möglich. Einfach Strähne abteilen, Farbe aufsprühen – fertig. Satte Farbpigmente und perfekter Haarspray-Halt! Erhältlich in den Farben: <br> purple | green | red | blue | pink | blonde',
     'right',
     'assets_build/NIGHT-LIFE/KL-NIGHT-L3-02-crazy-curl.jpg',
-    'assets_build/NIGHT-LIFE/KL-Packshots-NL-blond.jpg',
+    'assets_build/NIGHT-LIFE/KL-Packshots-NL-colorhairspray-pink.jpg',
     button_url,
     'Bestellen'
 ) }}
@@ -139,7 +136,9 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-6 col-sm-offset-3 text-center">
-                <h2 class="uppercase bold italic">FAQ zu den auswaschbaren Farbhaarsprays von KERALOCK</h2>
+                <h2 class="uppercase bold italic">FAQ </h2>
+                <h2 class="uppercase bold italic">COLOR HAIRSPRAYS</h2>
+                {# <p class="lead uppercase bold italic">COLOR HAIRSPRAYS</p> #}
             </div>
         </div>
         
