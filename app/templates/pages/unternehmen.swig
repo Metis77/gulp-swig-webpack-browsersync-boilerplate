@@ -74,17 +74,17 @@
                 <div class="testimonials text-slider slider-arrow-controls">
                     <ul class="slides">
                         <li>
-                            <p class="lead"> <br>KERALOCK bietet professionelles Haarstyling in Premiumqualität zu einem fairen Preis.</p>
+                            <p class="lead">KERALOCK bietet professionelles Haarstyling <br>in Premiumqualität zu einem fairen Preis.</p>
                             <div class="quote-author">
-                                <img alt="Avatar" src="/assets/img/avatar2.png" />
+                                <img alt="Avatar" src="/assets/img/avatar_petra_feldmeier.jpg" />
                                 <h6 class="uppercase">Petra Feldmeier</h6>
                                 <span>Brand & Marketing Manager</span>
                             </div>
                         </li>
                         <li>
-                            <p class="lead"> <br>KERALOCK bietet professionelles Haarstyling in Premiumqualität zu einem fairen Preis.</p>
+                            <p class="lead">KERALOCK bietet professionelles Haarstyling <br>in Premiumqualität zu einem fairen Preis.</p>
                             <div class="quote-author">
-                                <img alt="Avatar" src="/assets/img/avatar2.png" />
+                                <img alt="Avatar" src="/assets/img/avatar_petra_feldmeier.jpg" />
                                 <h6 class="uppercase">Petra Feldmeier</h6>
                                 <span>Brand & Marketing Manager</span>
                             </div>
