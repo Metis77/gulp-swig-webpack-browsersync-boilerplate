@@ -1,205 +1,98 @@
 {% extends "../layouts/default.swig" %}
 
-{% set page = 'home' %}
+{% set page = 'deluxe' %}
 
-{% block pagetitle %}Keralock{% endblock %}
+{% block pagetitle %} DE LUXE // Keralock{% endblock %}
 {% block description %}{% endblock %}
 
-{% block nav %}
-{% endblock %}
-
 {% block content %}
-<section class="cover image-bg fullscreen overlay bg-dark vid-bg pt-xs-120 -desktop">
-    <div class="fs-vid-background">
-        <video muted loop preload="auto" autoplay>
-            <source src="/assets/video/wave.webm" type="video/webm">
-            <source src="/assets/video/wave.mp4" type="video/mp4">
-            <source src="/assets/video/wave.ogv" type="video/ogg">
-        </video>
-    </div>
-    <div class="background-image-holder">
-        {# <img alt="image" class="background-image" src="/assets/img/home15.jpg" /> #}
-    </div>
 
-    <div class="bg-container">
-    	<div class="bg-item overlay srcset bg-item-inspiration">
-    		<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
-    			data-srcset="
-    				assets_build/home/KL-Keyvisual-INSPIRATION.jpg;1000w 1000w,
-    				assets_build/home/KL-Keyvisual-INSPIRATION.jpg;1300w 1300w,
-    				assets_build/home/KL-Keyvisual-INSPIRATION.jpg;1600w 1600w,
-    				assets_build/home/KL-Keyvisual-INSPIRATION.jpg;1900w 1900w" 
-    			data-sizes="100vw" 
-    			class="bg1"
-    			alt="">
-    		<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
-    			data-srcset="
-    				assets_build/home/KL-Keyvisual-INSPIRATION.png;1000w 1000w,
-    				assets_build/home/KL-Keyvisual-INSPIRATION.png;1300w 1300w,
-    				assets_build/home/KL-Keyvisual-INSPIRATION.png;1600w 1600w,
-    				assets_build/home/KL-Keyvisual-INSPIRATION.png;1900w 1900w" 
-    			data-sizes="100vw"
-    			class="bg2"
-    			alt="">
-    	</div>
 
-    	<div class="bg-item overlay bg-item-deluxe">
-    		<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
-    			data-srcset="
-    				assets_build/home/KL-Keyvisual-DELUXE.jpg;1000w 1000w,
-    				assets_build/home/KL-Keyvisual-DELUXE.jpg;1300w 1300w,
-    				assets_build/home/KL-Keyvisual-DELUXE.jpg;1600w 1600w,
-    				assets_build/home/KL-Keyvisual-DELUXE.jpg;1900w 1900w" 
-    			data-sizes="100vw" 
-    			class="bg1"
-    			alt="">
-    		<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
-    			data-srcset="
-    				assets_build/home/KL-Keyvisual-DELUXE.png;1000w 1000w,
-    				assets_build/home/KL-Keyvisual-DELUXE.png;1300w 1300w,
-    				assets_build/home/KL-Keyvisual-DELUXE.png;1600w 1600w,
-    				assets_build/home/KL-Keyvisual-DELUXE.png;1900w 1900w" 
-    			data-sizes="100vw" 
-    			class="bg2"
-    			alt="">
-    	</div>
+{{header_products(
+    'DE LUXE',
+    'Dauerwellen',
+    '/assets_build/header/KL-Keyvisual-DELUXE-L3.jpg',
+    'height_small'
+)}}
 
-    	<div class="bg-item overlay bg-item-nightlife">
-    		<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
-    			data-srcset="
-    				assets_build/home/KL-Keyvisual-NIGHT.jpg;1000w 1000w,
-    				assets_build/home/KL-Keyvisual-NIGHT.jpg;1300w 1300w,
-    				assets_build/home/KL-Keyvisual-NIGHT.jpg;1600w 1600w,
-    				assets_build/home/KL-Keyvisual-NIGHT.jpg;1900w 1900w" 
-    			data-sizes="100vw" 
-    			class="bg1"
-    			alt="">
-    		<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
-    			data-srcset="
-    				assets_build/home/KL-Keyvisual-NIGHT.png;1000w 1000w,
-    				assets_build/home/KL-Keyvisual-NIGHT.png;1300w 1300w,
-    				assets_build/home/KL-Keyvisual-NIGHT.png;1600w 1600w,
-    				assets_build/home/KL-Keyvisual-NIGHT.png;1900w 1900w" 
-    			data-sizes="100vw" 
-    			class="bg2"
-    			alt="">
 
-    	</div>
 
-    	<div class="bg-item overlay bg-item-care">
-    		<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
-    			data-srcset="
-    				assets_build/home/KL-Keyvisual-CARE.jpg;1000w 1000w,
-    				assets_build/home/KL-Keyvisual-CARE.jpg;1300w 1300w,
-    				assets_build/home/KL-Keyvisual-CARE.jpg;1600w 1600w,
-    				assets_build/home/KL-Keyvisual-CARE.jpg;1900w 1900w" 
-    			data-sizes="100vw" 
-    			class="bg1"
-    			alt="">
-    		<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
-    			data-srcset="
-    				assets_build/home/KL-Keyvisual-CARE.png;1000w 1000w,
-    				assets_build/home/KL-Keyvisual-CARE.png;1300w 1300w,
-    				assets_build/home/KL-Keyvisual-CARE.png;1600w 1600w,
-    				assets_build/home/KL-Keyvisual-CARE.png;1900w 1900w" 
-    			data-sizes="100vw"
-    			class="bg2"
-    			alt="">
-    	</div>
 
-    </div>
+{# {% macro product(side,src_bg,scr_hover,headline,text,button) %} #}
 
-    <div class="v-align-transform nav-home">
+{{product(
+    'Sensitiv <br>Dauerwelle',
+    '<b>Für beanspruchtes und empfindliches Haar</b> <br>Beruhigen Sie Ihre Kopfhaut: <br>Mit der Sensitiv Dauerwelle erreichen Sie eine besonders schonende Umformung.',
+    'left',
+    'assets_build/DELUXE/KL-DELUXE-L3-01-sensitiv-DW.jpg',
+    'assets_build/DELUXE/KL-Packshots-sensitiv-DW.jpg',
+    button_url,
+    'Bestellen'
+) }}
 
-			<div class="menu-wrapper">
-				<div class="logo">
-					<a href="/">{% include '../partials/KERALOCK-Logo.svg' %}</a>
-				</div>
-				<div class="item-nav" data-kat="inspiration">
-					<div class="center-wrapper sound-roll1">
-						<div class="link-wrapper">
-							<a href="inspiration.html" data-linkimg="competition">
-					            Haarfarben <br><span>INSPIRATION</span>		          	</a>
-				           <div class="cursor">
-				            	<div class="fine"></div>
-				            	<div class="large" style="visibility: visible; width: 27px; opacity: 1;"></div>
-				            </div> 
-			            </div>
-		             </div>
-		        </div>
-		        
-		       	<div class="item-nav" data-kat="deluxe">
-		        	<div class="center-wrapper">
-			        	<div class="link-wrapper sound-roll1">
-				        	<a href="deluxe.html">
-				        		Dauerwellen<br><span>DE LUXE</span></a>
-				            <div class="cursor">
-				            	<div class="fine" style="opacity: 0.3; transform: matrix(1, 0, 0, 1, 0, 0); width: 0%;"></div>
-				            	<div class="large" style="visibility: visible; width: 27px; opacity: 1;"></div>
-				            </div> 
-			            </div>            
-			            {# <ul class="submenu">		            	
-			             	<li class="sound-roll2">             	
-			             		<a href="http://www.pacorabanne.com/invictus/en-WW/#!/episodes">
-				             		<div class="link-text">
-					             		Last episode				             		<div class="link-hover-wrapper">
-					             			<div class="link-hover">
-					             				Last episode				             			</div>
-					             		</div>
-				             		</div>	
-			             		</a>
-			             	</li>
-			             	<li class="sound-roll2">             	
-								<a class="all-episodes" href="http://www.pacorabanne.com/invictus/en-WW/#!/episodes">
-									<div class="link-text">
-										All the episodes										<div class="link-hover-wrapper">
-											<div class="link-hover">
-												All the episodes											</div>
-										</div>
-									</div>	
-								</a>
-								<div class="cursor">
-				            		<div class="fine"></div>
-				            		<div class="large"></div>
-				            	</div>
-							</li>            	
-			         		
-				                                    	          	
-			             </ul> #}
-		         	</div>
-		        </div>
-			             
-		        <div class="item-nav" data-kat="nightlife">
-		        	<div class="center-wrapper">
-			        	<div class="link-wrapper sound-roll1">
-				        	<a href="night-life.html">
-					            Color Hairsprays<br><span>NIGHT LIFE</span>		             
-					        </a>
-				           <div class="cursor">
-				            	<div class="fine"></div>
-				            	<div class="large" style="visibility: visible; width: 27px; opacity: 1;"></div>
-				            </div> 
-			            </div>
-		             </div>
-		        </div>                    
+{{product(
+    'Intensiv <br>Dauerwelle',
+    '<b>Für unbehandeltes, schwer wellbares Haar</b> <br>Endlich Locken! <br>'+
+        'Modellieren Sie harmonische Wellen und sichtbares Volumen mit der KERALOCK Intensiv Dauerwelle.',
+    'right',
+    'assets_build/DELUXE/KL-DELUXE-L3-02-intensiv-DW.jpg',
+    'assets_build/DELUXE/KL-Packshots-intensiv-DW.jpg',
+    button_url,
+    'Bestellen'
+) }}
 
-		        <div class="item-nav" data-kat="care">
-		        	        	
-		        	<div class="center-wrapper">
-			        	<div class="link-wrapper sound-roll1">
-				        	<a href="care.html">
-					            Foamshampoos<br><span>CARE</span>
-					        </a>
-				            <div class="cursor">
-				            	<div class="fine" style="opacity: 0.3; transform: matrix(1, 0, 0, 1, 0, 0); width: 0%;"></div>
-				            	<div class="large" style="visibility: visible; width: 27px; opacity: 1;"></div>
-				            </div> 
-			            </div>
-			          </div>
-		        </div>
-		        
-			</div>
-    </div>
+{{product(
+    'Kräuterschaum <br>Dauerwelle',
+    '<b>Für unbehandeltes, normales und fettendes Haar</b> <br>Für jede Welle ist ein Kraut gewachsen: <br>'+
+        'Die Wirkstoffe der Kräuterschaum Dauerwelle sorgen für natürliche Vitalität.',
+    'left',
+    'assets_build/DELUXE/KL-DELUXE-L3-03-kaeuterschaum.jpg',
+    'assets_build/DELUXE/KL-Packshots-Kraeuterschaum.jpg',
+    button_url,
+    'Bestellen'
+) }}
+
+{# {{product(
+    'Powercurl <br>Dauerwelle',
+    '<b>KERALOCK NIGHT LIFE </b><br>'+
+        'Für individuelles Locken-Styling.',
+    'right',
+    'assets_build/DELUXE/KL-DELUXE-L3-04-powercurl.jpg',
+    scr_hover,
+    button_url,
+    'Bestellen'
+) }}
+ #}
+
+
+
+
+
+<section class="bg-primary">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h2 class="uppercase bold italic">Einfache Anwendung</h2>
+                <p class="lead">Die KERALOCK Dauerwellen sind speziell für die einfache Anwendung zu Hause konzipiert – ganz ohne Friseur. </p>
+                
+                
+                <ol>
+                    <li>Haare feucht auf Wickler drehen.</li>
+                    <li>Well-Lotion auftragen und einwirken lassen.</li>
+                    <li>Mit Wasser abspülen und Fixierung weitere 10 Minuten einwirken lassen. <br>
+                    Abdrehen, auswaschen – fertig</li>
+                </ol>
+
+            </div>
+
+            <div class="col-sm-6">
+                <h2 class="uppercase bold italic">Ergebnis</h2>
+                <p class="lead">Geschontes Haar mit natürlichem Glanz, elastisch und leicht kämmbar. Freuen Sie sich auf mehr Volumen, Vitalität und Spannkraft für Ihre Frisur.</p>
+
+                <h2 class="uppercase bold italic">Tipp</h2>
+                <p class="lead">Waschen Sie Ihr Haar vor einer Dauerwelle einige Male mit einen Shampoo zur Tiefenreinigung, um die Haarstruktur vollständig von Pflegerückständen zu befreien.</p>
+            </div>
+        </div>
 </section>
 
 
@@ -210,33 +103,76 @@
 
 
 
-{# 
-	Mobile HTML
-#}
 
 
-<section class="image-bg overlay pt64 pb64 .pt-sm-40 .pb-sm-40 pt-xs-40 pb-xs-48 -small -mobile-headline">
-    <div class="background-image-holder">
-        <img alt="image" class="background-image" src="/assets/img/home15.jpg" />
-    </div>
+<section>
     <div class="container">
-        {# <div class="row">
-            <div class="col-sm-12 text-center">
-                <h6 class="uppercase mb0">Willkommen in der Welt der Farbe</h6>
-                <h1>KERALOCK INSPIRATION</h1>
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3 text-center">
+                <h2 class="uppercase bold italic">FAQ</h2>
             </div>
-        </div> #}
-        <div class="nav-home">
-			<div class="logo">
-				{% include '../partials/KERALOCK-Logo.svg' %}
-			</div>
-			<div class="skip">
-				<a href="#anchor-inspiration" class="anchor-link">
-					<div>NEXT</div>
-					<span class="icon ti-angle-double-down"></span>
-				</a>
-			</div>					
-		</div>
+        </div>
+        
+
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1">
+                <ul class="accordion accordion-2 one-open">
+                    <li>
+                        <div class="title">
+                            <h4 class="inline-block mb0">Kann ich mir nach einer Dauerwelle die Haare färben?</h4>
+                        </div>
+                        <div class="content">
+                            <p>
+                                Nach einer Dauerwellenbehandlung sollten Sie mindestens zwei Wochen warten, bevor Sie die Coloration anwenden. Das Farbergebnis könnte sonst ungewollt intensiver oder sogar ungleichmäßig ausfallen. Wir empfehlen bei dauergewelltem Haar, die Einwirkzeit generell um etwa 5 bis 10 Minuten zu verkürzen. 
+
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="title">
+                            <h4 class="inline-block mb0">Welche Wickler eigenen sich am besten?</h4>
+                        </div>
+                        <div class="content">
+                            <p>
+                                Verwenden Sie nur metallfreie Kunststoff-Dauerwellwickler. Die Größe der Wickler entscheidet über die Wellwirkung und Lockengröße. 
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="title">
+                            <h4 class="inline-block mb0">Wie lange darf ich den Wirkstoff einwirken lassen?</h4>
+                        </div>
+                        <div class="content">
+                            <p>
+                                Maximal 20 Minuten. Die maximale Einwirkzeit sollten Sie nicht überschreiten, gleichgültig wie sich das Wellergebnis darstellt. Am bestem man überprüft die Einwirkung nach etwa 10 Minuten an einer Probesträhne. 
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="title">
+                            <h4 class="inline-block mb0">Wie kann ich meine Haut vor Irritationen schützen?</h4>
+                        </div>
+                        <div class="content">
+                            <p>
+                                Wir empfehlen, die Haut rund um den Haaransatz einzucremen und zusätzlich mit einem Wattestreifen zu schützen.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="title">
+                            <h4 class="inline-block mb0">Wie lange hält die Dauerwelle?</h4>
+                        </div>
+                        <div class="content">
+                            <p>
+                                Je nach Haarstruktur etwa 10 bis 12 Wochen.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <!--end of accordion-->
+            </div>
+        </div>
+        <!--end of row-->
     </div>
     <!--end of container-->
 </section>
@@ -245,110 +181,10 @@
 
 
 
-<section id="anchor-inspiration" class="image-bg bg-dark overlay pt160 pb160 .pt-sm-96 .pb-sm-96 pt-xs-48 pb-xs-48 -small">
-	<a href="inspiration.html" >
-	    <div class="background-image-holder srcset INSPIRATION-02-Haarfarben">
-	        <img
-	            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-	            data-srcset="
-	                ./assets_build/home-mobile/KL-Keyvisual-INSPIRATION.jpg;320w 320w,
-	                ./assets_build/home-mobile/KL-Keyvisual-INSPIRATION.jpg;600w 600w,
-	                ./assets_build/home-mobile/KL-Keyvisual-INSPIRATION.jpg;800w 800w,
-	                ./assets_build/home-mobile/KL-Keyvisual-INSPIRATION.jpg;1000w 1000w" 
-	            data-sizes="100vw"
-	            class=""
-	            alt="">
-	    </div>
-	    <div class="container">
-	        <div class="row">
-	            <div class="col-sm-12 ">
-	            	<h6 class="uppercase mb0">Haarfarben</h6>
-	                <h2 class="uppercase mb8">INSPIRATION</h2>
-	            </div>
-	        </div>
-	        <!--end of row-->
-	    </div>
-    </a>
-</section>
 
-<section class="image-bg bg-dark overlay pt160 pb160 .pt-sm-96 .pb-sm-96 pt-xs-48 pb-xs-48 -small">
-	<a href="inspiration.html">
-	    <div class="background-image-holder srcset INSPIRATION-02-Haarfarben">
-	        <img
-	            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-	            data-srcset="
-	                ./assets_build/home-mobile/KL-Keyvisual-DELUXE.jpg;320w 320w,
-	                ./assets_build/home-mobile/KL-Keyvisual-DELUXE.jpg;600w 600w,
-	                ./assets_build/home-mobile/KL-Keyvisual-DELUXE.jpg;800w 800w,
-	                ./assets_build/home-mobile/KL-Keyvisual-DELUXE.jpg;1000w 1000w" 
-	            data-sizes="100vw"
-	            class=""
-	            alt="">
-	    </div>
-	    <div class="container">
-	        <div class="row">
-	            <div class="col-sm-12 ">
-	            	<h6 class="uppercase mb0">Dauerwelle</h6>
-	                <h2 class="uppercase mb8">DE LUXE</h2>
-	            </div>
-	        </div>
-	        <!--end of row-->
-	    </div>
-    </a>
-</section>
 
-<section class="image-bg bg-dark overlay pt160 pb160 .pt-sm-96 .pb-sm-96 pt-xs-48 pb-xs-48 -small">
-	<a href="inspiration.html">
-	    <div class="background-image-holder srcset INSPIRATION-02-Haarfarben">
-	        <img
-	            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-	            data-srcset="
-	                ./assets_build/home-mobile/KL-Keyvisual-NIGHT.jpg;320w 320w,
-	                ./assets_build/home-mobile/KL-Keyvisual-NIGHT.jpg;600w 600w,
-	                ./assets_build/home-mobile/KL-Keyvisual-NIGHT.jpg;800w 800w,
-	                ./assets_build/home-mobile/KL-Keyvisual-NIGHT.jpg;1000w 1000w" 
-	            data-sizes="100vw"
-	            class=""
-	            alt="">
-	    </div>
-	    <div class="container">
-	        <div class="row">
-	            <div class="col-sm-12 ">
-	            	<h6 class="uppercase mb0">Color Hairsprays</h6>
-	                <h2 class="uppercase mb8">NIGHT LIFE</h2>
-	            </div>
-	        </div>
-	        <!--end of row-->
-	    </div>
-    </a>
-</section>
 
-<section class="image-bg bg-dark overlay pt160 pb160 .pt-sm-96 .pb-sm-96 pt-xs-48 pb-xs-48 -small">
-	<a href="inspiration.html">
-	    <div class="background-image-holder srcset INSPIRATION-02-Haarfarben">
-	        <img
-	            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-	            data-srcset="
-	                ./assets_build/home-mobile/KL-Keyvisual-CARE.jpg;320w 320w,
-	                ./assets_build/home-mobile/KL-Keyvisual-CARE.jpg;600w 600w,
-	                ./assets_build/home-mobile/KL-Keyvisual-CARE.jpg;800w 800w,
-	                ./assets_build/home-mobile/KL-Keyvisual-CARE.jpg;1000w 1000w" 
-	            data-sizes="100vw"
-	            class=""
-	            alt="">
-	    </div>
-	    <div class="container">
-	        <div class="row">
-	            <div class="col-sm-12 ">
-	            	<h6 class="uppercase mb0">HaarfFoamshampoosarben</h6>
-	                <h2 class="uppercase mb8">Care</h2>
-	            </div>
-	        </div>
-	        <!--end of row-->
-	    </div>
-    </a>
-</section>
+{% include '../partials/mailchimp.swig' %}
 
 
 {% endblock %}
-
