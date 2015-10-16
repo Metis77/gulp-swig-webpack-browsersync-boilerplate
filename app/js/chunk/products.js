@@ -9,6 +9,6 @@ $('.image-square')
 	.on('mouseleave', function(event) {
 		$(this)
 			.addClass('-is-out')
-			.removeClass('-is-out')
+			.removeClass('-is-hover')
 	});
 

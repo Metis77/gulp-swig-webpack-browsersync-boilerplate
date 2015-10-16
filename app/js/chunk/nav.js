@@ -7,7 +7,7 @@ function navToggleTransparet() {
 	}
 	// console.log(viewport().width);
 };
-
+navToggleTransparet();
  	
 var resizeId;
 $(window).resize(function() {

@@ -5,7 +5,7 @@
 
 
 {% block nav %}
-	{% include '../partials/nav_offcanvas.html' %}
+	{# {% include '../partials/nav_offcanvas.html' %} #}
 	{% include '../partials/nav.swig' %}
 {% endblock %}
 

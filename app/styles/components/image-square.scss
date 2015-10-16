@@ -1,5 +1,6 @@
-.image-square {
+.-image-square-effect {
 	$transitionWidth: 20vw;
+
 	.image {
 		overflow: hidden;
 		background-color: #444;
@@ -32,13 +33,6 @@
 	/*
 	 * animation
 	 */
-	// @keyframes open {
- //        0%    {transform: translate3d(0,0,0);}
- //        70%   {transform: translate3d(-30vw,0,0);}
- //        100%  {transform: translate3d(-20vw,0,0);}
- //    }
-
-
 	.background-image-holder,
 	.img_hover {
 		will-change: transform, opacity;
@@ -68,9 +62,9 @@
 
 
 	// hover state
-	&.--image-square-effect {
-		&.left:hover,
-		&.right:hover {
+	&.-image-square-effect.-is-hover {
+		&.left,
+		&.right {
 			.img_hover {
 				opacity: 1;
 			}
@@ -78,7 +72,7 @@
 				transform: translate3D(0,0,0) scale(1.02);
 			}
 		}
-		&.left:hover {
+		&.left {
 			// .img_hover {
 			// 	transform: translate3D(0,0,0) scale(1.1);
 			// }
@@ -89,7 +83,7 @@
 				// // animation-iteration-count: 1;
 			}
 		} 
-		&.right:hover {
+		&.right {
 			// .img_hover {
 			// 	transform: translate3D(0,0,0) scale(1.1);
 			// }
@@ -98,8 +92,5 @@
 			}
 		}
 	}
-	
-
-
 
 }
