@@ -157,8 +157,8 @@
                 <div class="col_half nobottommargin topmargin-lg col_last">
 
                     <div class="heading-block topmargin-lg">
-                        <h2>Typically Responsive</h2>
-                        <span>Our App scales beautifully to different Devices.</span>
+                        <h2>Manueller Desinfektionsmittel- und Flüssigseifenspender mit Bedienhebel</h2>
+                        <span>SD 2005 für 500 ml Flaschen, SD 2010 für 1.000 ml Flaschen</span>
                     </div>
 
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet cumque, perferendis accusamus porro illo exercitationem molestias, inventore obcaecati ut omnis voluptatibus ratione odio amet magnam quidem tempore necessitatibus quaerat, voluptates excepturi voluptatem, veritatis qui temporibus.</p>
@@ -169,7 +169,8 @@
 
                 <div class="col_half nobottommargin topmargin-lg">
 
-                    <img src="assets_build/startseite/1.3-euraneg-Manueller-Seifenspender-SD2005-SD2010.png" alt="Image" class="center-block">
+                    <img src="/assets_build/startseite/1.3-euraneg-Manueller-Seifenspender-SD2005-SD2010.png" 
+                        alt="euraneg-Manueller-Seifenspender-SD2005-SD2010" class="center-block">
 
                 </div>
 
@@ -182,18 +183,19 @@
 
                 <div class="col_half nobottommargin topmargin-lg">
 
-                    <img src="images/appshowcase/iphone-solid.png" alt="Image" class="center-block">
+                    <img src="/assets_build/startseite/1.4-euraneg-Automatischer-touchless-Seifenspender-SD4005-SD4010.png" 
+                        alt="euraneg-Automatischer-touchless-Seifenspender-SD4005-SD4010" class="center-block">
 
                 </div>
 
                 <div class="col_half nobottommargin topmargin-lg col_last">
 
                     <div class="heading-block topmargin-lg">
-                        <h2>Typically Responsive</h2>
-                        <span>Our App scales beautifully to different Devices.</span>
+                        <h2>Touchless</h2>
+                        <span>Automatischer Desinfektionsmittel- und Flüssigseifenspender</span>
                     </div>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet cumque, perferendis accusamus porro illo exercitationem molestias, inventore obcaecati ut omnis voluptatibus ratione odio amet magnam quidem tempore necessitatibus quaerat, voluptates excepturi voluptatem, veritatis qui temporibus.</p>
+                    <p>SD 4005 für 500 ml Flaschen, SD 4010 für 1.000 ml Flaschen</p>
 
                     <a href="#" class="button button-border button-rounded button-large button-dark noleftmargin">View Gallery</a>
 
