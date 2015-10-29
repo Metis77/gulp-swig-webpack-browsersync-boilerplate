@@ -149,13 +149,4 @@
 </section>
 
 
-
-
-
-
-
-
-{% include '../partials/mailchimp.swig' %}
-
-
 {% endblock %}

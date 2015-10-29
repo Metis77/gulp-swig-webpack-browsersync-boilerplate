@@ -8,14 +8,17 @@ var uglify          = require('gulp-uglify');
 var inlineResize    = require("gulp-inline-resize");
 var gm              = require('gulp-gm');
 
-var sass 			= require('gulp-sass');
+// var sass 			= require('gulp-sass');
+var less            = require('gulp-less');
+var LessPluginCleanCSS = require('less-plugin-clean-css');
+var cleancss        = new LessPluginCleanCSS({ advanced: true });
 var sourcemaps 		= require('gulp-sourcemaps');
 var autoprefixer 	= require('gulp-autoprefixer');
 
 var swig            = require('gulp-swig');
 var htmlmin         = require('gulp-htmlmin');
 
-var webpack = require('webpack');
+var webpack         = require('webpack');
 
 var browserSync     = require('browser-sync').create();
 
@@ -38,7 +41,7 @@ gulp.task('default', function() {
 	gulp.start('serve');
 });
 gulp.task('production', function() {
-	gulp.start('sass', 'templates', 'webpack');
+	gulp.start('less', 'templates', 'webpack');
 });
 
 
@@ -67,14 +70,12 @@ gulp.task('templates', function() {
             removeCommentsFromCDATA: true,
         }))
     
-    var styleStream = gulp.src(app + 'styles/main.scss')
+    var styleStream = gulp.src(app + 'styles/style.less')
         .pipe(plumber())
         .pipe(sourcemaps.init())
-        .pipe(sass(
-            {
-                outputStyle: 'compressed'
-            }
-        ))
+        .pipe(less({
+            plugins: [cleancss]
+        }))
         .pipe(sourcemaps.init({loadMaps: true}))
         .pipe(autoprefixer(
             {

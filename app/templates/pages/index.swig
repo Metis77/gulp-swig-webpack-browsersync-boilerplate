@@ -1,8 +1,8 @@
 {% extends "../layouts/default.swig" %}
 
-{% set page = 'deluxe' %}
+{% set page = 'home' %}
 
-{% block pagetitle %} DE LUXE // Keralock{% endblock %}
+{% block pagetitle %}EURANEG{% endblock %}
 {% block description %}{% endblock %}
 
 {% block content %}
@@ -11,124 +11,7 @@
 
 
 
-<section id="slider" class="slider-parallax swiper_wrapper full-screen clearfix">
-
-    <div class="swiper-container swiper-parent">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide dark" style="background-image: url('images/slider/swiper/1.jpg');">
-                <div class="container clearfix">
-                    <div class="slider-caption slider-caption-center">
-                        <h2 data-caption-animate="fadeInUp">Welcome to Canvas</h2>
-                        <p data-caption-animate="fadeInUp" data-caption-delay="200">Create just what you need for your Perfect Website. Choose from a wide range of Elements &amp; simply put them on your own Canvas.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide dark">
-                <div class="container clearfix">
-                    <div class="slider-caption slider-caption-center">
-                        <h2 data-caption-animate="fadeInUp">Beautifully Flexible</h2>
-                        <p data-caption-animate="fadeInUp" data-caption-delay="200">Looks beautiful &amp; ultra-sharp on Retina Screen Displays. Powerful Layout with Responsive functionality that can be adapted to any screen size.</p>
-                    </div>
-                </div>
-                <div class="video-wrap">
-                    <video id="slide-video" poster="images/videos/explore.jpg" preload="auto" loop autoplay muted>
-                        <source src='images/videos/explore.webm' type='video/webm' />
-                        <source src='images/videos/explore.mp4' type='video/mp4' />
-                    </video>
-                    <div class="video-overlay" style="background-color: rgba(0,0,0,0.55);"></div>
-                </div>
-            </div>
-            <div class="swiper-slide" style="background-image: url('images/slider/swiper/3.jpg'); background-position: center top;">
-                <div class="container clearfix">
-                    <div class="slider-caption">
-                        <h2 data-caption-animate="fadeInUp">Great Performance</h2>
-                        <p data-caption-animate="fadeInUp" data-caption-delay="200">You'll be surprised to see the Final Results of your Creation &amp; would crave for more.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="slider-arrow-left"><i class="icon-angle-left"></i></div>
-        <div id="slider-arrow-right"><i class="icon-angle-right"></i></div>
-    </div>
-
-    <script>
-        jQuery(document).ready(function($){
-            var swiperSlider = new Swiper('.swiper-parent',{
-                paginationClickable: false,
-                slidesPerView: 1,
-                grabCursor: true,
-                loop: true,
-                onSwiperCreated: function(swiper){
-                    $('[data-caption-animate]').each(function(){
-                        var $toAnimateElement = $(this);
-                        var toAnimateDelay = $(this).attr('data-caption-delay');
-                        var toAnimateDelayTime = 0;
-                        if( toAnimateDelay ) { toAnimateDelayTime = Number( toAnimateDelay ) + 750; } else { toAnimateDelayTime = 750; }
-                        if( !$toAnimateElement.hasClass('animated') ) {
-                            $toAnimateElement.addClass('not-animated');
-                            var elementAnimation = $toAnimateElement.attr('data-caption-animate');
-                            setTimeout(function() {
-                                $toAnimateElement.removeClass('not-animated').addClass( elementAnimation + ' animated');
-                            }, toAnimateDelayTime);
-                        }
-                    });
-                    SEMICOLON.slider.swiperSliderMenu();
-                },
-                onSlideChangeStart: function(swiper){
-                    $('[data-caption-animate]').each(function(){
-                        var $toAnimateElement = $(this);
-                        var elementAnimation = $toAnimateElement.attr('data-caption-animate');
-                        $toAnimateElement.removeClass('animated').removeClass(elementAnimation).addClass('not-animated');
-                    });
-                    SEMICOLON.slider.swiperSliderMenu();
-                },
-                onSlideChangeEnd: function(swiper){
-                    $('#slider').find('.swiper-slide').each(function(){
-                        if($(this).find('video').length > 0) { $(this).find('video').get(0).pause(); }
-                        if($(this).find('.yt-bg-player').length > 0) { $(this).find('.yt-bg-player').pauseYTP(); }
-                    });
-                    $('#slider').find('.swiper-slide:not(".swiper-slide-active")').each(function(){
-                        if($(this).find('video').length > 0) {
-                            if($(this).find('video').get(0).currentTime != 0 ) $(this).find('video').get(0).currentTime = 0;
-                        }
-                        if($(this).find('.yt-bg-player').length > 0) {
-                            $(this).find('.yt-bg-player').getPlayer().seekTo( $(this).find('.yt-bg-player').attr('data-start') );
-                        }
-                    });
-                    if( $('#slider').find('.swiper-slide.swiper-slide-active').find('video').length > 0 ) { $('#slider').find('.swiper-slide.swiper-slide-active').find('video').get(0).play(); }
-                    if( $('#slider').find('.swiper-slide.swiper-slide-active').find('.yt-bg-player').length > 0 ) { $('#slider').find('.swiper-slide.swiper-slide-active').find('.yt-bg-player').playYTP(); }
-
-                    $('#slider .swiper-slide.swiper-slide-active [data-caption-animate]').each(function(){
-                        var $toAnimateElement = $(this);
-                        var toAnimateDelay = $(this).attr('data-caption-delay');
-                        var toAnimateDelayTime = 0;
-                        if( toAnimateDelay ) { toAnimateDelayTime = Number( toAnimateDelay ) + 300; } else { toAnimateDelayTime = 300; }
-                        if( !$toAnimateElement.hasClass('animated') ) {
-                            $toAnimateElement.addClass('not-animated');
-                            var elementAnimation = $toAnimateElement.attr('data-caption-animate');
-                            setTimeout(function() {
-                                $toAnimateElement.removeClass('not-animated').addClass( elementAnimation + ' animated');
-                            }, toAnimateDelayTime);
-                        }
-                    });
-                }
-            });
-
-            $('#slider-arrow-left').on('click', function(e){
-                e.preventDefault();
-                swiperSlider.swipePrev();
-            });
-
-            $('#slider-arrow-right').on('click', function(e){
-                e.preventDefault();
-                swiperSlider.swipeNext();
-            });
-        });
-    </script>
-
-    <a href="#" data-scrollto="#content" data-offset="100" class="dark one-page-arrow"><i class="icon-angle-down infinite animated fadeInDown"></i></a>
-
-</section>
+{% include '../partials/section_slider_start.swig' %}
 
 <!-- Content
 ============================================= -->
@@ -139,8 +22,8 @@
         <div class="container clearfix">
             <div class="col_full">
                 <div class="heading-block center nobottomborder">
-                    <h2>Herzlich Willkommen bei euraneg UG</h2>
-                    <span>We value Work Ethics &amp; Environment as it helps in creating a Creative Thinktank</span>
+                    <h1>Herzlich Willkommen bei euraneg UG</h1>
+                    <span>Entsprechend unserer Devise entwicklen wir aus Produktideen marktreife Produkte im Kundenauftrag oder auf eigene Rechnung. Unsere Eigenentwicklungen übergeben wir zur Vermarktung an zuverlässige Partner.</span>
                 </div>
             </div>
         </div>
@@ -150,71 +33,184 @@
 
 
 
-        <div class="section nobottommargin" style="padding-bottom: 150px;">
+        <div class="section nomargin nobgcolor">
             <div class="container clearfix">
                 
+                <div class="col_half nobottommargin topmargin-lg ">
+                    <img src="/assets_build/startseite/1.3-euraneg-Manueller-Seifenspender-SD2005-SD2010.png" 
+                        alt="euraneg-Manueller-Seifenspender-SD2005-SD2010" class="center-block">
+                </div>
 
                 <div class="col_half nobottommargin topmargin-lg col_last">
-
                     <div class="heading-block topmargin-lg">
-                        <h2>Manueller Desinfektionsmittel- und Flüssigseifenspender mit Bedienhebel</h2>
-                        <span>SD 2005 für 500 ml Flaschen, SD 2010 für 1.000 ml Flaschen</span>
+                        <h2>MSD 2005 500 ml, SD 2010 1.000 ml</h2>
+                        <span>Manuelle Desinfektionsmittel- und Flüssigseifenspender mit Bedienhebel.</span>
                     </div>
 
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet cumque, perferendis accusamus porro illo exercitationem molestias, inventore obcaecati ut omnis voluptatibus ratione odio amet magnam quidem tempore necessitatibus quaerat, voluptates excepturi voluptatem, veritatis qui temporibus.</p>
 
-                    <a href="#" class="button button-border button-rounded button-large button-dark noleftmargin">View Gallery</a>
-
+                    <a href="#" class="button button-border button-rounded button-large button-dark noleftmargin">Hier geht‘s zu den Details</a>
                 </div>
 
-                <div class="col_half nobottommargin topmargin-lg">
-
-                    <img src="/assets_build/startseite/1.3-euraneg-Manueller-Seifenspender-SD2005-SD2010.png" 
-                        alt="euraneg-Manueller-Seifenspender-SD2005-SD2010" class="center-block">
-
-                </div>
+                
 
             </div>
 
         </div>
 
-        <div class="section notopmargin nobottommargin">
+
+        <div class="section nomargin nobgcolor">
             <div class="container clearfix">
 
+                
+
                 <div class="col_half nobottommargin topmargin-lg">
+                    <div class="heading-block topmargin-lg">
+                        <h2>SD 4005 500 ml, SD 4010 1.000 ml</h2>
+                        <span>„touchless“ Automatische Desinfektionsmittel- und Flüssigseifenspender.</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quod consequuntur quibusdam, enim expedita sed quia nesciunt incidunt accusamus necessitatibus modi adipisci officia libero accusantium esse hic, obcaecati, ullam, laboriosam!</p>
+                    <a href="#" class="button button-border button-rounded button-large button-dark noleftmargin">Hier geht‘s zu den Details</a>
+                </div>
+
+                <div class="col_half nobottommargin topmargin-lg col_last">
 
                     <img src="/assets_build/startseite/1.4-euraneg-Automatischer-touchless-Seifenspender-SD4005-SD4010.png" 
                         alt="euraneg-Automatischer-touchless-Seifenspender-SD4005-SD4010" class="center-block">
 
                 </div>
 
-                <div class="col_half nobottommargin topmargin-lg col_last">
-
-                    <div class="heading-block topmargin-lg">
-                        <h2>Touchless</h2>
-                        <span>Automatischer Desinfektionsmittel- und Flüssigseifenspender</span>
-                    </div>
-
-                    <p>SD 4005 für 500 ml Flaschen, SD 4010 für 1.000 ml Flaschen</p>
-
-                    <a href="#" class="button button-border button-rounded button-large button-dark noleftmargin">View Gallery</a>
-
-                </div>
-
             </div>
         </div>
         
 
-        
+        <div class="section nomargin nobgcolor">
+            <div class="container clearfix">
+                
+                <div class="col_half nobottommargin topmargin-lg">
+                    <img src="/assets_build/startseite/1.5-euraneg-Automatischer-touchless-MINI-Seifenspender-SD4005-SD4010.png" 
+                        alt="euraneg-Manueller-Seifenspender-SD2005-SD2010" class="center-block">
+                </div>
+
+                <div class="col_half nobottommargin topmargin-lg col_last">
+                    <div class="heading-block topmargin-lg">
+                        <h2>„touchless MINI“ </h2>
+                        <span>„touchless MINI“ Automatikspender. <br>
+                        Neu und platzsparend.</span>
+                    </div>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet cumque, perferendis accusamus porro illo exercitationem molestias, inventore obcaecati ut omnis voluptatibus ratione odio amet magnam quidem tempore necessitatibus quaerat, voluptates excepturi voluptatem, veritatis qui temporibus.</p>
+
+                    <a href="#" class="button button-border button-rounded button-large button-dark noleftmargin">Hier geht‘s zu den Details</a>
+                </div>
+
+                
+
+            </div>
+        </div>
 
        
 
 
         
         
+        <div class="section dark nomargin" style="padding-top: 60px;">
+            <div class="container clearfix">
+
+                <div class="col_one_third">
+                    <div class="feature-box fbox-plain">
+                        <div class="fbox-icon">
+                            <a href="#"><i class="icon-group"></i></a>
+                        </div>
+                        <h3>kompetente Beratung</h3>
+                        <p>Powerful Layout with Responsive functionality that can be adapted to any screen size. Resize browser to view.</p>
+                    </div>
+                </div>
+
+                <div class="col_one_third">
+                    <div class="feature-box fbox-plain">
+                        <div class="fbox-icon">
+                            <a href="#"><i class="icon-eye-open"></i></a>
+                        </div>
+                        <h3>höchste qualität</h3>
+                        <p>Looks beautiful &amp; ultra-sharp on Retina Screen Displays. Retina Icons, Fonts &amp; all others graphics are optimized.</p>
+                    </div>
+                </div>
+
+                <div class="col_one_third col_last">
+                    <div class="feature-box fbox-plain">
+                        <div class="fbox-icon">
+                            <a href="#"><i class="icon-filter"></i></a>
+                        </div>
+                        <h3>höchster hygienestandard</h3>
+                        <p>Canvas includes tons of optimized code that are completely customizable and deliver unmatched fast performance.</p>
+                    </div>
+                </div>
+
+                <div class="clear"></div>
+
+                <div class="col_one_third nobottommargin">
+                    <div class="feature-box fbox-plain">
+                        <div class="fbox-icon">
+                            <a href="#"><i class="icon-undo"></i></a>
+                        </div>
+                        <h3>Schneller support</h3>
+                        <p>We have included 12+ Header + Menu Designs for your convenience so that you can match your style.</p>
+                    </div>
+                </div>
+
+                <div class="col_one_third nobottommargin">
+                    <div class="feature-box fbox-plain">
+                        <div class="fbox-icon">
+                            <a href="#"><i class="icon-thumbs-up2"></i></a>
+                        </div>
+                        <h3>langlebigkeit</h3>
+                        <p>Completely Customizable 2 Columns, 3 Columns, 4 Columns &amp; 5 Columns Mega Menus are available with Canvas.</p>
+                    </div>
+                </div>
+
+                <div class="col_one_third nobottommargin col_last">
+                    <div class="feature-box fbox-plain">
+                        <div class="fbox-icon">
+                            <a href="#"><i class="icon-cogs"></i></a>
+                        </div>
+                        <h3>wirtschaftlicher nutzen</h3>
+                        <p>Smooth &amp; Stylish Sticky Menu is what will make your Website differentiate with others.</p>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+
+
+        <a class="button button-full center tright bottommargin" href="tel:00498704913136">
+            <div class="container clearfix">
+                Supporthotline: <strong>08704 913136</strong> <i class="icon-caret-right" style="top:4px;"></i>
+            </div>
+        </a>
+
+
 
         
+        <div class="container clearfix">
+            <div class="heading-block center">
+                <h3>Einfach zu handhaben</h3>
+                <span>Wir schreiben Hygiene und Handling GROSSma</span>
+            </div>
 
+            <iframe width="560" height="315" src="http://www.youtube.com/embed/SZEflIVnhH8" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+
+
+
+    
+
+        
         
 
         

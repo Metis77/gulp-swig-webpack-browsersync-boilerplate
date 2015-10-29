@@ -12,5 +12,5 @@
 {% block content %}
 blank
 
-{% include '../partials/mailchimp.swig' %}
+
 {% endblock %}
