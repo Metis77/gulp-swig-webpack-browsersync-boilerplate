@@ -21,9 +21,16 @@
 
                 <ul>
                     <li class="{% if page == 'home' %}current {% endif %}"><a href="index.html"><div>Startseite</div></a></li>
-                    <li class="{% if page == 'Produkte' %}current {% endif %}"><a href="produkt-SD2005-SD20.html"><div>Produkte</div></a></li>
+                    <li class="{% if page == 'Produkte' %}current {% endif %}">
+                        <a href="produkt-SD2005-SD2010.html"><div>Produkte</div></a>
+                        <ul>
+                            <li class="{% if page_sub == 'Produkt_1' %}current {% endif %}"><a href="produkt-SD2005-SD2010.html"><div>SD 2005 SD 2010</div></a></li>
+                            <li class="{% if page_sub == 'Produkt_2' %}current {% endif %}"><a href="produkt-SD4005-SD4010.html"><div>SD 4005 SD 4010</div></a></li>
+                            <li class="{% if page_sub == 'Produkt_3' %}current {% endif %}"><a href="produkt-touchless-mini.html"><div>touchless MINI</div></a></li>
+                        </ul>
+                    </li>
                     <li class="{% if page == 'Prinzip' %}current {% endif %}"><a href="euraneg-ug-prinzip.html"><div>euraneg UG Prinzip</div></a></li>
-                    <li class="{% if page == 'Neuigkeiten' %}current {% endif %}"><a href="neuigkeiten.html"><div>Neuigkeiten</div></a></li>
+                    {# <li class="{% if page == 'Neuigkeiten' %}current {% endif %}"><a href="neuigkeiten.html"><div>Neuigkeiten</div></a></li> #}
                     <li class="{% if page == 'Kontakt' %}current {% endif %}"><a href="kontakt.html"><div>Kontakt</div></a></li>
                 </ul>
 

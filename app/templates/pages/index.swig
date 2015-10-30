@@ -199,7 +199,7 @@
         <div class="container clearfix">
             <div class="heading-block center">
                 <h3>Einfach zu handhaben</h3>
-                <span>Wir schreiben Hygiene und Handling GROSSma</span>
+                <span>Wir schreiben Hygiene und Handling GROSS</span>
             </div>
 
             <iframe width="560" height="315" src="http://www.youtube.com/embed/SZEflIVnhH8" frameborder="0" allowfullscreen></iframe>
