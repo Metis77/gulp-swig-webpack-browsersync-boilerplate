@@ -20,11 +20,11 @@
             <nav id="primary-menu">
 
                 <ul>
-                    <li class="current"><a href="index.html"><div>Startseite</div></a></li>
-                    <li><a href="#"><div>Produkte</div></a></li>
-                    <li class="mega-menu"><a href="#"><div>euranet UG Prinzip</div></a></li>
-                    <li class="mega-menu"><a href="#"><div>Neuigkeiten</div></a></li>
-                    <li class="mega-menu"><a href="#"><div>Kontakt</div></a></li>
+                    <li class="{% if page == 'home' %}current {% endif %}"><a href="index.html"><div>Startseite</div></a></li>
+                    <li class="{% if page == 'Produkte' %}current {% endif %}"><a href="produkt-SD2005-SD20.html"><div>Produkte</div></a></li>
+                    <li class="{% if page == 'Prinzip' %}current {% endif %}"><a href="euraneg-ug-prinzip.html"><div>euraneg UG Prinzip</div></a></li>
+                    <li class="{% if page == 'Neuigkeiten' %}current {% endif %}"><a href="neuigkeiten.html"><div>Neuigkeiten</div></a></li>
+                    <li class="{% if page == 'Kontakt' %}current {% endif %}"><a href="kontakt.html"><div>Kontakt</div></a></li>
                 </ul>
 
     

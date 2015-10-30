@@ -1,29 +1,14 @@
 {% extends "../layouts/default.swig" %}
 
-{% set page = 'deluxe' %}
+{% set page = 'search' %}
 
-{% block pagetitle %} DE LUXE // Keralock{% endblock %}
+{% block pagetitle %} Suche | EURANEG{% endblock %}
 {% block description %}{% endblock %}
 
 {% block content %}
 
 
 
-
-
-<!-- Page Title
-============================================= -->
-<section id="page-title">
-
-    <div class="container clearfix">
-        <h1>Search Results</h1>
-        <ol class="breadcrumb">
-            <li><a href="#">Home</a></li>
-            <li class="active">Search</li>
-        </ol>
-    </div>
-
-</section><!-- #page-title end -->
 
 <!-- Content
 ============================================= -->

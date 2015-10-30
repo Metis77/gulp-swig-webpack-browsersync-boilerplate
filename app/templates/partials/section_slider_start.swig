@@ -5,28 +5,22 @@
 
 
             <div class="swiper-slide dark" style="background-image: url('/assets_build/startseite/1.1-euraneg-Seifenspender-automatisch-Header.png');">
-                <div class="container clearfix">
+                <div class="container clearfix pos_relative">
+                    <div class="vcenter-inner">
 
-                    <img src="images/appshowcase/slider-iphone.png" alt="Image" class="hidden-sm hidden-xs" data-style-lg="position: absolute; right: 0; bottom: 0; height: auto;" data-style-md="position: absolute; right: 0; bottom: 0; height: 450px;">
-
-                    <div class="vertical-middle no-fade">
-                        <div class="col-md-6 dark nobottommargin" data-animate="fadeIn">
-
-                            <div class="emphasis-title">
-                                <h1 data-style-lg="font-size: 52px;" data-style-md="font-size: 44px;">From Ideas to products <br>
-                                <strong>Der Erste und Einzige</strong></h1>
-                                <p>Desinfektionsmittel- <br>und Flüssigseifenspender</p>
-                            </div>
-
-                            {# <div class="hidden-xs">
-                                <a href="#" class="button button-desc button-border button-light button-rounded nomargin"><i class="icon-apple"></i><div>Start your Free Trial<span>30-Days &amp; No Credit card Required</span></div></a>
-                            </div> #}
-
-                            {# <div class="visible-xs">
-                                <a href="#" class="button button-light button-xlarge button-rounded nomargin"><i class="icon-apple"></i>Start Free Trial</a>
-                            </div> #}
-
+                        <div class="col_half">
+                            <div class="heading-block topmargin-custom-slider">
+                                <h4 class=" nobottommargin">From Ideas to products</h4>
+                                <h1>Der Erste und Einzige</h1>
+                                <h4>Desinfektionsmittel- <br> und Flüssigseifenspender</h4>
+                            </div>                         
                         </div>
+
+                        <div class="col_half hidden-xs col_last">
+                            <img src="/assets_build/startseite/1.3-euraneg-Manueller-Seifenspender-SD2005-SD2010.png" 
+                                alt="euraneg-Manueller-Seifenspender-SD2005-SD2010" class="center-block">
+                        </div>
+
                     </div>
 
                 </div>
