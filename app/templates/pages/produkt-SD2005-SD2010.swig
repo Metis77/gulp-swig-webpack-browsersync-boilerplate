@@ -184,14 +184,14 @@
             <div class="container clearfix">
 
                 <div class="col_half nobottommargin topmargin-lg ">
-                    <img src="/assets_build/test.jpeg;200w" alt="">
+                    <img src="./assets_build/test.jpg;200w" alt="">
                     
                     {{image50(
-                        '/assets_build/produktseite_1_SD2005_SD2010/2.5-euraneg-Manueller-Seifenspender-SD2005-SD2010.png',
+                        './assets_build/produktseite_1_SD2005_SD2010/2.5-euraneg-Manueller-Seifenspender-SD2005-SD2010.png',
                         'euraneg-Manueller-Seifenspender-SD2005-SD2010',
                         'center-block'
                     ) }}
-                    <img src="/assets_build/produktseite_1_SD2005_SD2010/2.5-euraneg-Manueller-Seifenspender-SD2005-SD2010.png;300w" 
+                    <img src="./assets_build/produktseite_1_SD2005_SD2010/2.5-euraneg-Manueller-Seifenspender-SD2005-SD2010.png;300w" 
                         alt="euraneg-Manueller-Seifenspender-SD2005-SD2010" class="center-block">
 
                     
