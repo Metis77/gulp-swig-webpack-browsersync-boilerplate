@@ -9,7 +9,19 @@
 
 
 
+<section id="page-title">
 
+    <div class="container clearfix">
+        <h1>Suche</h1>
+        <span></span>
+        <ol class="breadcrumb">
+            <li><a href="index.html">Startseite</a></li>
+            {# <li><a href="Kontakt.html">Kontakt</a></li> #}
+            <li class="active">Suche</li>
+        </ol>
+    </div>
+
+</section>
 <!-- Content
 ============================================= -->
 <section id="content">

@@ -4,8 +4,8 @@
         <div class="swiper-wrapper">
 
 
-            <div class="swiper-slide dark" style="background-image: url('/assets_build/startseite/1.1-euraneg-Seifenspender-automatisch-Header.png');">
-                <div class="container clearfix pos_relative">
+            <div class="swiper-slide dark" style="background-image: url('/assets_build/startseite/slider_1_bg-euraneg-Seifenspender-automatisch-Header.png');">
+                <div class="container clearfix pos_relative slider-caption slider-caption-maxWidthNone">
                     <div class="vcenter-inner">
 
                         <div class="col_half">
@@ -17,8 +17,10 @@
                         </div>
 
                         <div class="col_half hidden-xs col_last">
-                            <img src="/assets_build/startseite/1.3-euraneg-Manueller-Seifenspender-SD2005-SD2010.png" 
-                                alt="euraneg-Manueller-Seifenspender-SD2005-SD2010" class="center-block">
+                            <img src="/assets_build/startseite/slider_1-euraneg-Seifenspender-Produkte-Automatik-Manuell.png" 
+                                alt="euraneg-Manueller-Seifenspender-SD2005-SD2010" 
+                                class="center-block" 
+                                data-animate="pulse">
                         </div>
 
                     </div>

@@ -12,19 +12,21 @@
 
 				<div class="widget clearfix">
 
-					<img src="images/footer-widget-logo.png" alt="" class="footer-logo">
+					{# <img src="images/footer-widget-logo.png" alt="" class="footer-logo"> #}
 
-					<p>We believe in <strong>Simple</strong>, <strong>Creative</strong> &amp; <strong>Flexible</strong> Design Standards with a Retina &amp; Responsive Approach. Browse the amazing Features this template offers.</p>
+					{# <p>We believe in <strong>Simple</strong>, <strong>Creative</strong> &amp; <strong>Flexible</strong> Design Standards with a Retina &amp; Responsive Approach. Browse the amazing Features this template offers.</p> #}
 
-					<div style="background: url('images/world-map.png') no-repeat center center; background-size: 100%;">
+					<div style="background: url('images/world-map.png') no-repeat center center; background-size: 100%;">				
 						<address>
-							<strong>Headquarters:</strong><br>
-							795 Folsom Ave, Suite 600<br>
-							San Francisco, CA 94107<br>
+						<h4>EURANEG UG</h4>
+							Am Abendsberg 48<br>
+							D-84032 Altdorf<br>
 						</address>
-						<abbr title="Phone Number"><strong>Phone:</strong></abbr> (91) 8547 632521<br>
-						<abbr title="Fax"><strong>Fax:</strong></abbr> (91) 11 4752 1433<br>
-						<abbr title="Email Address"><strong>Email:</strong></abbr> info@canvas.com
+						<abbr title="Phone Number"><strong>Tel:</strong></abbr><a href="tel:004987048681"> +49 (0) 8704 86 81</a> <br>
+						<abbr title="Fax"><strong>Fax:</strong></abbr> +49 (0) 8704 84 91<br>
+						<abbr title="Email Address"><strong>Email: </strong></abbr> <a href="mailto:j.brachtendorf@euraneg.com"> j.brachtendorf@euraneg.com</a>
+						<br>
+						<br>
 					</div>
 
 				</div>

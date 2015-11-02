@@ -98,10 +98,10 @@ gulp.task('templates', function() {
 
     return merge(templateStream, assetsStream, styleStream)
         .pipe(newer(dist+'*.html'))
-        // .pipe(sourcemaps.write('.'))
         .pipe(inlineResize(
             {
                 replaceIn:['.html','.css'], 
+                // quiet: true,
                 naiveCache: {destFolder: dist} 
             }
         ))
@@ -112,40 +112,6 @@ gulp.task('templates', function() {
 
 
 
-
-
-
-
-/**
- * img compression
- */
-gulp.task('img', function () {
-  gulp.src(dist+'assets_build/**/*')
-    .pipe(plumber())
-    .pipe(gm(function (gmfile) {
-      return gmfile.quality(80);
-    }))
-    .pipe(gulp.dist('./dist/assets_build/'));
-});
-
-
-
-
-
-/**
- * JavaScript - main.js task.
- */
-// gulp.task('js', function() {
-//     return gulp.src([
-//             app+'js/libraries/*.js',
-//             app+'js/main/*.js',
-//         ])
-//         .pipe(plumber())
-//         .pipe(concat('main.js'))
-//         .pipe(uglify())
-//         .pipe(gulp.dest(dist+'js/'))
-//         .on("end", reload);
-// });
 
 
 

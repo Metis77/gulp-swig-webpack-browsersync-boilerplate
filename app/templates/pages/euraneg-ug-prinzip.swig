@@ -14,7 +14,7 @@
         <h1>euraneg UG Prinzip</h1>
         <span>We provide Amazing Solutions</span>
         <ol class="breadcrumb">
-            <li><a href="startseite.html">Startseite</a></li>
+            <li><a href="index.html">Startseite</a></li>
             {# <li><a href="#">Produkte</a></li> #}
             <li class="active">euraneg UG Prinzip</li>
         </ol>

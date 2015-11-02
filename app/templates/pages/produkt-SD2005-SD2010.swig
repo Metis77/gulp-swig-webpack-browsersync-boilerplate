@@ -15,7 +15,7 @@
         <h1>SD 2005 & SD 2010</h1>
         <span>Manuelle Desinfektionsmittel- und <br>Flüssigseifenspender mit Bedienhebel.</span>
         <ol class="breadcrumb">
-            <li><a href="startseite.html">Startseite</a></li>
+            <li><a href="index.html">Startseite</a></li>
             <li><a href="produkt-SD2005-SD2010.html">Produkte</a></li>
             <li class="active">SD 2005 SD 2010</li>
         </ol>
@@ -91,12 +91,110 @@
 
 
 
+
+
+
         <div class="section nomargin nobgcolor">
             <div class="container clearfix">
-                
+
+                <div class="col_one_third ">
+
+                    <div class="feature-box fbox-plain fbox-euraneg">
+                        <div class="fbox-icon">
+                            <a href="#"><i class="i-alt">1.</i></a>
+                        </div>
+                        <h3>Wandmontageplatte</h3>
+                        <p>Perferendis, nam. Eum aperiam vel animi beatae corporis dignissimos, molestias, placeat, maxime optio ipsam nostrum atque quidem.</p>
+                    </div>
+
+                </div>
+
+                <div class="col_one_third ">
+
+                    <div class="feature-box fbox-plain fbox-euraneg">
+                        <div class="fbox-icon">
+                            <a href="#"><i class="i-alt">2.</i></a>
+                        </div>
+                        <h3>gehäuse</h3>
+                        <p>Saepe qui enim at animi. Repellendus, blanditiis doloremque asperiores reprehenderit deleniti. Ipsam nam accusantium ex!</p>
+                    </div>
+
+                </div>
+
+                <div class="col_one_third  col_last">
+
+                    <div class="feature-box fbox-plain fbox-euraneg">
+                        <div class="fbox-icon">
+                            <a href="#"><i class="i-alt">3.</i></a>
+                        </div>
+                        <h3>frontdeckel</h3>
+                        <p>Necessitatibus accusamus, inventore atque commodi, animi architecto ea sed, suscipit tempora ex deleniti quae. Consectetur, sint velit.</p>
+                    </div>
+
+                </div>
+
+                <div class="col_one_third ">
+
+                    <div class="feature-box fbox-plain fbox-euraneg">
+                        <div class="fbox-icon">
+                            <a href="#"><i class="i-alt">4.</i></a>
+                        </div>
+                        <h3>Tropfschale</h3>
+                        <p>Perferendis, nam. Eum aperiam vel animi beatae corporis dignissimos, molestias, placeat, maxime optio ipsam nostrum atque quidem.</p>
+                    </div>
+
+                </div>
+
+                <div class="col_one_third ">
+
+                    <div class="feature-box fbox-plain fbox-euraneg">
+                        <div class="fbox-icon">
+                            <a href="#"><i class="i-alt">5.</i></a>
+                        </div>
+                        <h3>vorratsflasche</h3>
+                        <p>Perferendis, nam. Eum aperiam vel animi beatae corporis dignissimos, molestias, placeat, maxime optio ipsam nostrum atque quidem.</p>
+                    </div>
+
+                </div>
+
+                <div class="col_one_third  col_last">
+
+                    <div class="feature-box fbox-plain fbox-euraneg">
+                        <div class="fbox-icon">
+                            <a href="#"><i class="i-alt">6.</i></a>
+                        </div>
+                        <h3>Pumpe</h3>
+                        <p>Perferendis, nam. Eum aperiam vel animi beatae corporis dignissimos, molestias, placeat, maxime optio ipsam nostrum atque quidem.</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="section nomargin nobgcolor">
+            <div class="container clearfix">
+
                 <div class="col_half nobottommargin topmargin-lg ">
-                    <img src="/assets_build/startseite/1.3-euraneg-Manueller-Seifenspender-SD2005-SD2010.png" 
+                    <img src="./assets_build/test.jpeg;200w" alt="">
+                    
+                    {{image50(
+                        '/assets_build/produktseite_1_SD2005_SD2010/2.5-euraneg-Manueller-Seifenspender-SD2005-SD2010.png',
+                        'euraneg-Manueller-Seifenspender-SD2005-SD2010',
+                        'center-block'
+                    ) }}
+                    <img src="/assets_build/produktseite_1_SD2005_SD2010/2.5-euraneg-Manueller-Seifenspender-SD2005-SD2010.png;300w" 
                         alt="euraneg-Manueller-Seifenspender-SD2005-SD2010" class="center-block">
+
+                    
                 </div>
 
                 <div class="col_half nobottommargin topmargin-lg col_last">
@@ -108,7 +206,9 @@
                     <h4>Text inkl. Zubehörverlinkung</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet cumque, perferendis accusamus porro illo exercitationem molestias, inventore obcaecati ut omnis voluptatibus ratione odio amet magnam quidem tempore necessitatibus quaerat, voluptates excepturi voluptatem, veritatis qui temporibus.</p>
 
-                    <a href="#" class="button button-border button-rounded button-large button-dark noleftmargin">Hier geht‘s zu den Details</a>
+                    <a href="#" class="button button-reveal button-border button-rounded button-large button-dark noleftmargin">
+                        <i class="icon-line-download"></i>
+                        <span>download Datenblatt</span></a>
                 </div>
 
                 
