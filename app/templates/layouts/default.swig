@@ -8,11 +8,13 @@
 	<title>{% block pagetitle %}{% endblock %} - Site Title</title>
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0">
 	<meta name="description" content="">
-	<link rel="stylesheet" href="/css/main.css">
+	<link rel="stylesheet" href="/main.css">
+
+	<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+	<script src="/js/main.js" async></script>
 </head>
 <body>
 	
 	{% block content %}{% endblock %}
-	<script src="/js/main.js"></script>
 </body>
 </html>

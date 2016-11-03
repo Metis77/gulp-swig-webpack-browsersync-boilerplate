@@ -21,8 +21,6 @@
     "node-sass": "^3.2.0",
 
 
-
-
     "autoprefixer": "^6.5.1",
     "bower": "^1.7.9",
     "bower-installer": "^1.2.0",
@@ -35,7 +33,6 @@
     "gulp-sass": "^2.3.2",
     "gulp-sourcemaps": "^2.1.1",
     "gulp-util": "^3.0.7",
-    "vinyl-ftp": "^0.4.5",
     "webpack": "^1.12.9"
   }
 }
