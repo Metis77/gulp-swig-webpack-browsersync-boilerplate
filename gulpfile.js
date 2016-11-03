@@ -1,67 +1,45 @@
-var gulp    		= require("gulp");
-var gutil 			= require("gulp-util");
-
-var concat          = require('gulp-concat');
+var gulp            = require("gulp");
+var gutil           = require("gulp-util");
+var merge           = require("merge-stream");
+var newer           = require('gulp-newer');
+var plumber         = require('gulp-plumber');
 var uglify          = require('gulp-uglify');
+    
+var inlineResize    = require("gulp-inline-resize");
+var gm              = require('gulp-gm');
 
-var sass 			= require('gulp-sass');
-var sourcemaps 		= require('gulp-sourcemaps');
-var autoprefixer 	= require('gulp-autoprefixer');
+var sass            = require('gulp-sass');
+var sourcemaps      = require('gulp-sourcemaps');
+var autoprefixer    = require('gulp-autoprefixer');
 
 var swig            = require('gulp-swig');
+var htmlmin         = require('gulp-htmlmin');
+
+var webpack = require('webpack');
 
 var browserSync     = require('browser-sync').create();
 
 
-var src   = './app/';
-var dest  = './public/';
+
+
+/*
+ * myVars
+ */
+var app         = './app/',
+    dist        = './dist/',
+    assets      = ['./assets/**/*', './assets/**/.*'],
+    assetsImages = './assets_generate/**/*';
 
 
 /*
  * generic tasks
  */
 gulp.task('default', function() {
-	gulp.start('serve');
+    gulp.start('serve');
 });
 gulp.task('production', function() {
-	gulp.start('sass', 'templates', 'js');
+    gulp.start('sass', 'templates', 'webpack');
 });
-
-
-/**
- *  SASS
- *  https://github.com/sindresorhus/gulp-autoprefixer/issues/8
- */
-gulp.task('sass', function () {
-    return gulp.src(src + 'styles/main.scss')
-        .pipe(sourcemaps.init())
-            .pipe(sass(
-            	{
-            		outputStyle: 'compressed'
-            	}
-            ))
-        .pipe(sourcemaps.write())
-        .pipe(sourcemaps.init({loadMaps: true}))
-            .pipe(autoprefixer(
-            	{
-            		browsers: [
-                        '> 1%',
-                        'last 2 versions',
-                        'firefox >= 4',
-                        'safari 7',
-                        'safari 8',
-                        'IE 8',
-                        'IE 9',
-                        'IE 10',
-                        'IE 11'
-                    ],
-            	}
-            ))
-        .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest(dest + 'css/'))
-        .pipe(browserSync.stream());
-});
-
 
 
 
@@ -72,22 +50,82 @@ gulp.task('sass', function () {
  * Templates task - compiles templates.
  */
 gulp.task('templates', function() {
-    return gulp.src(src+'templates/pages/**/*.swig', { 
-            base: src+'templates/pages/' 
+    var templateStream = gulp.src(app+'templates/pages/**/*.swig', {
+            base: app+'templates/pages/'
         })
+        .pipe(plumber())
         .pipe(swig({
             defaults: { cache: false },
             load_json: true,
-            json_path: src+'templates/data/'
+            json_path: app+'templates/data/'
         }))
-        .pipe(gulp.dest(dest))
-        .pipe(browserSync.stream());
+        .pipe(htmlmin({
+            collapseWhitespace: true,
+            preserveLineBreaks: true,
+            
+            removeComments: true,
+            removeCommentsFromCDATA: true,
+        }))
+    
+    var styleStream = gulp.src(app + 'styles/main.scss')
+        .pipe(plumber())
+        .pipe(sourcemaps.init())
+        .pipe(sass(
+            {
+                outputStyle: 'compressed'
+            }
+        ))
+        .pipe(sourcemaps.init({loadMaps: true}))
+        .pipe(autoprefixer(
+            {
+                browsers: [
+                    '> 1%',
+                    'last 2 versions',
+                    'firefox >= 4',
+                    'safari 7',
+                    'safari 8',
+                    'IE 8',
+                    'IE 9',
+                    'IE 10',
+                    'IE 11'
+                ],
+            }
+        ))
+        .pipe(sourcemaps.write('.'))
+
+    var assetsStream = gulp.src(assetsImages);
+
+    return merge(templateStream, assetsStream, styleStream)
+        .pipe(newer(dist+'*.html'))
+        // .pipe(sourcemaps.write('.'))
+        .pipe(inlineResize(
+            {
+                replaceIn:['.html','.css'], 
+                naiveCache: {destFolder: dist} 
+            }
+        ))
+        .pipe(gulp.dest(dist))
+        .on("end", browserSync.reload);
 });
 
 
 
 
 
+
+
+
+/**
+ * img compression
+ */
+gulp.task('img', function () {
+  gulp.src(dist+'assets_build/**/*')
+    .pipe(plumber())
+    .pipe(gm(function (gmfile) {
+      return gmfile.quality(80);
+    }))
+    .pipe(gulp.dist('./dist/assets_build/'));
+});
 
 
 
@@ -96,15 +134,53 @@ gulp.task('templates', function() {
 /**
  * JavaScript - main.js task.
  */
-gulp.task('js', function() {
-    return gulp.src([
-            src+'js/libraries/*.js',
-            src+'js/main/*.js',
-        ])
-        .pipe(concat('main.js'))
-        .pipe(uglify())
-        .pipe(gulp.dest(dest+'js/'))
-        .pipe(browserSync.stream());
+// gulp.task('js', function() {
+//     return gulp.src([
+//             app+'js/libraries/*.js',
+//             app+'js/main/*.js',
+//         ])
+//         .pipe(plumber())
+//         .pipe(concat('main.js'))
+//         .pipe(uglify())
+//         .pipe(gulp.dest(dist+'js/'))
+//         .on("end", reload);
+// });
+
+
+
+/**
+ * Webpack
+ */
+gulp.task('webpack', function() {
+    return webpack({
+        context: __dirname + "/app/js",
+        entry: {
+            main: "./entry.js"
+        },
+        output: {
+            path: "./dist/js/",
+            publicPath: "/js/",
+
+            filename: "[name].js",
+
+        },
+        externals: {
+            // require("jquery") is external and available on the global var jQuery
+            "jquery": "jQuery",
+            "$": "jQuery",
+        },
+        plugins: [
+            new webpack.optimize.UglifyJsPlugin({
+              sourceMap: true,
+              mangle: true
+            })
+        ],
+        devtool: "source-map",
+    }, function(err, stats) {
+        if(err) throw new gutil.PluginError("webpack", err);
+        // gutil.log("[webpack]", stats.toString({}));
+        browserSync.reload();        
+    })
 });
 
 
@@ -113,6 +189,16 @@ gulp.task('js', function() {
 
 
 
+/**
+ * copy assets
+ */
+gulp.task('copy', function () {
+    return gulp.src(assets)
+        .pipe(plumber())
+        .pipe(newer(dist))
+        .pipe(gulp.dest(dist))
+        .on("end", browserSync.reload);
+});
 
 
 
@@ -121,18 +207,20 @@ gulp.task('js', function() {
  */
 
 // Static Server + watching scss/html files
-gulp.task('serve', ['sass','templates', 'js'], function() {
+gulp.task('serve', ['templates', 'webpack', 'copy'], function() {
 
     browserSync.init({
-        server: dest,
+        server: dist,
         open: false,
         reloadOnRestart: true,
         notify: false,
     });
 
-    gulp.watch(src + 'js/**/*', ['js']);
-    gulp.watch(src + 'styles/**/*', ['sass']);
-    gulp.watch(src + 'templates/**/*', ['templates']);
+    gulp.watch(app + 'templates/**/*', ['templates']);
+    gulp.watch(app + 'styles/**/*', ['templates']);
+    gulp.watch(app + 'js/**/*', ['webpack']);
+    gulp.watch(assets, ['copy'])
+
 });
 
 
