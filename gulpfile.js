@@ -146,10 +146,10 @@ gulp.task('webpack', function() {
     return webpack({
         context: __dirname + "/app/js",
         entry: {
-            main: "entry.js"
+            main: "./entry.js"
         },
         output: {
-            path: "dist/js/",
+            path: "./dist/js/",
             publicPath: "/js/",
 
             filename: "[name].js",
