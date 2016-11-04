@@ -8,9 +8,6 @@ var uglify          = require('gulp-uglify');
 var inlineResize    = require("gulp-inline-resize");
 var gm              = require('gulp-gm');
 
-// var sass            = require('gulp-sass');
-// var sourcemaps      = require('gulp-sourcemaps');
-// var autoprefixer    = require('gulp-autoprefixer');
 
 var sourcemaps    = require( 'gulp-sourcemaps' );
 var sass          = require( 'gulp-sass' );
@@ -75,32 +72,6 @@ gulp.task('templates', function() {
             removeCommentsFromCDATA: true,
         }))
     
-    // var styleStream = gulp.src(app + 'styles/main.scss')
-    //     .pipe(plumber())
-    //     .pipe(sourcemaps.init())
-    //     .pipe(sass(
-    //         {
-    //             outputStyle: 'compressed'
-    //         }
-    //     ))
-    //     .pipe(sourcemaps.init({loadMaps: true}))
-    //     .pipe(autoprefixer(
-    //         {
-    //             browsers: [
-    //                 '> 1%',
-    //                 'last 2 versions',
-    //                 'firefox >= 4',
-    //                 'safari 7',
-    //                 'safari 8',
-    //                 'IE 8',
-    //                 'IE 9',
-    //                 'IE 10',
-    //                 'IE 11'
-    //             ],
-    //         }
-    //     ))
-    //     .pipe(sourcemaps.write('.'))
-    
     var processors = [
             autoprefixer({browsers: ['last 2 version','> 1%']}),
             cssnano({safe: true})
@@ -113,27 +84,13 @@ gulp.task('templates', function() {
         .pipe(sourcemaps.write('.'))
 
 
-    // gulp.task('sass', function () {
-    //     var processors = [
-    //         autoprefixer({browsers: ['last 2 version','> 1%']}),
-    //         cssnano({safe: true})
-    //     ];
-    //     return gulp.src( styles_src )
-    //         .pipe(sourcemaps.init())
-    //         .pipe(sass().on('error', sass.logError))
-    //         .pipe(postcss(processors))
-    //         .pipe(sourcemaps.write('.'))
-    //         .pipe(gulp.dest( styles_dist ));
-    // });
-
-
     var assetsStream = gulp.src(assetsImages);
 
     return merge(templateStream, assetsStream, styleStream)
         .pipe(newer(dist+'*.html'))
-        // .pipe(sourcemaps.write('.'))
         .pipe(inlineResize(
-            {
+            {   
+                quiet: false,
                 replaceIn:['.html','.css'], 
                 naiveCache: {destFolder: dist} 
             }
