@@ -30,10 +30,10 @@ var browserSync     = require('browser-sync').create();
 /*
  * myVars
  */
-var app         = './app/',
-    dist        = './dist/',
-    assets      = ['./assets/**/*', './assets/**/.*'],
-    assetsImages = './assets_generate/**/*';
+var app         = 'app/',
+    dist        = 'dist/',
+    assets      = ['assets/**/*', 'assets/**/.*'],
+    assetsImages = 'assets_generate/**/*';
 
 
 /*
@@ -115,7 +115,7 @@ gulp.task('img', function () {
     .pipe(gm(function (gmfile) {
       return gmfile.quality(80);
     }))
-    .pipe(gulp.dist('./dist/assets_build/'));
+    .pipe(gulp.dist('dist/assets_build/'));
 });
 
 
@@ -146,10 +146,10 @@ gulp.task('webpack', function() {
     return webpack({
         context: __dirname + "/app/js",
         entry: {
-            main: "./entry.js"
+            main: "entry.js"
         },
         output: {
-            path: "./dist/js/",
+            path: "dist/js/",
             publicPath: "/js/",
 
             filename: "[name].js",
