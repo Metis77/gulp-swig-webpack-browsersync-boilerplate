@@ -10,10 +10,10 @@
 	<meta name="description" content="{% block description %}gulp swig webpack bowesersync boilerplate{% endblock %}">
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0">
 
-	<link rel="stylesheet" href="/main.css">
+	<link rel="stylesheet" href="/main.css?v={{ Date()|date('Y-m-d-i-s') }}">
 
 	<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
-	<script src="/js/main.js" async></script>
+	<script src="/js/main.js?v={{ Date()|date('Y-m-d-i-s') }}" async></script>
 </head>
 
 <body class="{% if page %}page_{{ page }}{% endif %}">
