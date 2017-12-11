@@ -5,6 +5,10 @@
   "main": "index.js",
   "author": "Martin Schwenzer",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Metis77/gulp-swig-webpack-browsersync-boilerplate"
+  },
   "devDependencies": {
     "browser-sync": "^2.7.13",
     "gulp-autoprefixer": "^2.3.1",
